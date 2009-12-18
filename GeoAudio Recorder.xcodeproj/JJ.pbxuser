@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* GeoAudio_RecorderAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 505}}";
+			sepNavSelRange = "{616, 0}";
+			sepNavVisRange = "{0, 625}";
+			sepNavWindowFrame = "{{15, 295}, {972, 578}}";
+		};
+	};
+	1D3623250D0F684500981E51 /* GeoAudio_RecorderAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 505}}";
+			sepNavSelRange = "{633, 0}";
+			sepNavVisRange = "{0, 716}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* GeoAudio Recorder */ = {
+		activeExec = 0;
+		executables = (
+			28E76F5E10DAE1BC0025C0D1 /* GeoAudio Recorder */,
+		);
+	};
+	289A002610DB4B5200AB296B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D304C810DB3669002E43EC /* TracksNavController.h */;
+		name = "TracksNavController.h: 12";
+		rLen = 0;
+		rLoc = 229;
+		rType = 0;
+		vrLen = 251;
+		vrLoc = 0;
+	};
+	289A002710DB4B5200AB296B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D304C910DB3669002E43EC /* TracksNavController.m */;
+		name = "TracksNavController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 818;
+		vrLoc = 594;
+	};
+	289A002810DB4B5200AB296B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAB10DAF50B0025C0D1 /* ThirdLevelViewController.m */;
+		name = "ThirdLevelViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1112;
+		vrLoc = 0;
+	};
+	289A002910DB4B5200AB296B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAA10DAF50B0025C0D1 /* ThirdLevelViewController.h */;
+		name = "ThirdLevelViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 255;
+		vrLoc = 0;
+	};
+	289A002A10DB4B5200AB296B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D304DD10DB38B7002E43EC /* TracksTableViewController.m */;
+		name = "TracksTableViewController.m: 153";
+		rLen = 0;
+		rLoc = 4543;
+		rType = 0;
+		vrLen = 1470;
+		vrLoc = 3324;
+	};
+	289A002B10DB4B5200AB296B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D304DD10DB38B7002E43EC /* TracksTableViewController.m */;
+		name = "TracksTableViewController.m: 153";
+		rLen = 0;
+		rLoc = 4543;
+		rType = 0;
+		vrLen = 1487;
+		vrLoc = 3307;
+	};
+	28D304C810DB3669002E43EC /* TracksNavController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 500}}";
+			sepNavSelRange = "{229, 0}";
+			sepNavVisRange = "{0, 251}";
+		};
+	};
+	28D304C910DB3669002E43EC /* TracksNavController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{594, 818}";
+		};
+	};
+	28D304CD10DB3695002E43EC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 28D304B010DB2BA5002E43EC /* singleicon.png */;
+	};
+	28D304CE10DB3695002E43EC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 28D304B210DB2BAF002E43EC /* doubleicon.png */;
+	};
+	28D304D010DB3695002E43EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
+		name = "RecorderViewController.h: 9";
+		rLen = 0;
+		rLoc = 184;
+		rType = 0;
+		vrLen = 250;
+		vrLoc = 0;
+	};
+	28D304D110DB3695002E43EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 40";
+		rLen = 0;
+		rLoc = 1093;
+		rType = 0;
+		vrLen = 841;
+		vrLoc = 622;
+	};
+	28D304DC10DB38B7002E43EC /* TracksTableViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 505}}";
+			sepNavSelRange = "{441, 0}";
+			sepNavVisRange = "{0, 498}";
+		};
+	};
+	28D304DD10DB38B7002E43EC /* TracksTableViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1188, 2548}}";
+			sepNavSelRange = "{4543, 0}";
+			sepNavVisRange = "{3307, 1487}";
+		};
+	};
+	28D304F010DB3DDA002E43EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* GeoAudio_RecorderAppDelegate.m */;
+		name = "GeoAudio_RecorderAppDelegate.m: 27";
+		rLen = 0;
+		rLoc = 633;
+		rType = 0;
+		vrLen = 716;
+		vrLoc = 0;
+	};
+	28D304F110DB3DDA002E43EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* GeoAudio_RecorderAppDelegate.h */;
+		name = "GeoAudio_RecorderAppDelegate.h: 21";
+		rLen = 0;
+		rLoc = 616;
+		rType = 0;
+		vrLen = 625;
+		vrLoc = 0;
+	};
+	28D304FC10DB4433002E43EC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D304DC10DB38B7002E43EC /* TracksTableViewController.h */;
+		name = "TracksTableViewController.h: 15";
+		rLen = 0;
+		rLoc = 441;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 0;
+	};
+	28E76F5E10DAE1BC0025C0D1 /* GeoAudio Recorder */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "GeoAudio Recorder";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	28E76F6B10DAE1D60025C0D1 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	28E76F6C10DAE1D60025C0D1 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 505}}";
+			sepNavSelRange = "{184, 0}";
+			sepNavVisRange = "{0, 250}";
+		};
+	};
+	28E76F7010DAE3420025C0D1 /* RecorderViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 819}}";
+			sepNavSelRange = "{1093, 0}";
+			sepNavVisRange = "{622, 841}";
+		};
+	};
+	28E76FAA10DAF50B0025C0D1 /* ThirdLevelViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 500}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 255}";
+		};
+	};
+	28E76FAB10DAF50B0025C0D1 /* ThirdLevelViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1112}";
+		};
+	};
+	28E76FAF10DAF5310025C0D1 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */;
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 28E76F5E10DAE1BC0025C0D1 /* GeoAudio Recorder */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* GeoAudio Recorder */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* GeoAudio Recorder */,
+		);
+		codeSenseManager = 28E76F6C10DAE1D60025C0D1 /* Code sense */;
+		executables = (
+			28E76F5E10DAE1BC0025C0D1 /* GeoAudio Recorder */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					993,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					1007,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 282805366;
+			PBXWorkspaceStateSaveDate = 282805366;
+		};
+		perUserProjectItems = {
+			289A002610DB4B5200AB296B /* PBXTextBookmark */ = 289A002610DB4B5200AB296B /* PBXTextBookmark */;
+			289A002710DB4B5200AB296B /* PBXTextBookmark */ = 289A002710DB4B5200AB296B /* PBXTextBookmark */;
+			289A002810DB4B5200AB296B /* PBXTextBookmark */ = 289A002810DB4B5200AB296B /* PBXTextBookmark */;
+			289A002910DB4B5200AB296B /* PBXTextBookmark */ = 289A002910DB4B5200AB296B /* PBXTextBookmark */;
+			289A002A10DB4B5200AB296B /* PBXTextBookmark */ = 289A002A10DB4B5200AB296B /* PBXTextBookmark */;
+			289A002B10DB4B5200AB296B /* PBXTextBookmark */ = 289A002B10DB4B5200AB296B /* PBXTextBookmark */;
+			28D304CD10DB3695002E43EC /* PBXBookmark */ = 28D304CD10DB3695002E43EC /* PBXBookmark */;
+			28D304CE10DB3695002E43EC /* PBXBookmark */ = 28D304CE10DB3695002E43EC /* PBXBookmark */;
+			28D304D010DB3695002E43EC /* PBXTextBookmark */ = 28D304D010DB3695002E43EC /* PBXTextBookmark */;
+			28D304D110DB3695002E43EC /* PBXTextBookmark */ = 28D304D110DB3695002E43EC /* PBXTextBookmark */;
+			28D304F010DB3DDA002E43EC /* PBXTextBookmark */ = 28D304F010DB3DDA002E43EC /* PBXTextBookmark */;
+			28D304F110DB3DDA002E43EC /* PBXTextBookmark */ = 28D304F110DB3DDA002E43EC /* PBXTextBookmark */;
+			28D304FC10DB4433002E43EC /* PBXTextBookmark */ = 28D304FC10DB4433002E43EC /* PBXTextBookmark */;
+			28E76FAF10DAF5310025C0D1 /* PBXBookmark */ = 28E76FAF10DAF5310025C0D1 /* PBXBookmark */;
+		};
+		sourceControlManager = 28E76F6B10DAE1D60025C0D1 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+}
