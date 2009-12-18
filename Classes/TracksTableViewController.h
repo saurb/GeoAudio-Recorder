@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class ThirdLevelViewController;
+@class TrackDetailViewController;
 
 @interface TracksTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
 	IBOutlet UITableView* tracksTableView;
 	NSArray* tracks;
-	ThirdLevelViewController* trackDetailViewController;
+	TrackDetailViewController* trackDetailViewController;
 
 }
 

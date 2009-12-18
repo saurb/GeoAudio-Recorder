@@ -6,10 +6,10 @@
 //  Copyright 2009 Arizona State University. All rights reserved.
 //
 
-#import "ThirdLevelViewController.h"
+#import "TrackDetailViewController.h"
 
 
-@implementation ThirdLevelViewController
+@implementation TrackDetailViewController
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.

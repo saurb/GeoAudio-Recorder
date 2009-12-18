@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ThirdLevelViewController : UIViewController {
+@interface TrackDetailViewController : UIViewController {
 
 }
 

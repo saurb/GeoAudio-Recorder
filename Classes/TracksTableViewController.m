@@ -7,7 +7,7 @@
 //
 
 #import "TracksTableViewController.h"
-#import "ThirdLevelViewController.h"
+#import "TrackDetailViewController.h"
 #import "GeoAudio_RecorderAppDelegate.h"
 
 
@@ -143,7 +143,7 @@
 accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 {
 	if (trackDetailViewController == nil) {
-		trackDetailViewController = [[ThirdLevelViewController alloc] initWithNibName:@"ThirdLevelViewController" bundle:nil];
+		trackDetailViewController = [[TrackDetailViewController alloc] initWithNibName:@"TrackDetailViewController" bundle:nil];
 	}
 	
 	trackDetailViewController.title = @"Detailed Info";
