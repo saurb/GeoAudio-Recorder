@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,8 +275,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>1</integer>
+									<integer>16</integer>
+									<integer>13</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -309,14 +311,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecorderViewController.m</string>
+								<string>RecorderViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,11 +324,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RecorderViewController.m</string>
+										<string>RecorderViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>280A889810DD4218005CF926</string>
+										<string>280A88D110DD5238005CF926</string>
 										<key>history</key>
 										<array>
 											<string>28E76FAF10DAF5310025C0D1</string>
@@ -342,8 +342,8 @@
 											<string>28D3B76010DD3FD900C96A80</string>
 											<string>28D3B76110DD3FD900C96A80</string>
 											<string>28D3B76210DD3FD900C96A80</string>
-											<string>28D3B76310DD3FD900C96A80</string>
-											<string>28D3B76510DD3FD900C96A80</string>
+											<string>280A88CC10DD520C005CF926</string>
+											<string>280A88CD10DD520C005CF926</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

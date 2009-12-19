@@ -17,6 +17,8 @@
 	BOOL recording;
 	
 	IBOutlet UIButton* recordButton;
+	
+	UIImage* recordEnabled, *recordPressed;
 
 }
 

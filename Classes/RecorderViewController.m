@@ -36,6 +36,11 @@
 {
 	[super viewDidLoad];
 	
+	recordEnabled = [[UIImage imageNamed:@"RecordEnabled.png"] retain];
+	recordPressed = [[UIImage imageNamed:@"RecordPressed.png"] retain];
+	
+	[recordButton setImage:recordEnabled forState:UIControlStateNormal];
+	
 	//TODO: set up the recorder
 	recording = NO;
 	
@@ -86,8 +91,9 @@
 		recording = NO;
 		self.recorder = nil;
 		
-		[recordButton setTitle:@"Record" forState:UIControlStateNormal];
-		[recordButton setTitle:@"Record" forState:UIControlStateHighlighted];
+		//[recordButton setTitle:@"Record" forState:UIControlStateNormal];
+		//[recordButton setTitle:@"Record" forState:UIControlStateHighlighted];
+		[recordButton setImage:recordEnabled forState:UIControlStateNormal];
 		
 		[[AVAudioSession sharedInstance] setActive:NO error:nil];
 	}
@@ -130,8 +136,9 @@
 		recorder.delegate = self;
 		[recorder prepareToRecord];
 		[recorder record];
-		[recordButton setTitle:@"Stop" forState:UIControlStateNormal];
-		[recordButton setTitle:@"Stop" forState:UIControlStateHighlighted];
+		//[recordButton setTitle:@"Stop" forState:UIControlStateNormal];
+		//[recordButton setTitle:@"Stop" forState:UIControlStateHighlighted];
+		[recordButton setImage:recordPressed forState:UIControlStateNormal];
 		
 		recording = YES;
 	}
