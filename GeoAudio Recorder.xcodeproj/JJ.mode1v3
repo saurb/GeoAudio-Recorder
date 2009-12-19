@@ -273,8 +273,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
-									<integer>13</integer>
+									<integer>5</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -328,12 +328,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>280A88E710DD5E41005CF926</string>
+										<string>280A897710DD9153005CF926</string>
 										<key>history</key>
 										<array>
-											<string>28E76FAF10DAF5310025C0D1</string>
 											<string>289A002610DB4B5200AB296B</string>
-											<string>289A002710DB4B5200AB296B</string>
 											<string>28B5598F10DBDDAA004D75B4</string>
 											<string>28B5599010DBDDAA004D75B4</string>
 											<string>28B55A1810DCAE0D004D75B4</string>
@@ -342,8 +340,10 @@
 											<string>28D3B76010DD3FD900C96A80</string>
 											<string>28D3B76110DD3FD900C96A80</string>
 											<string>28D3B76210DD3FD900C96A80</string>
-											<string>280A88E510DD5E41005CF926</string>
-											<string>280A88E610DD5E41005CF926</string>
+											<string>280A890A10DD7A2F005CF926</string>
+											<string>280A890B10DD7A2F005CF926</string>
+											<string>280A890C10DD7A2F005CF926</string>
+											<string>280A890D10DD7A2F005CF926</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -541,10 +541,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>28E76F7D10DAE34F0025C0D1</string>
 		<string>/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio Recorder.xcodeproj</string>
-		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>1 109 1440 769 0 0 1440 878 </string>
@@ -568,7 +568,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>RecorderViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -639,7 +639,7 @@
 			<key>WindowToolGUID</key>
 			<string>28E76F7D10DAE34F0025C0D1</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -928,7 +928,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -26,7 +26,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 54";
 		rLen = 0;
-		rLoc = 2136;
+		rLoc = 2205;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 1063;
@@ -36,7 +36,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 109";
 		rLen = 0;
-		rLoc = 3883;
+		rLoc = 4588;
 		rType = 0;
 		vrLen = 1523;
 		vrLoc = 1952;
@@ -46,7 +46,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 108";
 		rLen = 0;
-		rLoc = 3870;
+		rLoc = 4575;
 		rType = 0;
 		vrLen = 1545;
 		vrLoc = 1952;
@@ -56,7 +56,7 @@
 		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
 		name = "RecorderViewController.h: 22";
 		rLen = 0;
-		rLoc = 579;
+		rLoc = 762;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 0;
@@ -66,7 +66,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 15";
 		rLen = 0;
-		rLoc = 284;
+		rLoc = 358;
 		rType = 0;
 		vrLen = 1011;
 		vrLoc = 160;
@@ -76,7 +76,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 43";
 		rLen = 0;
-		rLoc = 1226;
+		rLoc = 1300;
 		rType = 0;
 		vrLen = 1010;
 		vrLoc = 555;
@@ -86,7 +86,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 144";
 		rLen = 0;
-		rLoc = 4928;
+		rLoc = 5633;
 		rType = 0;
 		vrLen = 1294;
 		vrLoc = 3198;
@@ -96,7 +96,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 145";
 		rLen = 0;
-		rLoc = 4932;
+		rLoc = 5637;
 		rType = 0;
 		vrLen = 1100;
 		vrLoc = 3397;
@@ -106,7 +106,7 @@
 		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
 		name = "RecorderViewController.h: 19";
 		rLen = 0;
-		rLoc = 536;
+		rLoc = 618;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 0;
@@ -116,7 +116,7 @@
 		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
 		name = "RecorderViewController.h: 19";
 		rLen = 0;
-		rLoc = 536;
+		rLoc = 618;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 0;
@@ -126,7 +126,7 @@
 		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
 		name = "RecorderViewController.h: 19";
 		rLen = 0;
-		rLoc = 536;
+		rLoc = 618;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 0;
@@ -136,7 +136,7 @@
 		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
 		name = "RecorderViewController.h: 19";
 		rLen = 0;
-		rLoc = 536;
+		rLoc = 618;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 0;
@@ -146,7 +146,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 145";
 		rLen = 0;
-		rLoc = 4932;
+		rLoc = 5637;
 		rType = 0;
 		vrLen = 1209;
 		vrLoc = 3288;
@@ -156,10 +156,303 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 61";
 		rLen = 0;
-		rLoc = 1758;
+		rLoc = 1827;
 		rType = 0;
 		vrLen = 987;
 		vrLoc = 1157;
+	};
+	280A88F710DD6DDC005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
+		name = "RecorderViewController.h: 32";
+		rLen = 0;
+		rLoc = 1064;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 0;
+	};
+	280A88F810DD6DDC005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 15";
+		rLen = 0;
+		rLoc = 358;
+		rType = 0;
+		vrLen = 1022;
+		vrLoc = 0;
+	};
+	280A88F910DD6DDC005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 98";
+		rLen = 0;
+		rLoc = 2957;
+		rType = 0;
+		vrLen = 873;
+		vrLoc = 2173;
+	};
+	280A88FC10DD6F24005CF926 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'kAudioFormatAppleLossless' undeclared (first use in this function)";
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 152;
+		rType = 1;
+	};
+	280A88FD10DD6F24005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 126";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 837;
+		vrLoc = 3185;
+	};
+	280A890010DD6F2F005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 126";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 1690;
+		vrLoc = 2814;
+	};
+	280A890110DD6F2F005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
+		name = "RecorderViewController.h: 11";
+		rLen = 0;
+		rLoc = 223;
+		rType = 0;
+		vrLen = 1024;
+		vrLoc = 0;
+	};
+	280A890210DD6F2F005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
+		name = "RecorderViewController.h: 11";
+		rLen = 0;
+		rLoc = 223;
+		rType = 0;
+		vrLen = 984;
+		vrLoc = 0;
+	};
+	280A890310DD6F35005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 126";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 894;
+		vrLoc = 3185;
+	};
+	280A890410DD6F4E005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
+		name = "RecorderViewController.h: 26";
+		rLen = 0;
+		rLoc = 760;
+		rType = 0;
+		vrLen = 1022;
+		vrLoc = 0;
+	};
+	280A890A10DD7A2F005CF926 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */;
+	};
+	280A890B10DD7A2F005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D304C910DB3669002E43EC /* TracksNavController.m */;
+		name = "TracksNavController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 813;
+		vrLoc = 594;
+	};
+	280A890C10DD7A2F005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
+		name = "RecorderViewController.h: 39";
+		rLen = 0;
+		rLoc = 1140;
+		rType = 0;
+		vrLen = 1090;
+		vrLoc = 57;
+	};
+	280A890D10DD7A2F005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 110";
+		rLen = 0;
+		rLoc = 3022;
+		rType = 0;
+		vrLen = 814;
+		vrLoc = 2409;
+	};
+	280A890E10DD7A2F005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 115";
+		rLen = 0;
+		rLoc = 3132;
+		rType = 0;
+		vrLen = 595;
+		vrLoc = 2409;
+	};
+	280A890F10DD7A52005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 141";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 607;
+		vrLoc = 4248;
+	};
+	280A891010DD7A68005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 107";
+		rLen = 0;
+		rLoc = 2981;
+		rType = 0;
+		vrLen = 633;
+		vrLoc = 2409;
+	};
+	280A891310DD7D32005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 82";
+		rLen = 0;
+		rLoc = 2394;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 1413;
+	};
+	280A891410DD7D47005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 146";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 652;
+		vrLoc = 4373;
+	};
+	280A892710DD7E91005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 66";
+		rLen = 0;
+		rLoc = 1905;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 1759;
+	};
+	280A894410DD8016005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 66";
+		rLen = 0;
+		rLoc = 1905;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 1759;
+	};
+	280A896910DD8E13005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 140";
+		rLen = 0;
+		rLoc = 3625;
+		rType = 0;
+		vrLen = 1176;
+		vrLoc = 3137;
+	};
+	280A896A10DD8E26005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 153";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 3994;
+	};
+	280A896D10DD8FFC005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 213";
+		rLen = 0;
+		rLoc = 6239;
+		rType = 0;
+		vrLen = 1000;
+		vrLoc = 5296;
+	};
+	280A896E10DD904A005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 153";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 3994;
+	};
+	280A897110DD9058005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 216";
+		rLen = 0;
+		rLoc = 6291;
+		rType = 0;
+		vrLen = 1001;
+		vrLoc = 5296;
+	};
+	280A897210DD906B005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 153";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 3994;
+	};
+	280A897510DD913F005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 228";
+		rLen = 0;
+		rLoc = 6729;
+		rType = 0;
+		vrLen = 1099;
+		vrLoc = 5640;
+	};
+	280A897610DD9151005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 153";
+		rLen = 0;
+		rLoc = 3994;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 3994;
+	};
+	280A897710DD9153005CF926 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 212";
+		rLen = 0;
+		rLoc = 6144;
+		rType = 0;
+		vrLen = 1099;
+		vrLoc = 5640;
 	};
 	289A002610DB4B5200AB296B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -220,7 +513,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1171, 754}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{594, 818}";
+			sepNavVisRange = "{594, 813}";
 		};
 	};
 	28D304DC10DB38B7002E43EC /* TracksTableViewController.h */ = {
@@ -282,7 +575,7 @@
 		fRef = 28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */;
 		name = "RecorderViewController.h: 15";
 		rLen = 0;
-		rLoc = 452;
+		rLoc = 517;
 		rType = 0;
 		vrLen = 705;
 		vrLoc = 0;
@@ -292,7 +585,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 96";
 		rLen = 0;
-		rLoc = 3969;
+		rLoc = 4674;
 		rType = 0;
 		vrLen = 1203;
 		vrLoc = 2424;
@@ -302,7 +595,7 @@
 		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
 		name = "RecorderViewController.m: 54";
 		rLen = 0;
-		rLoc = 2136;
+		rLoc = 2205;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 1063;
@@ -351,17 +644,17 @@
 	};
 	28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 476}}";
-			sepNavSelRange = "{536, 0}";
-			sepNavVisRange = "{0, 748}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 546}}";
+			sepNavSelRange = "{1140, 0}";
+			sepNavVisRange = "{57, 1090}";
 			sepNavWindowFrame = "{{15, 295}, {972, 578}}";
 		};
 	};
 	28E76F7010DAE3420025C0D1 /* RecorderViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 2223}}";
-			sepNavSelRange = "{1758, 0}";
-			sepNavVisRange = "{1157, 987}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 2847}}";
+			sepNavSelRange = "{6144, 0}";
+			sepNavVisRange = "{5640, 1099}";
 		};
 	};
 	28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */ = {
@@ -436,7 +729,7 @@
 					953,
 					60,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 				);
@@ -468,6 +761,36 @@
 			280A88E510DD5E41005CF926 /* PBXTextBookmark */ = 280A88E510DD5E41005CF926 /* PBXTextBookmark */;
 			280A88E610DD5E41005CF926 /* PBXTextBookmark */ = 280A88E610DD5E41005CF926 /* PBXTextBookmark */;
 			280A88E710DD5E41005CF926 /* PBXTextBookmark */ = 280A88E710DD5E41005CF926 /* PBXTextBookmark */;
+			280A88F710DD6DDC005CF926 /* PBXTextBookmark */ = 280A88F710DD6DDC005CF926 /* PBXTextBookmark */;
+			280A88F810DD6DDC005CF926 /* PBXTextBookmark */ = 280A88F810DD6DDC005CF926 /* PBXTextBookmark */;
+			280A88F910DD6DDC005CF926 /* PBXTextBookmark */ = 280A88F910DD6DDC005CF926 /* PBXTextBookmark */;
+			280A88FC10DD6F24005CF926 /* XCBuildMessageTextBookmark */ = 280A88FC10DD6F24005CF926 /* XCBuildMessageTextBookmark */;
+			280A88FD10DD6F24005CF926 /* PBXTextBookmark */ = 280A88FD10DD6F24005CF926 /* PBXTextBookmark */;
+			280A890010DD6F2F005CF926 /* PBXTextBookmark */ = 280A890010DD6F2F005CF926 /* PBXTextBookmark */;
+			280A890110DD6F2F005CF926 /* PBXTextBookmark */ = 280A890110DD6F2F005CF926 /* PBXTextBookmark */;
+			280A890210DD6F2F005CF926 /* PBXTextBookmark */ = 280A890210DD6F2F005CF926 /* PBXTextBookmark */;
+			280A890310DD6F35005CF926 /* PBXTextBookmark */ = 280A890310DD6F35005CF926 /* PBXTextBookmark */;
+			280A890410DD6F4E005CF926 /* PBXTextBookmark */ = 280A890410DD6F4E005CF926 /* PBXTextBookmark */;
+			280A890A10DD7A2F005CF926 /* PBXBookmark */ = 280A890A10DD7A2F005CF926 /* PBXBookmark */;
+			280A890B10DD7A2F005CF926 /* PBXTextBookmark */ = 280A890B10DD7A2F005CF926 /* PBXTextBookmark */;
+			280A890C10DD7A2F005CF926 /* PBXTextBookmark */ = 280A890C10DD7A2F005CF926 /* PBXTextBookmark */;
+			280A890D10DD7A2F005CF926 /* PBXTextBookmark */ = 280A890D10DD7A2F005CF926 /* PBXTextBookmark */;
+			280A890E10DD7A2F005CF926 /* PBXTextBookmark */ = 280A890E10DD7A2F005CF926 /* PBXTextBookmark */;
+			280A890F10DD7A52005CF926 /* PBXTextBookmark */ = 280A890F10DD7A52005CF926 /* PBXTextBookmark */;
+			280A891010DD7A68005CF926 /* PBXTextBookmark */ = 280A891010DD7A68005CF926 /* PBXTextBookmark */;
+			280A891310DD7D32005CF926 /* PBXTextBookmark */ = 280A891310DD7D32005CF926 /* PBXTextBookmark */;
+			280A891410DD7D47005CF926 /* PBXTextBookmark */ = 280A891410DD7D47005CF926 /* PBXTextBookmark */;
+			280A892710DD7E91005CF926 /* PBXTextBookmark */ = 280A892710DD7E91005CF926 /* PBXTextBookmark */;
+			280A894410DD8016005CF926 /* PBXTextBookmark */ = 280A894410DD8016005CF926 /* PBXTextBookmark */;
+			280A896910DD8E13005CF926 /* PBXTextBookmark */ = 280A896910DD8E13005CF926 /* PBXTextBookmark */;
+			280A896A10DD8E26005CF926 /* PBXTextBookmark */ = 280A896A10DD8E26005CF926 /* PBXTextBookmark */;
+			280A896D10DD8FFC005CF926 /* PBXTextBookmark */ = 280A896D10DD8FFC005CF926 /* PBXTextBookmark */;
+			280A896E10DD904A005CF926 /* PBXTextBookmark */ = 280A896E10DD904A005CF926 /* PBXTextBookmark */;
+			280A897110DD9058005CF926 /* PBXTextBookmark */ = 280A897110DD9058005CF926 /* PBXTextBookmark */;
+			280A897210DD906B005CF926 /* PBXTextBookmark */ = 280A897210DD906B005CF926 /* PBXTextBookmark */;
+			280A897510DD913F005CF926 /* PBXTextBookmark */ = 280A897510DD913F005CF926 /* PBXTextBookmark */;
+			280A897610DD9151005CF926 /* PBXTextBookmark */ = 280A897610DD9151005CF926 /* PBXTextBookmark */;
+			280A897710DD9153005CF926 /* PBXTextBookmark */ = 280A897710DD9153005CF926 /* PBXTextBookmark */;
 			289A002610DB4B5200AB296B = 289A002610DB4B5200AB296B /* PBXTextBookmark */;
 			289A002710DB4B5200AB296B = 289A002710DB4B5200AB296B /* PBXTextBookmark */;
 			28B5598F10DBDDAA004D75B4 = 28B5598F10DBDDAA004D75B4 /* PBXTextBookmark */;

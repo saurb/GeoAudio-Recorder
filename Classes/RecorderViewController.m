@@ -12,6 +12,9 @@
 @implementation RecorderViewController
 @synthesize recorder;
 @synthesize recordButton;
+@synthesize locationManager;
+@synthesize location;
+@synthesize geoSwitch;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -41,7 +44,7 @@
 	
 	[recordButton setImage:recordEnabled forState:UIControlStateNormal];
 	
-	//TODO: set up the recorder
+	// set up the recorder
 	recording = NO;
 	
 	AVAudioSession* audioSession = [AVAudioSession sharedInstance];
@@ -73,6 +76,11 @@
 		return;
 	}
 	
+	// set up for location manager
+	self.locationManager = [[CLLocationManager alloc] init];
+	locationManager.delegate = self;
+	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,13 +95,31 @@
 	// e.g. self.myOutlet = nil;
 	self.recorder = nil;
 	self.recordButton = nil;
+	self.locationManager = nil;
+	self.location = nil;
+	self.geoSwitch = nil;
 }
 
 
 - (void)dealloc {
 	[recorder release];
 	[recordButton release];
+	[locationManager release];
+	[location release];
+	[geoSwitch release];
     [super dealloc];
+}
+
+- (IBAction)switchChanged:(id)sender
+{
+	geoSwitch = sender;
+	if (geoSwitch.on) {
+		NSLog(@"geoSwitch is on");
+	}
+	else {
+		NSLog(@"geoSwitch is off");
+	}
+
 }
 
 #pragma mark -
@@ -110,8 +136,15 @@
 		[recordButton setImage:recordEnabled forState:UIControlStateNormal];
 		
 		[[AVAudioSession sharedInstance] setActive:NO error:nil];
+		
+		[locationManager stopUpdatingLocation];
 	}
 	else {
+		// start updating location
+		if (geoSwitch.on) {
+			[locationManager startUpdatingLocation];
+		}
+		
 		[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:nil];
 		
 		NSMutableDictionary* recordSetting = [[NSMutableDictionary alloc] init];
@@ -160,6 +193,39 @@
 		recording = YES;
 	}
 
+}
+
+#pragma mark -
+#pragma mark CLLocationManagerDelegate Methods
+// Called when locaiton is updated
+- (void)locationManager:(CLLocationManager*)manager
+	didUpdateToLocation:(CLLocation*)newLocation
+		   fromLocation:(CLLocation*)oldLocation
+{
+	if (location == nil) {
+		self.location = newLocation;
+	}
+	NSString* latitudeString = [[NSString alloc] initWithFormat:@"%g°", newLocation.coordinate.latitude];
+	NSLog(@"latitude = %@", latitudeString);
+	[latitudeString release];
+	
+	NSString* longitudeString = [[NSString alloc] initWithFormat:@"%g°", newLocation.coordinate.longitude];
+	NSLog(@"longitude = %@", longitudeString);
+	[longitudeString release];
+	
+}
+
+- (void)locationManager:(CLLocationManager*)manager
+	   didFailWithError:(NSError*)error
+{
+	NSString* errorType = (error.code == kCLErrorDenied) ? @"Access Denied" : @"Unknown Error";
+	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error getting location" 
+													message:errorType 
+												   delegate:nil 
+										  cancelButtonTitle:@"OK" 
+										  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
 }
 
 
