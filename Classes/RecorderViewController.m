@@ -45,6 +45,20 @@
 	recording = NO;
 	
 	AVAudioSession* audioSession = [AVAudioSession sharedInstance];
+	
+	// handle error
+	BOOL audioHWAvailable = audioSession.inputIsAvailable;
+	if (!audioHWAvailable) {
+		UIAlertView* cantRecordAlert = [[UIAlertView alloc] initWithTitle:@"Warning"
+																  message:@"Audio input hardware not found"
+																 delegate:nil 
+														cancelButtonTitle:@"OK" 
+														otherButtonTitles:nil];
+		[cantRecordAlert show];
+		[cantRecordAlert release];
+		return;
+	}
+	
 	NSError* err = nil;
 	[audioSession setCategory:AVAudioSessionCategoryRecord error:&err];
 	if (err) {
@@ -135,7 +149,10 @@
 		// prepare to record
 		recorder.delegate = self;
 		[recorder prepareToRecord];
+		
+		// start recording
 		[recorder record];
+		
 		//[recordButton setTitle:@"Stop" forState:UIControlStateNormal];
 		//[recordButton setTitle:@"Stop" forState:UIControlStateHighlighted];
 		[recordButton setImage:recordPressed forState:UIControlStateNormal];
