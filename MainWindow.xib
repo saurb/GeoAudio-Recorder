@@ -12,7 +12,6 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="16"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -54,12 +53,11 @@
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<object class="IBUINavigationController" key="IBUISelectedViewController" id="233325179">
 					<object class="IBUITabBarItem" key="IBUITabBarItem" id="198579950">
-						<string key="IBUITitle">Files</string>
+						<string key="IBUITitle">Tracks</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">doubleicon.png</string>
+							<string key="NSResourceName">tracks.png</string>
 						</object>
-						<reference key="IBUITabBar"/>
 					</object>
 					<reference key="IBUIToolbarItems" ref="0"/>
 					<reference key="IBUIParentViewController" ref="764279193"/>
@@ -71,12 +69,11 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 					</object>
-					<object class="NSArray" key="IBUIViewControllers">
+					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="IBUIViewController" id="679640889">
 							<reference key="IBUIToolbarItems" ref="0"/>
 							<object class="IBUINavigationItem" key="IBUINavigationItem" id="180220284">
-								<reference key="IBUINavigationBar"/>
 								<string key="IBUITitle">Item</string>
 							</object>
 							<reference key="IBUIParentViewController" ref="233325179"/>
@@ -92,9 +89,8 @@
 							<string key="IBUITitle">Recorder</string>
 							<object class="NSCustomResource" key="IBUIImage">
 								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">singleicon.png</string>
+								<string key="NSResourceName">microphone.png</string>
 							</object>
-							<reference key="IBUITabBar"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="764279193"/>
 						<string key="IBUINibName">RecorderViewController</string>
