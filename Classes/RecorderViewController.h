@@ -10,9 +10,19 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreAudio/CoreAudioTypes.h>
 
-@interface RecorderViewController : UIViewController {
+#define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+
+@interface RecorderViewController : UIViewController <AVAudioRecorderDelegate, AVAudioSessionDelegate> {
 	AVAudioRecorder* recorder;
+	BOOL recording;
+	
+	IBOutlet UIButton* recordButton;
 
 }
+
+@property (nonatomic, retain) AVAudioRecorder* recorder;
+@property (nonatomic, retain) IBOutlet UIButton* recordButton;
+
+- (IBAction)recordOrStop:(id)sender;
 
 @end
