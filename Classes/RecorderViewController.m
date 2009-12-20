@@ -77,6 +77,7 @@
 	
 	// set up for location manager
 	locationController = [[LocationController alloc] init];
+	locationController.delegate = self;
 	
 }
 
@@ -115,6 +116,18 @@
 		NSLog(@"geoSwitch is off");
 	}
 
+}
+
+#pragma mark -
+#pragma mark LocationControllerDelegate Methods
+- (void)locationUpdate:(CLLocation*)location
+{
+	locationLabel.text = [location description];
+}
+
+- (void)locationError:(NSError*)error
+{
+	locationLabel.text = [error description];
 }
 
 #pragma mark -

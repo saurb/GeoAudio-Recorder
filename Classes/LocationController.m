@@ -12,6 +12,7 @@
 @implementation LocationController
 @synthesize locationManager;
 @synthesize location;
+@synthesize delegate;
 
 - (id)init
 {
@@ -28,6 +29,7 @@
 {
 	[self.locationManager release];
 	[self.location release];
+	[self.delegate release];
 	[super dealloc];
 }
 
@@ -38,6 +40,8 @@
 	didUpdateToLocation:(CLLocation*)newLocation
 		   fromLocation:(CLLocation*)oldLocation
 {
+	[self.delegate locationUpdate:newLocation];
+	
 	if (location == nil) {
 		self.location = newLocation;
 	}
@@ -54,6 +58,8 @@
 - (void)locationManager:(CLLocationManager*)manager
 	   didFailWithError:(NSError*)error
 {
+	[self.delegate locationError:error];
+	
 	NSString* errorType = (error.code == kCLErrorDenied) ? @"Access Denied" : @"Unknown Error";
 	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error getting location" 
 													message:errorType 

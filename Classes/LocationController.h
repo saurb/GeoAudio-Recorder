@@ -9,15 +9,25 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
+// protocol for sending location updates to another view controller
+@protocol LocationControllerDelegate <NSObject>
+@required
+- (void)locationUpdate:(CLLocation*)location;
+- (void)locationError:(NSError*)error;
+@end
+
+
 
 @interface LocationController : NSObject <CLLocationManagerDelegate> {
 	
 	CLLocationManager* locationManager;
 	CLLocation* location;
+	id delegate;
 
 }
 
 @property (nonatomic, retain) CLLocationManager* locationManager;
 @property (nonatomic, retain) CLLocation* location;
+@property (nonatomic, assign) id <LocationControllerDelegate> delegate;
 
 @end

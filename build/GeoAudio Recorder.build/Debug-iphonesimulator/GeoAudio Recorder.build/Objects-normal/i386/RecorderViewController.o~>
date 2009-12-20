@@ -1,0 +1,2 @@
+/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m: In function '-[RecorderViewController viewDidLoad]':
+/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m:80: warning: class 'RecorderViewController' does not implement the 'LocationControllerDelegate' protocol

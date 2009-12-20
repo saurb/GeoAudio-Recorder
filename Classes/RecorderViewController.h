@@ -13,7 +13,7 @@
 
 #define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 
-@interface RecorderViewController : UIViewController <AVAudioRecorderDelegate, AVAudioSessionDelegate> {
+@interface RecorderViewController : UIViewController <AVAudioRecorderDelegate, AVAudioSessionDelegate, LocationControllerDelegate> {
 	
 	// for recorder
 	AVAudioRecorder* recorder;
@@ -24,6 +24,7 @@
 	// for location
 	LocationController* locationController;
 	UISwitch* geoSwitch;
+	IBOutlet UILabel* locationLabel;
 	
 
 }
