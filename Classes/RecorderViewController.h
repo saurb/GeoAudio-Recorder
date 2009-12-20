@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreAudio/CoreAudioTypes.h>
-#import <CoreLocation/CoreLocation.h>
+#import "LocationController.h"
 
 #define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 
-@interface RecorderViewController : UIViewController <AVAudioRecorderDelegate, AVAudioSessionDelegate, CLLocationManagerDelegate> {
+@interface RecorderViewController : UIViewController <AVAudioRecorderDelegate, AVAudioSessionDelegate> {
 	
 	// for recorder
 	AVAudioRecorder* recorder;
@@ -22,8 +22,7 @@
 	UIImage* recordEnabled, *recordPressed;
 	
 	// for location
-	CLLocationManager* locationManager;
-	CLLocation* location;
+	LocationController* locationController;
 	UISwitch* geoSwitch;
 	
 
@@ -31,8 +30,7 @@
 
 @property (nonatomic, retain) AVAudioRecorder* recorder;
 @property (nonatomic, retain) IBOutlet UIButton* recordButton;
-@property (nonatomic, retain) CLLocationManager* locationManager;
-@property (nonatomic, retain) CLLocation* location;
+@property (nonatomic, retain) LocationController* locationController;
 @property (nonatomic, retain) IBOutlet UISwitch* geoSwitch;
 
 - (IBAction)recordOrStop:(id)sender;

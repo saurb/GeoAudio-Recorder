@@ -12,8 +12,7 @@
 @implementation RecorderViewController
 @synthesize recorder;
 @synthesize recordButton;
-@synthesize locationManager;
-@synthesize location;
+@synthesize locationController;
 @synthesize geoSwitch;
 
 /*
@@ -77,9 +76,7 @@
 	}
 	
 	// set up for location manager
-	self.locationManager = [[CLLocationManager alloc] init];
-	locationManager.delegate = self;
-	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+	locationController = [[LocationController alloc] init];
 	
 }
 
@@ -95,8 +92,7 @@
 	// e.g. self.myOutlet = nil;
 	self.recorder = nil;
 	self.recordButton = nil;
-	self.locationManager = nil;
-	self.location = nil;
+	self.locationController = nil;
 	self.geoSwitch = nil;
 }
 
@@ -104,8 +100,7 @@
 - (void)dealloc {
 	[recorder release];
 	[recordButton release];
-	[locationManager release];
-	[location release];
+	[locationController release];
 	[geoSwitch release];
     [super dealloc];
 }
@@ -137,12 +132,13 @@
 		
 		[[AVAudioSession sharedInstance] setActive:NO error:nil];
 		
-		[locationManager stopUpdatingLocation];
+		[locationController.locationManager stopUpdatingLocation];
+		NSLog(@"locationManager stopped.");
 	}
 	else {
 		// start updating location
 		if (geoSwitch.on) {
-			[locationManager startUpdatingLocation];
+			[locationController.locationManager startUpdatingLocation];
 		}
 		
 		[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:nil];
@@ -193,39 +189,6 @@
 		recording = YES;
 	}
 
-}
-
-#pragma mark -
-#pragma mark CLLocationManagerDelegate Methods
-// Called when locaiton is updated
-- (void)locationManager:(CLLocationManager*)manager
-	didUpdateToLocation:(CLLocation*)newLocation
-		   fromLocation:(CLLocation*)oldLocation
-{
-	if (location == nil) {
-		self.location = newLocation;
-	}
-	NSString* latitudeString = [[NSString alloc] initWithFormat:@"%g°", newLocation.coordinate.latitude];
-	NSLog(@"latitude = %@", latitudeString);
-	[latitudeString release];
-	
-	NSString* longitudeString = [[NSString alloc] initWithFormat:@"%g°", newLocation.coordinate.longitude];
-	NSLog(@"longitude = %@", longitudeString);
-	[longitudeString release];
-	
-}
-
-- (void)locationManager:(CLLocationManager*)manager
-	   didFailWithError:(NSError*)error
-{
-	NSString* errorType = (error.code == kCLErrorDenied) ? @"Access Denied" : @"Unknown Error";
-	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error getting location" 
-													message:errorType 
-												   delegate:nil 
-										  cancelButtonTitle:@"OK" 
-										  otherButtonTitles:nil];
-	[alert show];
-	[alert release];
 }
 
 

@@ -1,0 +1,386 @@
+TGeoAudio Recorder
+v7
+r1
+cCheck dependencies
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk
+c000000004A1650CC0000000000000110
+t1242976460
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/ResourceRules.plist
+c000000004A0BA04000000000000001E5
+t1242275904
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004A12213B000000000001B0E0
+t1242702139
+s110816
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004A0BB36E00000000000000EB
+t1242280814
+s235
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/CoreAudioTypes.h
+c000000004A0BAD8C000000000000F342
+t1242279308
+s62274
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004A121EB900000000003D72A0
+t1242701497
+s4027040
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004A1222C30000000000080DA0
+t1242702531
+s527776
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
+c000000004A0CD38700000000000001AF
+t1242354567
+s431
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004A121FF90000000000396540
+t1242701817
+s3761472
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004A0BAECB0000000000001355
+t1242279627
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004A0CBEBD000000000000075E
+t1242349245
+s1886
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004A1221FD00000000019A6110
+t1242702333
+s26894608
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/GeoAudio_RecorderAppDelegate.h
+c000000004B2AFF360000000000000271
+t1261109046
+s625
+i<UIKit/UIKit.h>
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/GeoAudio_RecorderAppDelegate.m
+c000000004B2AFF8D00000000000002CC
+t1261109133
+s716
+i"GeoAudio_RecorderAppDelegate.h"
+i"TracksNavController.h"
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/LocationController.h
+c000000004B2DB30800000000000001E2
+t1261286152
+s482
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/LocationController.m
+c000000004B2DB56800000000000006C1
+t1261286760
+s1729
+i"LocationController.h"
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.h
+c000000004B2DB5B90000000000000416
+t1261286841
+s1046
+i<UIKit/UIKit.h>
+i<AVFoundation/AVFoundation.h>
+i<CoreAudio/CoreAudioTypes.h>
+i"LocationController.h"
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m
+c000000004B2DB67F0000000000001662
+t1261287039
+s5730
+i"RecorderViewController.h"
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.xib
+c000000004B2DAC9B0000000000005E2B
+t1261284507
+s24107
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TrackDetailViewController.h
+c000000004B2BA4510000000000000100
+t1261151313
+s256
+i<UIKit/UIKit.h>
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TrackDetailViewController.m
+c000000004B2BA5E40000000000000595
+t1261151716
+s1429
+i"TrackDetailViewController.h"
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TracksNavController.h
+c000000004B2B038100000000000000FB
+t1261110145
+s251
+i<UIKit/UIKit.h>
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TracksNavController.m
+c000000004B2AFEE90000000000000584
+t1261108969
+s1412
+i"TracksNavController.h"
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TracksNavController.xib
+c000000004B2AFEE90000000000001728
+t1261108969
+s5928
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TracksTableViewController.h
+c000000004B2BA48100000000000001F4
+t1261151361
+s500
+i<UIKit/UIKit.h>
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TracksTableViewController.m
+c000000004B2BA4E40000000000001753
+t1261151460
+s5971
+i"TracksTableViewController.h"
+i"TrackDetailViewController.h"
+i"GeoAudio_RecorderAppDelegate.h"
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio_Recorder_Prefix.pch
+c000000004B2AAA3C00000000000000CB
+t1261087292
+s203
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/MainWindow.xib
+c000000004B2C69260000000000007479
+t1261201702
+s29817
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/RecordEnabled.png
+c000000004B2D14320000000000000BEE
+t1261245490
+s3054
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/RecordPressed.png
+c000000004B2D144B0000000000000BC7
+t1261245515
+s3015
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/TrackDetailViewController.xib
+c000000004B2BA76F0000000000004265
+t1261152111
+s16997
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/TrackTableView.xib
+c000000004B2B11630000000000004843
+t1261113699
+s18499
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app.dSYM
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/GeoAudio Recorder
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/Info.plist
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/MainWindow.nib
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/PkgInfo
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/RecordEnabled.png
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/RecordPressed.png
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/RecorderViewController.nib
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/ResourceRules.plist
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/TrackDetailViewController.nib
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/TrackTableView.nib
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/TracksNavController.nib
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/disclosureButtonControllerIcon.png
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/microphone.png
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/tracks.png
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/GeoAudio Recorder.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/GeoAudio_RecorderAppDelegate.o
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/LocationController.o
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/RecorderViewController.o
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/TrackDetailViewController.o
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/TracksNavController.o
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/TracksTableViewController.o
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/main.o
+t2
+s0
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/disclosureButtonControllerIcon.png
+c00000000487CBE0A000000000000138B
+t1216134666
+s5003
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/main.m
+c000000004B2AAA3C0000000000000174
+t1261087292
+s372
+i<UIKit/UIKit.h>
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/microphone.png
+c0000000049F48446000000000000010D
+t1240761414
+s269
+
+N/Users/JJ/Git Projects/GeoAudio-Recorder/tracks.png
+c000000004AA72B020000000000000107
+t1252469506
+s263
+
+N/var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-dxrgdhhsgtjeuuhbhcwmoddeffmb/GeoAudio_Recorder_Prefix.pch.gch
+t2
+s0
+
+NGeoAudio_Recorder-Info.plist
+c000000004B2AAA3C000000000000038D
+t1261087292
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies282980058#282980058#0(133"[BEROR]Code Sign error: The identity 'iPhone Developer' doesn't match any valid certificate/private key pair in the default keychain1(4@125"Code Sign error: The identity 'iPhone Developer' doesn't match any valid certificate/private key pair in the default keychain282980058#18446744073709551615#0#0(1@0"0(0#1#0"4300882208#0"0#
+
+CCompileC "build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/GeoAudio_RecorderAppDelegate.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/GeoAudio_RecorderAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/LocationController.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/LocationController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/RecorderViewController.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/TrackDetailViewController.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TrackDetailViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/TracksNavController.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TracksNavController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/TracksTableViewController.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TracksTableViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/GeoAudio Recorder.build/Debug-iphoneos/GeoAudio Recorder.build/Objects-normal/armv6/main.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.xib"
+r0
+
+CCompileXIB "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/TracksNavController.xib"
+r0
+
+CCompileXIB "/Users/JJ/Git Projects/GeoAudio-Recorder/MainWindow.xib"
+r0
+
+CCompileXIB "/Users/JJ/Git Projects/GeoAudio-Recorder/TrackDetailViewController.xib"
+r0
+
+CCompileXIB "/Users/JJ/Git Projects/GeoAudio-Recorder/TrackTableView.xib"
+r0
+
+CCopyPNGFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/RecordEnabled.png" RecordEnabled.png
+r0
+
+CCopyPNGFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/RecordPressed.png" RecordPressed.png
+r0
+
+CCopyPNGFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/disclosureButtonControllerIcon.png" disclosureButtonControllerIcon.png
+r0
+
+CCopyPNGFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/microphone.png" microphone.png
+r0
+
+CCopyPNGFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/tracks.png" tracks.png
+r0
+
+CCpResource "build/Debug-iphoneos/GeoAudio Recorder.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/ResourceRules.plist
+r0
+
+CGenerateDSYMFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app.dSYM" "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/GeoAudio Recorder"
+r0
+
+CLd "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/GeoAudio Recorder" normal armv6
+r0
+
+CProcessInfoPlistFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app/Info.plist" GeoAudio_Recorder-Info.plist
+r0
+
+CProcessPCH /var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-dxrgdhhsgtjeuuhbhcwmoddeffmb/GeoAudio_Recorder_Prefix.pch.gch GeoAudio_Recorder_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphoneos/GeoAudio Recorder.app"
+r0
+
