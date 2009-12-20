@@ -13,7 +13,6 @@
 @protocol LocationControllerDelegate <NSObject>
 @required
 - (void)locationUpdate:(CLLocation*)location;
-- (void)locationError:(NSError*)error;
 @end
 
 

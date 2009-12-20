@@ -8,7 +8,6 @@
 
 #import "RecorderViewController.h"
 
-
 @implementation RecorderViewController
 @synthesize recorder;
 @synthesize recordButton;
@@ -122,13 +121,34 @@
 #pragma mark LocationControllerDelegate Methods
 - (void)locationUpdate:(CLLocation*)location
 {
-	locationLabel.text = [location description];
+	NSMutableString* update = [[NSMutableString alloc] init];
+	
+	if (signbit(location.horizontalAccuracy)) {
+		[update appendString:@"LatLongUnavailable"];
+	}
+	else {
+		
+		NSString* latitudeString = [[NSString alloc] initWithFormat:@"%f°", location.coordinate.latitude];
+		[update appendString:latitudeString];
+		[latitudeString release];
+		[update appendString:@" "];
+		NSString* sOrN = signbit(location.coordinate.latitude) ? @"S" : @"N";
+		[update appendString:sOrN];
+		[update appendString:@"\n"];
+		NSString* longitudeString = [[NSString alloc] initWithFormat:@"%f°", location.coordinate.longitude];
+		[update appendString:longitudeString];
+		[longitudeString release];
+		[update appendString:@" "];
+		NSString* wOrE = signbit(location.coordinate.longitude) ? @"W" : @"E";
+		[update appendString:wOrE];
+		
+		locationLabel.text = update;
+		[update release];
+		
+	}
+
 }
 
-- (void)locationError:(NSError*)error
-{
-	locationLabel.text = [error description];
-}
 
 #pragma mark -
 #pragma mark recorder methods
