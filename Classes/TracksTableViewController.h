@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+
 @class TrackDetailViewController;
 
 @interface TracksTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {

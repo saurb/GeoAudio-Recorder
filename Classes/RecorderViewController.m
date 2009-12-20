@@ -127,7 +127,7 @@
 		[update appendString:@"LatLongUnavailable"];
 	}
 	else {
-		
+		// append location with compass direction
 		NSString* latitudeString = [[NSString alloc] initWithFormat:@"%f°", location.coordinate.latitude];
 		[update appendString:latitudeString];
 		[latitudeString release];

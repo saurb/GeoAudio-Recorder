@@ -64,11 +64,11 @@
 - (void)viewDidLoad
 {
 	self.title = @"Tracks";
-	// test below
-	NSArray* array = [[NSArray alloc] initWithObjects:@"Toy Story", @"A Bug's Life", @"Toy Story 2", @"Monsters, Inc.",
-					  @"Finding Nemo", @"The Incredibles", @"Cars", @"Ratatouille", @"WALL-E", @"Up", @"Toy Story 3", @"Cars 2", @"The Bear and the Bow", @"Newt", nil];
-	self.tracks = array;
-	[array release];
+	
+	NSError* error = nil;
+	NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:DOCUMENTS_FOLDER error:&error];
+	
+	self.tracks = files;
 	[super viewDidLoad];
 }
 
@@ -116,8 +116,8 @@
 	NSUInteger row = [indexPath row];
 	NSString* rowString = [tracks objectAtIndex:row];
 	cell.textLabel.text = rowString;
+	cell.textLabel.font = [UIFont systemFontOfSize:13.0];
 	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-	[rowString release];
 	
     return cell;
 }
