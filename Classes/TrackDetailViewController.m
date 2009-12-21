@@ -10,6 +10,8 @@
 
 
 @implementation TrackDetailViewController
+@synthesize trackTitle;
+@synthesize message;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -36,6 +38,12 @@
 }
 */
 
+- (void)viewWillAppear:(BOOL)animated
+{
+	trackTitle.text = message;
+	[super viewWillAppear:animated];
+}
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -46,10 +54,14 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+	self.trackTitle = nil;
+	self.message = nil;
 }
 
 
 - (void)dealloc {
+	[trackTitle release];
+	[message release];
     [super dealloc];
 }
 

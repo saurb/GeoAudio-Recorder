@@ -11,6 +11,10 @@
 
 @interface TrackDetailViewController : UIViewController {
 
+	IBOutlet UILabel* trackTitle;
+	NSString* message;
 }
+@property (nonatomic, retain) IBOutlet UILabel* trackTitle;
+@property (nonatomic, retain) NSString* message;
 
 @end

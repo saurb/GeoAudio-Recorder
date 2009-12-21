@@ -147,6 +147,12 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	}
 	
 	trackDetailViewController.title = @"Detailed Info";
+	
+	NSUInteger row = [indexPath row];
+	NSString* selectedTrack = [tracks objectAtIndex:row];
+	NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
+	trackDetailViewController.message = detailMessage;
+	[detailMessage release];
 	[self.navigationController pushViewController:trackDetailViewController animated:YES];
 }
 
