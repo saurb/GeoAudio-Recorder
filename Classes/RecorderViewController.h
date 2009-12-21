@@ -15,6 +15,7 @@
 
 @interface RecorderViewController : UIViewController <AVAudioRecorderDelegate, AVAudioSessionDelegate, LocationControllerDelegate> {
 	
+	NSString* caldate; // file created date
 	// for recorder
 	AVAudioRecorder* recorder;
 	BOOL recording;
@@ -26,6 +27,9 @@
 	UISwitch* geoSwitch;
 	IBOutlet UILabel* locationLabel;
 	
+	NSMutableDictionary* tracksAndLocations;
+	NSMutableArray* trackNames;
+	NSMutableArray* trackLocations;
 
 }
 
@@ -33,6 +37,9 @@
 @property (nonatomic, retain) IBOutlet UIButton* recordButton;
 @property (nonatomic, retain) LocationController* locationController;
 @property (nonatomic, retain) IBOutlet UISwitch* geoSwitch;
+@property (nonatomic, retain) NSMutableDictionary* tracksAndLocations;
+@property (nonatomic, retain) NSMutableArray* trackNames;
+@property (nonatomic, retain) NSMutableArray* trackLocations;
 
 - (IBAction)recordOrStop:(id)sender;
 - (IBAction)switchChanged:(id)sender;

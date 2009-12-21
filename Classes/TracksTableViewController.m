@@ -112,7 +112,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Set up the cell...
+    // Set up the cell
 	NSUInteger row = [indexPath row];
 	NSString* rowString = [tracks objectAtIndex:row];
 	cell.textLabel.text = rowString;
@@ -133,7 +133,7 @@
 	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Hey, do you see the disclosure button?" 
 													message:@"If you wanna see detailed infomation, touch that instead." 
 												   delegate:nil
-										  cancelButtonTitle:@"Won't happen again"
+										  cancelButtonTitle:@"OK"
 										  otherButtonTitles:nil];
 	[alert show];
 	[alert release];

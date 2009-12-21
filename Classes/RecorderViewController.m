@@ -13,6 +13,9 @@
 @synthesize recordButton;
 @synthesize locationController;
 @synthesize geoSwitch;
+@synthesize tracksAndLocations;
+@synthesize trackNames;
+@synthesize trackLocations;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -78,6 +81,9 @@
 	locationController = [[LocationController alloc] init];
 	locationController.delegate = self;
 	
+	// init trackLocations array
+	trackLocations = [[NSMutableArray alloc] init];
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,6 +100,9 @@
 	self.recordButton = nil;
 	self.locationController = nil;
 	self.geoSwitch = nil;
+	self.tracksAndLocations = nil;
+	self.trackNames = nil;
+	self.trackLocations = nil;
 }
 
 
@@ -102,6 +111,9 @@
 	[recordButton release];
 	[locationController release];
 	[geoSwitch release];
+	[tracksAndLocations release];
+	[trackNames release];
+	[tracksAndLocations release];
     [super dealloc];
 }
 
@@ -142,6 +154,8 @@
 		NSString* wOrE = signbit(location.coordinate.longitude) ? @"W" : @"E";
 		[update appendString:wOrE];
 		
+		[trackLocations addObject:update];
+		
 		locationLabel.text = update;
 		[update release];
 		
@@ -154,21 +168,9 @@
 #pragma mark recorder methods
 - (IBAction)recordOrStop:(id)sender
 {
-	if (recording) {
-		[recorder stop];
-		recording = NO;
-		self.recorder = nil;
+	
+	if (!recording) {
 		
-		//[recordButton setTitle:@"Record" forState:UIControlStateNormal];
-		//[recordButton setTitle:@"Record" forState:UIControlStateHighlighted];
-		[recordButton setImage:recordEnabled forState:UIControlStateNormal];
-		
-		[[AVAudioSession sharedInstance] setActive:NO error:nil];
-		
-		[locationController.locationManager stopUpdatingLocation];
-		NSLog(@"locationManager stopped.");
-	}
-	else {
 		// start updating location
 		if (geoSwitch.on) {
 			[locationController.locationManager startUpdatingLocation];
@@ -185,10 +187,11 @@
 		
 		// create a new dated file
 		NSDate* now = [NSDate dateWithTimeIntervalSinceNow:0];
-		NSString* caldate = [now description];
+		caldate = [now description];
 		NSString* recorderFilePath = [[NSString stringWithFormat:@"%@/%@.caf", DOCUMENTS_FOLDER, caldate] retain];
 		NSLog(@"%@", recorderFilePath);// show the saved path
 		NSURL* url = [NSURL fileURLWithPath:recorderFilePath];
+		[caldate retain]; // retain so that when stop the location plist name will be the same as the audio file
 		
 		// init recorder with url
 		NSError* err = nil;
@@ -220,6 +223,39 @@
 		[recordButton setImage:recordPressed forState:UIControlStateNormal];
 		
 		recording = YES;
+	}
+	else {
+		
+		[recorder stop];
+		recording = NO;
+		self.recorder = nil;
+		
+		//[recordButton setTitle:@"Record" forState:UIControlStateNormal];
+		//[recordButton setTitle:@"Record" forState:UIControlStateHighlighted];
+		[recordButton setImage:recordEnabled forState:UIControlStateNormal];
+		
+		[[AVAudioSession sharedInstance] setActive:NO error:nil];
+		
+		[locationController.locationManager stopUpdatingLocation];
+		NSLog(@"locationManager stopped.");
+		
+		// save to plist
+		NSMutableString* plistName = [[NSMutableString alloc] init];
+		NSMutableString* keyName = [[NSMutableString alloc] init];
+		[plistName appendString:caldate];
+		[plistName appendString:@".plist"];
+		[keyName appendString:caldate];
+		[keyName appendString:@".caf"];
+		NSString* path = [DOCUMENTS_FOLDER stringByAppendingPathComponent:plistName];
+		
+		//NSArray* key = [[NSArray alloc] initWithObjects:keyName, nil];
+		//tracksAndLocations = [[NSMutableDictionary alloc] init];
+		//[tracksAndLocations initWithObjects:trackLocations forKeys:key];
+		
+		//[tracksAndLocations writeToFile:path atomically:YES];
+		[trackLocations writeToFile:path atomically:YES];
+		[plistName release];
+		[keyName release];
 	}
 
 }
