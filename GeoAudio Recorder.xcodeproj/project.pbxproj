@@ -21,6 +21,8 @@
 		28B559C210DBE5BA004D75B4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B559C110DBE5BA004D75B4 /* AVFoundation.framework */; };
 		28B55A0E10DCA010004D75B4 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B55A0D10DCA010004D75B4 /* microphone.png */; };
 		28B55A1010DCA069004D75B4 /* tracks.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B55A0F10DCA069004D75B4 /* tracks.png */; };
+		28C1AEE610E009CB00DBBB55 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C1AEE510E009CB00DBBB55 /* MapKit.framework */; };
+		28C1AEEF10E0167C00DBBB55 /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C1AEEE10E0167C00DBBB55 /* LocationAnnotation.m */; };
 		28D304CB10DB3669002E43EC /* TracksNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D304C910DB3669002E43EC /* TracksNavController.m */; };
 		28D304CC10DB3669002E43EC /* TracksNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D304CA10DB3669002E43EC /* TracksNavController.xib */; };
 		28D304DE10DB38B7002E43EC /* TracksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D304DD10DB38B7002E43EC /* TracksTableViewController.m */; };
@@ -48,6 +50,9 @@
 		28B559C110DBE5BA004D75B4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		28B55A0D10DCA010004D75B4 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
 		28B55A0F10DCA069004D75B4 /* tracks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tracks.png; sourceTree = "<group>"; };
+		28C1AEE510E009CB00DBBB55 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		28C1AEED10E0167C00DBBB55 /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
+		28C1AEEE10E0167C00DBBB55 /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 		28D304C810DB3669002E43EC /* TracksNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksNavController.h; sourceTree = "<group>"; };
 		28D304C910DB3669002E43EC /* TracksNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksNavController.m; sourceTree = "<group>"; };
 		28D304CA10DB3669002E43EC /* TracksNavController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TracksNavController.xib; path = Classes/TracksNavController.xib; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				28B559C210DBE5BA004D75B4 /* AVFoundation.framework in Frameworks */,
 				280A88F210DD6CF2005CF926 /* CoreLocation.framework in Frameworks */,
+				28C1AEE610E009CB00DBBB55 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 				28D304C910DB3669002E43EC /* TracksNavController.m */,
 				280A898110DDE9EF005CF926 /* LocationController.h */,
 				280A898210DDE9EF005CF926 /* LocationController.m */,
+				28C1AEED10E0167C00DBBB55 /* LocationAnnotation.h */,
+				28C1AEEE10E0167C00DBBB55 /* LocationAnnotation.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				28B559C110DBE5BA004D75B4 /* AVFoundation.framework */,
 				280A88F110DD6CF2005CF926 /* CoreLocation.framework */,
+				28C1AEE510E009CB00DBBB55 /* MapKit.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 				28D304CB10DB3669002E43EC /* TracksNavController.m in Sources */,
 				28D304DE10DB38B7002E43EC /* TracksTableViewController.m in Sources */,
 				280A898310DDE9EF005CF926 /* LocationController.m in Sources */,
+				28C1AEEF10E0167C00DBBB55 /* LocationAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

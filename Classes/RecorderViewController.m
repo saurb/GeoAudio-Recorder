@@ -167,7 +167,10 @@
 		NSString* wOrE = signbit(location.coordinate.longitude) ? @"W" : @"E";
 		[update appendString:wOrE];
 		
-		[trackLocations addObject:update];
+		// push location update to trackLocations
+		NSString* loc = [[NSString alloc] initWithFormat:@"%f,%f", location.coordinate.latitude, location.coordinate.longitude];
+		[trackLocations addObject:loc];
+		[loc release];
 		
 		locationLabel.text = update;
 		[update release];

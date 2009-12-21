@@ -149,10 +149,22 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	trackDetailViewController.title = @"Detailed Info";
 	
 	NSUInteger row = [indexPath row];
-	NSString* selectedTrack = [tracks objectAtIndex:row];
+	NSString* selectedTrack = [[tracks objectAtIndex:row] retain];
 	NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
 	trackDetailViewController.message = detailMessage;
 	[detailMessage release];
+	
+	// get the according plist file
+	NSArray* array = [selectedTrack componentsSeparatedByString:@"."];
+	NSString* fileName = [array objectAtIndex:0];
+	NSString* plistPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"plist", fileName, @"plist" ] retain];
+	// read locations
+	if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+		NSArray* trackLocations = [[NSArray alloc] initWithContentsOfFile:plistPath];
+		trackDetailViewController.locations = trackLocations;
+		[trackLocations release];
+	}
+
 	[self.navigationController pushViewController:trackDetailViewController animated:YES];
 }
 

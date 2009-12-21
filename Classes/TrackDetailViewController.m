@@ -12,6 +12,7 @@
 @implementation TrackDetailViewController
 @synthesize trackTitle;
 @synthesize message;
+@synthesize locations;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -41,6 +42,32 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	trackTitle.text = message;
+	
+	MKCoordinateRegion region;
+	MKCoordinateSpan span;
+	span.latitudeDelta = 0.02;
+	span.longitudeDelta = 0.02;
+	
+	// loop through locations and pin on the map
+	for (int i = 0; i < [locations count]; i++) {
+		NSString* loc = [locations objectAtIndex:i];
+		NSArray* array = [loc componentsSeparatedByString:@","];
+		double lat = [[array objectAtIndex:0] doubleValue];
+		double lon = [[array objectAtIndex:1] doubleValue];
+		
+		CLLocationCoordinate2D location;
+		location.latitude = lat;
+		location.longitude = lon;
+		region.span =span;
+		region.center = location;
+		
+		locationAnnotation = [[LocationAnnotation alloc] initWithCoordinate:location];
+		locationAnnotation.title = [NSString stringWithFormat:@"%f°,\n%f°", lat, lon];
+		[mapView addAnnotation:locationAnnotation];
+		[mapView setRegion:region animated:TRUE];
+		[mapView regionThatFits:region];
+		
+	}
 	[super viewWillAppear:animated];
 }
 
@@ -55,14 +82,25 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 	self.trackTitle = nil;
-	self.message = nil;
+	self.locations = nil;
 }
 
 
 - (void)dealloc {
 	[trackTitle release];
 	[message release];
+	[locations release];
     [super dealloc];
+}
+
+- (MKAnnotationView*)mapView:(MKMapView*)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+	MKPinAnnotationView* annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"currentloc"];
+	annView.pinColor = MKPinAnnotationColorRed;
+	annView.animatesDrop = TRUE;
+	annView.canShowCallout = YES;
+	annView.calloutOffset = CGPointMake(-20.0, 20.0);
+	return annView;
 }
 
 

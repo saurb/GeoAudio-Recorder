@@ -7,14 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "LocationAnnotation.h"
 
 
-@interface TrackDetailViewController : UIViewController {
+@interface TrackDetailViewController : UIViewController <MKMapViewDelegate> {
 
+	IBOutlet MKMapView* mapView;
 	IBOutlet UILabel* trackTitle;
 	NSString* message;
+	NSArray* locations;
+	LocationAnnotation* locationAnnotation;
 }
+
 @property (nonatomic, retain) IBOutlet UILabel* trackTitle;
 @property (nonatomic, retain) NSString* message;
+@property (nonatomic, retain) NSArray* locations;
 
 @end
