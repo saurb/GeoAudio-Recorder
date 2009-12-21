@@ -40,6 +40,19 @@
 {
 	[super viewDidLoad];
 	
+	// create a audio folder
+	audioFilePath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"audio"] retain];
+	BOOL directoryExist = [[NSFileManager defaultManager] fileExistsAtPath:audioFilePath];
+	if (!directoryExist) {
+		[[NSFileManager defaultManager] createDirectoryAtPath:audioFilePath attributes:nil];
+	}
+	// create a plist folder
+	plistFilePath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"plist"] retain];
+	BOOL plistDirectoryExist = [[NSFileManager defaultManager] fileExistsAtPath:plistFilePath];
+	if (!plistDirectoryExist) {
+		[[NSFileManager defaultManager] createDirectoryAtPath:plistFilePath attributes:nil];
+	}
+	
 	recordEnabled = [[UIImage imageNamed:@"RecordEnabled.png"] retain];
 	recordPressed = [[UIImage imageNamed:@"RecordPressed.png"] retain];
 	
@@ -188,7 +201,8 @@
 		// create a new dated file
 		NSDate* now = [NSDate dateWithTimeIntervalSinceNow:0];
 		caldate = [now description];
-		NSString* recorderFilePath = [[NSString stringWithFormat:@"%@/%@.caf", DOCUMENTS_FOLDER, caldate] retain];
+		
+		NSString* recorderFilePath = [[NSString stringWithFormat:@"%@/%@.caf", audioFilePath, caldate] retain];
 		NSLog(@"%@", recorderFilePath);// show the saved path
 		NSURL* url = [NSURL fileURLWithPath:recorderFilePath];
 		[caldate retain]; // retain so that when stop the location plist name will be the same as the audio file
@@ -241,12 +255,10 @@
 		
 		// save to plist
 		NSMutableString* plistName = [[NSMutableString alloc] init];
-		NSMutableString* keyName = [[NSMutableString alloc] init];
 		[plistName appendString:caldate];
 		[plistName appendString:@".plist"];
-		[keyName appendString:caldate];
-		[keyName appendString:@".caf"];
-		NSString* path = [DOCUMENTS_FOLDER stringByAppendingPathComponent:plistName];
+	
+		NSString* path = [plistFilePath stringByAppendingPathComponent:plistName];
 		
 		//NSArray* key = [[NSArray alloc] initWithObjects:keyName, nil];
 		//tracksAndLocations = [[NSMutableDictionary alloc] init];
@@ -255,7 +267,6 @@
 		//[tracksAndLocations writeToFile:path atomically:YES];
 		[trackLocations writeToFile:path atomically:YES];
 		[plistName release];
-		[keyName release];
 	}
 
 }

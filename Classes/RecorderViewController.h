@@ -15,7 +15,11 @@
 
 @interface RecorderViewController : UIViewController <AVAudioRecorderDelegate, AVAudioSessionDelegate, LocationControllerDelegate> {
 	
-	NSString* caldate; // file created date
+	// directory and date
+	NSString* caldate;
+	NSString* audioFilePath;
+	NSString* plistFilePath;
+	
 	// for recorder
 	AVAudioRecorder* recorder;
 	BOOL recording;

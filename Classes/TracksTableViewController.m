@@ -65,8 +65,8 @@
 {
 	self.title = @"Tracks";
 	
-	NSError* error = nil;
-	NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:DOCUMENTS_FOLDER error:&error];
+	NSString* audioPath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"audio"] retain];
+	NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:audioPath error:nil];
 	
 	self.tracks = files;
 	[super viewDidLoad];
