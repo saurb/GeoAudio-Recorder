@@ -54,6 +54,12 @@
 		fRef = 28B55A0D10DCA010004D75B4 /* microphone.png */;
 	};
 	28B02DE110E11E3E0034A0C8 /* AudioPlayer.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = AudioPlayer.h;
+		path = "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/AudioPlayer.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1171, 494}}";
 			sepNavSelRange = "{248, 21}";
@@ -61,10 +67,16 @@
 		};
 	};
 	28B02DE210E11E3E0034A0C8 /* AudioPlayer.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = AudioPlayer.m;
+		path = "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/AudioPlayer.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 2613}}";
-			sepNavSelRange = "{593, 290}";
-			sepNavVisRange = "{443, 1315}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 2392}}";
+			sepNavSelRange = "{301, 89}";
+			sepNavVisRange = "{0, 937}";
 		};
 	};
 	28B02E0410E124B00034A0C8 /* XCBuildMessageTextBookmark */ = {
@@ -72,8 +84,8 @@
 		comments = "Request for member 'fileName' in something not a structure or union";
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 56;
+		rLen = 0;
+		rLoc = 57;
 		rType = 1;
 	};
 	28B02E0510E124B00034A0C8 /* PBXTextBookmark */ = {
@@ -81,7 +93,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 46";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1098;
@@ -91,8 +103,8 @@
 		comments = "Request for member 'fileName' in something not a structure or union";
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 56;
+		rLen = 0;
+		rLoc = 57;
 		rType = 1;
 	};
 	28B02E0910E124F20034A0C8 /* PBXTextBookmark */ = {
@@ -100,7 +112,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 46";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1098;
@@ -124,7 +136,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 25";
 		rLen = 0;
-		rLoc = 720;
+		rLoc = 809;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 0;
@@ -174,7 +186,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 46";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 846;
@@ -184,7 +196,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 10";
 		rLen = 0;
-		rLoc = 223;
+		rLoc = 200;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 0;
@@ -194,7 +206,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1122;
@@ -204,7 +216,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1122;
@@ -214,7 +226,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 10";
 		rLen = 0;
-		rLoc = 223;
+		rLoc = 200;
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 0;
@@ -244,7 +256,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1122;
@@ -264,7 +276,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 10";
 		rLen = 0;
-		rLoc = 223;
+		rLoc = 200;
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 0;
@@ -274,7 +286,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 105";
 		rLen = 0;
-		rLoc = 3750;
+		rLoc = 3723;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 2318;
@@ -284,7 +296,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1122;
@@ -294,7 +306,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 105";
 		rLen = 0;
-		rLoc = 3750;
+		rLoc = 3723;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 2318;
@@ -304,7 +316,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1122;
@@ -314,7 +326,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 105";
 		rLen = 0;
-		rLoc = 3750;
+		rLoc = 3723;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 2318;
@@ -324,7 +336,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1122;
@@ -354,7 +366,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 25";
 		rLen = 0;
-		rLoc = 720;
+		rLoc = 809;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 0;
@@ -364,7 +376,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 92";
 		rLen = 0;
-		rLoc = 3288;
+		rLoc = 3261;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1863;
@@ -404,7 +416,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1122;
@@ -414,7 +426,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1879;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1122;
@@ -492,7 +504,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 25";
 		rLen = 0;
-		rLoc = 720;
+		rLoc = 809;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 0;
@@ -502,7 +514,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 94";
 		rLen = 0;
-		rLoc = 3288;
+		rLoc = 3261;
 		rType = 0;
 		vrLen = 719;
 		vrLoc = 2381;
@@ -662,7 +674,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 25";
 		rLen = 0;
-		rLoc = 720;
+		rLoc = 809;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 0;
@@ -672,7 +684,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 94";
 		rLen = 0;
-		rLoc = 3288;
+		rLoc = 3261;
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 2320;
@@ -682,7 +694,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 48";
 		rLen = 0;
-		rLoc = 1980;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 973;
 		vrLoc = 848;
@@ -712,7 +724,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 901;
@@ -832,7 +844,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 25";
 		rLen = 0;
-		rLoc = 720;
+		rLoc = 809;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 0;
@@ -932,7 +944,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 25";
 		rLen = 0;
-		rLoc = 720;
+		rLoc = 809;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 0;
@@ -942,7 +954,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 901;
@@ -952,7 +964,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1024;
 		vrLoc = 901;
@@ -1002,7 +1014,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1108;
 		vrLoc = 901;
@@ -1012,7 +1024,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 49";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 983;
@@ -1032,7 +1044,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 49";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1179;
 		vrLoc = 983;
@@ -1342,7 +1354,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1196;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 1101;
@@ -1352,7 +1364,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 31";
 		rLen = 0;
-		rLoc = 940;
+		rLoc = 1029;
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 0;
@@ -1362,7 +1374,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 33";
 		rLen = 0;
-		rLoc = 990;
+		rLoc = 1079;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 34;
@@ -1372,7 +1384,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 33";
 		rLen = 0;
-		rLoc = 990;
+		rLoc = 1079;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 56;
@@ -1382,7 +1394,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1196;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 1101;
@@ -1432,8 +1444,8 @@
 		comments = "No '-initWithFilePath:' method found";
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 55;
+		rLen = 0;
+		rLoc = 57;
 		rType = 1;
 	};
 	28B02EF910E145080034A0C8 /* PBXTextBookmark */ = {
@@ -1441,7 +1453,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 336;
 		vrLoc = 1101;
@@ -1511,7 +1523,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 989;
 		vrLoc = 269;
@@ -1521,7 +1533,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 54";
 		rLen = 0;
-		rLoc = 1878;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 894;
 		vrLoc = 1220;
@@ -1531,7 +1543,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 405;
 		vrLoc = 1258;
@@ -1561,7 +1573,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 57";
 		rLen = 0;
-		rLoc = 2008;
+		rLoc = 1981;
 		rType = 0;
 		vrLen = 978;
 		vrLoc = 1220;
@@ -1571,7 +1583,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 57";
 		rLen = 0;
-		rLoc = 2008;
+		rLoc = 1981;
 		rType = 0;
 		vrLen = 894;
 		vrLoc = 1220;
@@ -1581,7 +1593,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 1217;
@@ -1601,7 +1613,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 55";
 		rLen = 0;
-		rLoc = 1878;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 1217;
@@ -1611,7 +1623,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1586;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 888;
 		vrLoc = 1217;
@@ -1621,7 +1633,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 310;
 		vrLoc = 1217;
@@ -1631,7 +1643,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 55";
 		rLen = 0;
-		rLoc = 1838;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 1217;
@@ -1641,7 +1653,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 1217;
@@ -1651,7 +1663,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1196;
 		rType = 0;
 		vrLen = 929;
 		vrLoc = 1217;
@@ -1661,7 +1673,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 344;
 		vrLoc = 1217;
@@ -1671,7 +1683,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 344;
 		vrLoc = 1217;
@@ -1701,7 +1713,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 33";
 		rLen = 0;
-		rLoc = 982;
+		rLoc = 1071;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 56;
@@ -1711,7 +1723,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 47";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1196;
 		rType = 0;
 		vrLen = 978;
 		vrLoc = 1217;
@@ -1721,7 +1733,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 45";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1196;
 		rType = 0;
 		vrLen = 985;
 		vrLoc = 1217;
@@ -1731,7 +1743,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 53";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 351;
 		vrLoc = 1217;
@@ -1771,7 +1783,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 51";
 		rLen = 0;
-		rLoc = 1582;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 1215;
@@ -1781,7 +1793,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 141";
 		rLen = 0;
-		rLoc = 4577;
+		rLoc = 4529;
 		rType = 0;
 		vrLen = 563;
 		vrLoc = 3606;
@@ -1791,7 +1803,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 52";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 686;
 		vrLoc = 1007;
@@ -1801,7 +1813,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 132";
 		rLen = 0;
-		rLoc = 3868;
+		rLoc = 3841;
 		rType = 0;
 		vrLen = 744;
 		vrLoc = 3606;
@@ -1811,7 +1823,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 52";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 597;
 		vrLoc = 1217;
@@ -1821,7 +1833,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 132";
 		rLen = 0;
-		rLoc = 3868;
+		rLoc = 3841;
 		rType = 0;
 		vrLen = 746;
 		vrLoc = 3606;
@@ -1831,7 +1843,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 52";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 597;
 		vrLoc = 1217;
@@ -1841,7 +1853,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 135";
 		rLen = 0;
-		rLoc = 4577;
+		rLoc = 4529;
 		rType = 0;
 		vrLen = 801;
 		vrLoc = 3275;
@@ -1851,7 +1863,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 131";
 		rLen = 0;
-		rLoc = 4212;
+		rLoc = 4171;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 3254;
@@ -1861,7 +1873,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 52";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 688;
 		vrLoc = 1221;
@@ -1871,7 +1883,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 52";
 		rLen = 0;
-		rLoc = 1583;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 688;
 		vrLoc = 1221;
@@ -1882,7 +1894,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 14;
+		rLoc = 16;
 		rType = 1;
 	};
 	28B02F6610E14DE00034A0C8 /* PBXTextBookmark */ = {
@@ -1890,7 +1902,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 14";
 		rLen = 0;
-		rLoc = 303;
+		rLoc = 373;
 		rType = 0;
 		vrLen = 400;
 		vrLoc = 3;
@@ -1910,7 +1922,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 142";
 		rLen = 0;
-		rLoc = 4535;
+		rLoc = 4487;
 		rType = 0;
 		vrLen = 830;
 		vrLoc = 3655;
@@ -1920,7 +1932,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 14";
 		rLen = 0;
-		rLoc = 303;
+		rLoc = 373;
 		rType = 0;
 		vrLen = 950;
 		vrLoc = 3;
@@ -1940,7 +1952,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 15";
 		rLen = 0;
-		rLoc = 303;
+		rLoc = 373;
 		rType = 0;
 		vrLen = 354;
 		vrLoc = 3;
@@ -1960,7 +1972,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 142";
 		rLen = 0;
-		rLoc = 4535;
+		rLoc = 4487;
 		rType = 0;
 		vrLen = 830;
 		vrLoc = 3655;
@@ -1970,7 +1982,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 55";
 		rLen = 0;
-		rLoc = 1838;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 924;
@@ -1980,7 +1992,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 15";
 		rLen = 0;
-		rLoc = 303;
+		rLoc = 373;
 		rType = 0;
 		vrLen = 354;
 		vrLoc = 3;
@@ -1990,7 +2002,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 55";
 		rLen = 0;
-		rLoc = 1838;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1308;
 		vrLoc = 924;
@@ -2000,7 +2012,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 15";
 		rLen = 0;
-		rLoc = 303;
+		rLoc = 373;
 		rType = 0;
 		vrLen = 354;
 		vrLoc = 3;
@@ -2010,10 +2022,167 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 55";
 		rLen = 0;
-		rLoc = 1838;
+		rLoc = 1951;
 		rType = 0;
 		vrLen = 1421;
 		vrLoc = 924;
+	};
+	28B02F7F10E16F3F0034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
+		name = "TrackDetailViewController.h: 15";
+		rLen = 0;
+		rLoc = 373;
+		rType = 0;
+		vrLen = 402;
+		vrLoc = 3;
+	};
+	28B02F8010E16F3F0034A0C8 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'DOCUMENTS_FOLDER' undeclared (first use in this function)";
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 51;
+		rType = 1;
+	};
+	28B02F8110E16F3F0034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		name = "TrackDetailViewController.m: 53";
+		rLen = 0;
+		rLoc = 1561;
+		rType = 0;
+		vrLen = 754;
+		vrLoc = 1259;
+	};
+	28B02F8410E16F640034A0C8 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Request for member 'fileName' in something not a structure or union";
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 57;
+		rType = 1;
+	};
+	28B02F8510E16F640034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		name = "TrackDetailViewController.m: 68";
+		rLen = 0;
+		rLoc = 1951;
+		rType = 0;
+		vrLen = 641;
+		vrLoc = 2013;
+	};
+	28B02F8810E16F720034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28B02DE110E11E3E0034A0C8 /* AudioPlayer.h */;
+		name = "AudioPlayer.h: 12";
+		rLen = 21;
+		rLoc = 248;
+		rType = 0;
+		vrLen = 880;
+		vrLoc = 43;
+	};
+	28B02F8910E16F720034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28B02DE210E11E3E0034A0C8 /* AudioPlayer.m */;
+		name = "AudioPlayer.m: 15";
+		rLen = 89;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 937;
+		vrLoc = 0;
+	};
+	28B02F8A10E16F720034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
+		name = "TrackDetailViewController.h: 15";
+		rLen = 0;
+		rLoc = 371;
+		rType = 0;
+		vrLen = 1030;
+		vrLoc = 93;
+	};
+	28B02F8B10E16F720034A0C8 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Request for member 'fileName' in something not a structure or union";
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 57;
+		rType = 1;
+	};
+	28B02F8C10E16F720034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		name = "TrackDetailViewController.m: 70";
+		rLen = 0;
+		rLoc = 1955;
+		rType = 0;
+		vrLen = 1468;
+		vrLoc = 1404;
+	};
+	28B02F8D10E16F9B0034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		name = "TrackDetailViewController.m: 68";
+		rLen = 0;
+		rLoc = 1951;
+		rType = 0;
+		vrLen = 564;
+		vrLoc = 2308;
+	};
+	28B02F9110E16FE80034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		name = "TrackDetailViewController.m: 9";
+		rLen = 0;
+		rLoc = 200;
+		rType = 0;
+		vrLen = 960;
+		vrLoc = 162;
+	};
+	28B02F9210E16FE80034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
+		name = "TrackDetailViewController.h: 29";
+		rLen = 0;
+		rLoc = 752;
+		rType = 0;
+		vrLen = 960;
+		vrLoc = 159;
+	};
+	28B02F9310E16FE80034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
+		name = "TrackDetailViewController.h: 29";
+		rLen = 0;
+		rLoc = 752;
+		rType = 0;
+		vrLen = 988;
+		vrLoc = 59;
+	};
+	28B02F9410E170010034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
+		name = "TrackDetailViewController.m: 58";
+		rLen = 0;
+		rLoc = 1951;
+		rType = 0;
+		vrLen = 511;
+		vrLoc = 1954;
+	};
+	28B02F9710E1706B0034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
+		name = "TrackDetailViewController.h: 23";
+		rLen = 0;
+		rLoc = 605;
+		rType = 0;
+		vrLen = 971;
+		vrLoc = 59;
 	};
 	28C1AEED10E0167C00DBBB55 /* LocationAnnotation.h */ = {
 		uiCtxt = {
@@ -2074,7 +2243,7 @@
 		fRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */;
 		name = "TrackDetailViewController.m: 88";
 		rLen = 0;
-		rLoc = 3246;
+		rLoc = 3219;
 		rType = 0;
 		vrLen = 772;
 		vrLoc = 2199;
@@ -2140,7 +2309,7 @@
 		fRef = 28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */;
 		name = "TrackDetailViewController.h: 20";
 		rLen = 0;
-		rLoc = 652;
+		rLoc = 748;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 0;
@@ -2289,17 +2458,17 @@
 	};
 	28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {467, 533}}";
-			sepNavSelRange = "{303, 0}";
-			sepNavVisRange = "{3, 354}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 507}}";
+			sepNavSelRange = "{605, 0}";
+			sepNavVisRange = "{59, 971}";
 			sepNavWindowFrame = "{{15, 295}, {972, 578}}";
 		};
 	};
 	28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 1872}}";
-			sepNavSelRange = "{1838, 0}";
-			sepNavVisRange = "{924, 1421}";
+			sepNavIntBoundsRect = "{{0, 0}, {831, 1820}}";
+			sepNavSelRange = "{1951, 0}";
+			sepNavVisRange = "{1954, 511}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -2576,6 +2745,22 @@
 			28B02F7610E14E7B0034A0C8 /* PBXTextBookmark */ = 28B02F7610E14E7B0034A0C8 /* PBXTextBookmark */;
 			28B02F7710E14E800034A0C8 /* PBXTextBookmark */ = 28B02F7710E14E800034A0C8 /* PBXTextBookmark */;
 			28B02F7810E14E830034A0C8 /* PBXTextBookmark */ = 28B02F7810E14E830034A0C8 /* PBXTextBookmark */;
+			28B02F7F10E16F3F0034A0C8 /* PBXTextBookmark */ = 28B02F7F10E16F3F0034A0C8 /* PBXTextBookmark */;
+			28B02F8010E16F3F0034A0C8 /* XCBuildMessageTextBookmark */ = 28B02F8010E16F3F0034A0C8 /* XCBuildMessageTextBookmark */;
+			28B02F8110E16F3F0034A0C8 /* PBXTextBookmark */ = 28B02F8110E16F3F0034A0C8 /* PBXTextBookmark */;
+			28B02F8410E16F640034A0C8 /* XCBuildMessageTextBookmark */ = 28B02F8410E16F640034A0C8 /* XCBuildMessageTextBookmark */;
+			28B02F8510E16F640034A0C8 /* PBXTextBookmark */ = 28B02F8510E16F640034A0C8 /* PBXTextBookmark */;
+			28B02F8810E16F720034A0C8 /* PBXTextBookmark */ = 28B02F8810E16F720034A0C8 /* PBXTextBookmark */;
+			28B02F8910E16F720034A0C8 /* PBXTextBookmark */ = 28B02F8910E16F720034A0C8 /* PBXTextBookmark */;
+			28B02F8A10E16F720034A0C8 /* PBXTextBookmark */ = 28B02F8A10E16F720034A0C8 /* PBXTextBookmark */;
+			28B02F8B10E16F720034A0C8 /* XCBuildMessageTextBookmark */ = 28B02F8B10E16F720034A0C8 /* XCBuildMessageTextBookmark */;
+			28B02F8C10E16F720034A0C8 /* PBXTextBookmark */ = 28B02F8C10E16F720034A0C8 /* PBXTextBookmark */;
+			28B02F8D10E16F9B0034A0C8 /* PBXTextBookmark */ = 28B02F8D10E16F9B0034A0C8 /* PBXTextBookmark */;
+			28B02F9110E16FE80034A0C8 /* PBXTextBookmark */ = 28B02F9110E16FE80034A0C8 /* PBXTextBookmark */;
+			28B02F9210E16FE80034A0C8 /* PBXTextBookmark */ = 28B02F9210E16FE80034A0C8 /* PBXTextBookmark */;
+			28B02F9310E16FE80034A0C8 /* PBXTextBookmark */ = 28B02F9310E16FE80034A0C8 /* PBXTextBookmark */;
+			28B02F9410E170010034A0C8 /* PBXTextBookmark */ = 28B02F9410E170010034A0C8 /* PBXTextBookmark */;
+			28B02F9710E1706B0034A0C8 /* PBXTextBookmark */ = 28B02F9710E1706B0034A0C8 /* PBXTextBookmark */;
 			28C1AFB410E03F7D00DBBB55 = 28C1AFB410E03F7D00DBBB55 /* PBXTextBookmark */;
 			28C1AFBC10E03FBD00DBBB55 = 28C1AFBC10E03FBD00DBBB55 /* PBXTextBookmark */;
 			28C1AFC210E03FCF00DBBB55 = 28C1AFC210E03FCF00DBBB55 /* PBXTextBookmark */;

@@ -274,7 +274,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -317,7 +316,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TrackDetailViewController.m</string>
+								<string>TrackDetailViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +324,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TrackDetailViewController.m</string>
+										<string>TrackDetailViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28B02F7810E14E830034A0C8</string>
+										<string>28B02F9710E1706B0034A0C8</string>
 										<key>history</key>
 										<array>
 											<string>28D3B76010DD3FD900C96A80</string>
@@ -352,10 +351,8 @@
 											<string>28B02F0010E145A80034A0C8</string>
 											<string>28B02F0110E145A80034A0C8</string>
 											<string>28B02F4010E1495C0034A0C8</string>
-											<string>28B02F4D10E14BD60034A0C8</string>
-											<string>28B02F6910E14DF30034A0C8</string>
-											<string>28B02F7010E14E480034A0C8</string>
-											<string>28B02F7110E14E480034A0C8</string>
+											<string>28B02F9110E16FE80034A0C8</string>
+											<string>28B02F9210E16FE80034A0C8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -555,10 +552,10 @@
 	<array>
 		<string>28B02EE010E140EE0034A0C8</string>
 		<string>28B02ED810E140C40034A0C8</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>28E76F7D10DAE34F0025C0D1</string>
 		<string>/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio Recorder.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>2 106 1440 769 0 0 1440 878 </string>
@@ -582,7 +579,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TrackDetailViewController.h</string>
+								<string>TrackDetailViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -942,7 +939,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

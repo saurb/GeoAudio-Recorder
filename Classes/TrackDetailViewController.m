@@ -7,7 +7,6 @@
 //
 
 #import "TrackDetailViewController.h"
-#import "AudioPlayer.h"
 
 
 @implementation TrackDetailViewController
@@ -49,13 +48,15 @@
 	playBtnBG = [[[UIImage imageNamed:@"play.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	pauseBtnBG = [[[UIImage imageNamed:@"pause.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	[playButton setImage:playBtnBG forState:UIControlStateNormal];
-	//self.audioPlayer = [AudioPlayer initWithFilePath:message];
-	self.audioPlayer = [[AudioPlayer alloc] init];
-	[self.audioPlayer initWithFilePath:message];
-	[self.audioPlayer.player setDelegate:self]; // so that will call the avaudioplayer delegate method
-	//self.audioPlayer.fileName = message;
-	//audioPlayer.fileName = message;
-	NSLog(@"fileName in trackdetailview = %@", audioPlayer.fileName);
+	
+	NSString* filePath = [[NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", message] retain];
+	NSURL* fileURL = [[[NSURL alloc] initFileURLWithPath:filePath] retain];
+	AVAudioPlayer* newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+	self.audioPlayer = newPlayer;
+	[newPlayer release];
+	[audioPlayer prepareToPlay];
+	[audioPlayer setDelegate:self];
+	
 	MKCoordinateRegion region;
 	MKCoordinateSpan span;
 	span.latitudeDelta = 0.02;
@@ -122,15 +123,15 @@
 #pragma mark Player Method
 - (IBAction)playButtonPressed:(UIButton*)sender
 {
-	if (self.audioPlayer.player.playing) {
+	if (self.audioPlayer.playing) {
 		[self.playButton setImage:playBtnBG forState:UIControlStateHighlighted];
 		[self.playButton setImage:playBtnBG forState:UIControlStateNormal];
-		[self.audioPlayer.player pause];
+		[self.audioPlayer pause];
 	}
 	else {
 		[self.playButton setImage:pauseBtnBG forState:UIControlStateHighlighted];
 		[self.playButton setImage:pauseBtnBG forState:UIControlStateNormal];
-		[self.audioPlayer.player play];
+		[self.audioPlayer play];
 	}
 
 }

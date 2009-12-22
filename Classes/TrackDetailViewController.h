@@ -10,14 +10,17 @@
 #import <MapKit/MapKit.h>
 #import "LocationAnnotation.h"
 #import <AVFoundation/AVFoundation.h>
-@class AudioPlayer;
+
+#define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 
 @interface TrackDetailViewController : UIViewController <MKMapViewDelegate, AVAudioPlayerDelegate> {
 
-	IBOutlet AudioPlayer* audioPlayer;
+	// for audio player
+	AVAudioPlayer* audioPlayer;
 	IBOutlet UIButton* playButton;
 	UIImage* playBtnBG, * pauseBtnBG;
 	
+	// for map
 	IBOutlet MKMapView* mapView;
 	IBOutlet UILabel* trackTitle;
 	NSString* message;
@@ -25,7 +28,7 @@
 	LocationAnnotation* locationAnnotation;
 }
 
-@property (nonatomic, retain) IBOutlet AudioPlayer* audioPlayer;
+@property (nonatomic, retain) AVAudioPlayer* audioPlayer;
 @property (nonatomic, retain) IBOutlet UILabel* trackTitle;
 @property (nonatomic, retain) NSString* message;
 @property (nonatomic, retain) NSArray* locations;
