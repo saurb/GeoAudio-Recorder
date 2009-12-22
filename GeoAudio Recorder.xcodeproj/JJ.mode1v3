@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -266,6 +268,7 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>28C1B05E10E0988800DBBB55</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -273,8 +276,51 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
-									<integer>1</integer>
+									<integer>19</integer>
+									<integer>18</integer>
+									<integer>17</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>20</integer>
+									<integer>18</integer>
+									<integer>17</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>21</integer>
+									<integer>18</integer>
+									<integer>17</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>22</integer>
+									<integer>18</integer>
+									<integer>17</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>23</integer>
+									<integer>18</integer>
+									<integer>17</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>24</integer>
+									<integer>18</integer>
+									<integer>17</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>25</integer>
+									<integer>18</integer>
+									<integer>17</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>26</integer>
+									<integer>18</integer>
+									<integer>17</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -309,14 +355,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TrackDetailViewController.m</string>
+								<string>microphone.png</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,30 +368,35 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TrackDetailViewController.m</string>
+										<string>microphone.png</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28C1AFDE10E04D4100DBBB55</string>
+										<string>28C1B07110E098A900DBBB55</string>
 										<key>history</key>
 										<array>
-											<string>28B55A1810DCAE0D004D75B4</string>
-											<string>28B55A1910DCAE0D004D75B4</string>
-											<string>28D3B75F10DD3FD900C96A80</string>
 											<string>28D3B76010DD3FD900C96A80</string>
 											<string>280A890A10DD7A2F005CF926</string>
 											<string>283E996610DF07A4002006F3</string>
-											<string>283E996710DF07A4002006F3</string>
-											<string>28C1AF3910E02AB100DBBB55</string>
-											<string>28C1AF5010E033CC00DBBB55</string>
-											<string>28C1AF5210E033CC00DBBB55</string>
-											<string>28C1AF7D10E0386400DBBB55</string>
-											<string>28C1AFB210E03F7D00DBBB55</string>
-											<string>28C1AFB310E03F7D00DBBB55</string>
 											<string>28C1AFB410E03F7D00DBBB55</string>
 											<string>28C1AFBC10E03FBD00DBBB55</string>
 											<string>28C1AFC210E03FCF00DBBB55</string>
-											<string>28C1AFC710E0408500DBBB55</string>
+											<string>28C1B06110E098A900DBBB55</string>
+											<string>28C1B06210E098A900DBBB55</string>
+											<string>28C1B06310E098A900DBBB55</string>
+											<string>28C1B06410E098A900DBBB55</string>
+											<string>28C1B06510E098A900DBBB55</string>
+											<string>28C1B06610E098A900DBBB55</string>
+											<string>28C1B06710E098A900DBBB55</string>
+											<string>28C1B06810E098A900DBBB55</string>
+											<string>28C1B06910E098A900DBBB55</string>
+											<string>28C1B06A10E098A900DBBB55</string>
+											<string>28C1B06B10E098A900DBBB55</string>
+											<string>28C1B06C10E098A900DBBB55</string>
+											<string>28C1B06D10E098A900DBBB55</string>
+											<string>28C1B06E10E098A900DBBB55</string>
+											<string>28C1B06F10E098A900DBBB55</string>
+											<string>28C1B07010E098A900DBBB55</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -545,8 +594,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>28E76F7D10DAE34F0025C0D1</string>
 		<string>/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio Recorder.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 109 1440 769 0 0 1440 878 </string>
@@ -748,13 +799,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>28C1AEA710DFE54B00DBBB55</string>
+				<string>28C1AFEA10E04E3000DBBB55</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>28C1AEA810DFE54B00DBBB55</string>
-				<string>28C1AEA910DFE54B00DBBB55</string>
-				<string>28C1AEAA10DFE54B00DBBB55</string>
-				<string>28C1AEAB10DFE54B00DBBB55</string>
-				<string>28C1AEAC10DFE54B00DBBB55</string>
+				<string>28C1AFEB10E04E3000DBBB55</string>
+				<string>28C1AFEC10E04E3000DBBB55</string>
+				<string>28C1AFED10E04E3000DBBB55</string>
+				<string>28C1AFEE10E04E3000DBBB55</string>
+				<string>28C1AFEF10E04E3000DBBB55</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -918,7 +969,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>28C1AEAD10DFE54B00DBBB55</string>
+				<string>28C1AFF010E04E3000DBBB55</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -928,7 +979,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
