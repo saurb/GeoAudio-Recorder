@@ -18,6 +18,8 @@
 	// for audio player
 	AVAudioPlayer* audioPlayer;
 	IBOutlet UIButton* playButton;
+	IBOutlet UIButton* ffwButton;
+	IBOutlet UIButton* rewButton;
 	UIImage* playBtnBG, * pauseBtnBG;
 	
 	// for map
@@ -33,6 +35,10 @@
 @property (nonatomic, retain) NSString* message;
 @property (nonatomic, retain) NSArray* locations;
 @property (nonatomic, retain) IBOutlet UIButton* playButton;
+@property (nonatomic, retain) IBOutlet UIButton* ffwButton;
+@property (nonatomic, retain) IBOutlet UIButton* rewButton;
 
 - (IBAction)playButtonPressed:(UIButton*)sender;
+- (IBAction)ffwButtonPressed:(UIButton*)sender;
+- (IBAction)rewButtonPressed:(UIButton*)sender;
 @end

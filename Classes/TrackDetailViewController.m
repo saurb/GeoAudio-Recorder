@@ -15,6 +15,8 @@
 @synthesize message;
 @synthesize locations;
 @synthesize playButton;
+@synthesize ffwButton;
+@synthesize rewButton;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -98,6 +100,9 @@
 	self.trackTitle = nil;
 	self.locations = nil;
 	self.audioPlayer = nil;
+	self.playButton = nil;
+	self.ffwButton = nil;
+	self.rewButton = nil;
 }
 
 
@@ -106,6 +111,9 @@
 	[trackTitle release];
 	[message release];
 	[locations release];
+	[playButton release];
+	[ffwButton release];
+	[rewButton release];
     [super dealloc];
 }
 
@@ -136,6 +144,38 @@
 
 }
 
+- (IBAction)ffwButtonPressed:(UIButton*)sender
+{
+	NSTimeInterval time = self.audioPlayer.currentTime;
+	time += 3.0;
+	if (time > self.audioPlayer.duration) {
+		[self.playButton setImage:playBtnBG forState:UIControlStateHighlighted];
+		[self.playButton setImage:playBtnBG forState:UIControlStateNormal];
+		[self.audioPlayer stop];
+	}
+	else {
+		self.audioPlayer.currentTime = time;
+		[self.audioPlayer play];
+	}
+
+}
+
+- (IBAction)rewButtonPressed:(UIButton*)sender
+{
+	NSTimeInterval time = self.audioPlayer.currentTime;
+	time -= 3.0;
+	if (time < 0) {
+		[self.playButton setImage:playBtnBG forState:UIControlStateHighlighted];
+		[self.playButton setImage:playBtnBG forState:UIControlStateNormal];
+		[self.audioPlayer stop];
+	}
+	else {
+		self.audioPlayer.currentTime = time;
+		[self.audioPlayer play];
+	}
+
+}
+
 #pragma mark -
 #pragma mark AVAudioPlayerDelegate Method
 - (void) audioPlayerDidFinishPlaying: (AVAudioPlayer *) player
@@ -144,7 +184,6 @@
         [self.playButton setImage: playBtnBG forState: UIControlStateNormal];
     }
 }
-
 
 
 @end
