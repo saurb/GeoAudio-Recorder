@@ -9,10 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "LocationAnnotation.h"
+#import <AVFoundation/AVFoundation.h>
+@class AudioPlayer;
 
+@interface TrackDetailViewController : UIViewController <MKMapViewDelegate, AVAudioPlayerDelegate> {
 
-@interface TrackDetailViewController : UIViewController <MKMapViewDelegate> {
-
+	IBOutlet AudioPlayer* audioPlayer;
+	IBOutlet UIButton* playButton;
+	UIImage* playBtnBG, * pauseBtnBG;
+	
 	IBOutlet MKMapView* mapView;
 	IBOutlet UILabel* trackTitle;
 	NSString* message;
@@ -20,8 +25,11 @@
 	LocationAnnotation* locationAnnotation;
 }
 
+@property (nonatomic, retain) IBOutlet AudioPlayer* audioPlayer;
 @property (nonatomic, retain) IBOutlet UILabel* trackTitle;
 @property (nonatomic, retain) NSString* message;
 @property (nonatomic, retain) NSArray* locations;
+@property (nonatomic, retain) IBOutlet UIButton* playButton;
 
+- (IBAction)playButtonPressed:(UIButton*)sender;
 @end

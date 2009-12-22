@@ -150,9 +150,10 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	
 	NSUInteger row = [indexPath row];
 	NSString* selectedTrack = [[tracks objectAtIndex:row] retain];
-	NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
-	trackDetailViewController.message = detailMessage;
-	[detailMessage release];
+	//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
+	trackDetailViewController.message = selectedTrack;
+	[selectedTrack release];
+	//[detailMessage release];
 	
 	// get the according plist file
 	NSArray* array = [selectedTrack componentsSeparatedByString:@"."];

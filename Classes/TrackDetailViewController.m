@@ -7,12 +7,15 @@
 //
 
 #import "TrackDetailViewController.h"
+#import "AudioPlayer.h"
 
 
 @implementation TrackDetailViewController
+@synthesize audioPlayer;
 @synthesize trackTitle;
 @synthesize message;
 @synthesize locations;
+@synthesize playButton;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -43,6 +46,16 @@
 {
 	trackTitle.text = message;
 	
+	playBtnBG = [[[UIImage imageNamed:@"play.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
+	pauseBtnBG = [[[UIImage imageNamed:@"pause.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
+	[playButton setImage:playBtnBG forState:UIControlStateNormal];
+	//self.audioPlayer = [AudioPlayer initWithFilePath:message];
+	self.audioPlayer = [[AudioPlayer alloc] init];
+	[self.audioPlayer initWithFilePath:message];
+	[self.audioPlayer.player setDelegate:self]; // so that will call the avaudioplayer delegate method
+	//self.audioPlayer.fileName = message;
+	//audioPlayer.fileName = message;
+	NSLog(@"fileName in trackdetailview = %@", audioPlayer.fileName);
 	MKCoordinateRegion region;
 	MKCoordinateSpan span;
 	span.latitudeDelta = 0.02;
@@ -83,10 +96,12 @@
 	// e.g. self.myOutlet = nil;
 	self.trackTitle = nil;
 	self.locations = nil;
+	self.audioPlayer = nil;
 }
 
 
 - (void)dealloc {
+	[audioPlayer release];
 	[trackTitle release];
 	[message release];
 	[locations release];
@@ -99,9 +114,36 @@
 	annView.pinColor = MKPinAnnotationColorRed;
 	annView.animatesDrop = TRUE;
 	annView.canShowCallout = YES;
-	annView.calloutOffset = CGPointMake(-20.0, 20.0);
+	annView.calloutOffset = CGPointMake(-5.0, 5.0);
 	return annView;
 }
+
+#pragma mark -
+#pragma mark Player Method
+- (IBAction)playButtonPressed:(UIButton*)sender
+{
+	if (self.audioPlayer.player.playing) {
+		[self.playButton setImage:playBtnBG forState:UIControlStateHighlighted];
+		[self.playButton setImage:playBtnBG forState:UIControlStateNormal];
+		[self.audioPlayer.player pause];
+	}
+	else {
+		[self.playButton setImage:pauseBtnBG forState:UIControlStateHighlighted];
+		[self.playButton setImage:pauseBtnBG forState:UIControlStateNormal];
+		[self.audioPlayer.player play];
+	}
+
+}
+
+#pragma mark -
+#pragma mark AVAudioPlayerDelegate Method
+- (void) audioPlayerDidFinishPlaying: (AVAudioPlayer *) player
+                        successfully: (BOOL) completed {
+    if (completed == YES) {
+        [self.playButton setImage: playBtnBG forState: UIControlStateNormal];
+    }
+}
+
 
 
 @end
