@@ -12,6 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="16"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -51,17 +52,18 @@
 			<object class="IBUITabBarController" id="764279193">
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="233325179">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="198579950">
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="933307326">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="293482278">
 						<string key="IBUITitle">Tracks</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">tracks.png</string>
 						</object>
+						<reference key="IBUITabBar"/>
 					</object>
 					<reference key="IBUIToolbarItems" ref="0"/>
 					<reference key="IBUIParentViewController" ref="764279193"/>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="1013537296">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="739217973">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{320, 44}</string>
@@ -71,16 +73,16 @@
 					</object>
 					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="IBUIViewController" id="679640889">
+						<object class="IBUIViewController" id="675308363">
 							<reference key="IBUIToolbarItems" ref="0"/>
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="180220284">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="979431457">
+								<reference key="IBUINavigationBar"/>
 								<string key="IBUITitle">Item</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="233325179"/>
+							<reference key="IBUIParentViewController" ref="933307326"/>
 							<string key="IBUINibName">TrackTableView</string>
 						</object>
 					</object>
-					<bool key="IBUIToolbarHidden">NO</bool>
 				</object>
 				<object class="NSMutableArray" key="IBUIViewControllers">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -91,11 +93,12 @@
 								<string key="NSClassName">NSImage</string>
 								<string key="NSResourceName">microphone.png</string>
 							</object>
+							<reference key="IBUITabBar"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="764279193"/>
 						<string key="IBUINibName">RecorderViewController</string>
 					</object>
-					<reference ref="233325179"/>
+					<reference ref="933307326"/>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="452162585">
 					<nil key="NSNextResponder"/>
@@ -140,9 +143,9 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">tracksNavController</string>
 						<reference key="source" ref="664661524"/>
-						<reference key="destination" ref="233325179"/>
+						<reference key="destination" ref="933307326"/>
 					</object>
-					<int key="connectionID">32</int>
+					<int key="connectionID">40</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -185,7 +188,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="452162585"/>
 							<reference ref="512838864"/>
-							<reference ref="233325179"/>
+							<reference ref="933307326"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -209,39 +212,39 @@
 						<reference key="parent" ref="512838864"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="233325179"/>
+						<int key="objectID">35</int>
+						<reference key="object" ref="933307326"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="198579950"/>
-							<reference ref="679640889"/>
-							<reference ref="1013537296"/>
+							<reference ref="293482278"/>
+							<reference ref="675308363"/>
+							<reference ref="739217973"/>
 						</object>
 						<reference key="parent" ref="764279193"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">28</int>
-						<reference key="object" ref="198579950"/>
-						<reference key="parent" ref="233325179"/>
+						<int key="objectID">36</int>
+						<reference key="object" ref="293482278"/>
+						<reference key="parent" ref="933307326"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">29</int>
-						<reference key="object" ref="679640889"/>
+						<int key="objectID">37</int>
+						<reference key="object" ref="675308363"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="180220284"/>
+							<reference ref="979431457"/>
 						</object>
-						<reference key="parent" ref="233325179"/>
+						<reference key="parent" ref="933307326"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">30</int>
-						<reference key="object" ref="180220284"/>
-						<reference key="parent" ref="679640889"/>
+						<int key="objectID">38</int>
+						<reference key="object" ref="979431457"/>
+						<reference key="parent" ref="675308363"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">31</int>
-						<reference key="object" ref="1013537296"/>
-						<reference key="parent" ref="233325179"/>
+						<int key="objectID">39</int>
+						<reference key="object" ref="739217973"/>
+						<reference key="parent" ref="933307326"/>
 					</object>
 				</object>
 			</object>
@@ -260,16 +263,16 @@
 					<string>2.IBEditorWindowLastContentRect</string>
 					<string>2.IBPluginDependency</string>
 					<string>21.IBPluginDependency</string>
-					<string>27.CustomClassName</string>
-					<string>29.CustomClassName</string>
 					<string>3.CustomClassName</string>
 					<string>3.IBPluginDependency</string>
+					<string>35.CustomClassName</string>
+					<string>37.CustomClassName</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>UIApplication</string>
 					<string>UIResponder</string>
-					<string>{{485, 271}, {320, 480}}</string>
+					<string>{{505, 355}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>RecorderViewController</string>
@@ -284,10 +287,10 @@
 					<string>{{481, 355}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>TracksNavController</string>
-					<string>TracksTableViewController</string>
 					<string>GeoAudio_RecorderAppDelegate</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>TracksNavController</string>
+					<string>TracksTableViewController</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -306,7 +309,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">32</int>
+			<int key="maxID">40</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -345,6 +348,34 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">RecorderViewController</string>
 					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>recordOrStop:</string>
+							<string>switchChanged:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="outlets">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>geoSwitch</string>
+							<string>locationLabel</string>
+							<string>recordButton</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UISwitch</string>
+							<string>UILabel</string>
+							<string>UIButton</string>
+						</object>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Classes/RecorderViewController.h</string>
@@ -517,6 +548,30 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">UIButton</string>
+					<string key="superclassName">UIControl</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UIButton.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UIControl</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UIControl.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UILabel</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UILabel.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">UINavigationBar</string>
 					<string key="superclassName">UIView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="208219553">
@@ -564,6 +619,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UISearchDisplayController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UISwitch</string>
+					<string key="superclassName">UIControl</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UISwitch.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
