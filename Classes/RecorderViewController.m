@@ -11,7 +11,6 @@
 @implementation RecorderViewController
 @synthesize recorder;
 @synthesize recordButton;
-@synthesize locationController;
 @synthesize spinner;
 @synthesize tracksAndLocations;
 @synthesize trackNames;
@@ -90,9 +89,25 @@
 		return;
 	}
 	
-	// set up for location manager
+	/*// set up for location manager
 	locationController = [[LocationController alloc] init];
-	locationController.delegate = self;
+	locationController.delegate = self;*/
+	// set up for location manager
+	[LocationController sharedInstance].delegate = self;
+	// Check to see if the user has disabled location services all together
+    // In that case, we just print a message and disable the "Start" button
+    if ( ! [LocationController sharedInstance].locationManager.locationServicesEnabled ) {
+		
+		UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled" 
+														message:@"Try turn on the location service." 
+													   delegate:nil
+											  cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+        
+		recordButton.enabled = NO;
+    }
 	
 	// init trackLocations array
 	trackLocations = [[NSMutableArray alloc] init];
@@ -111,7 +126,6 @@
 	// e.g. self.myOutlet = nil;
 	self.recorder = nil;
 	self.recordButton = nil;
-	self.locationController = nil;
 	self.spinner = nil;
 	self.tracksAndLocations = nil;
 	self.trackNames = nil;
@@ -122,7 +136,6 @@
 - (void)dealloc {
 	[recorder release];
 	[recordButton release];
-	[locationController release];
 	[spinner release];
 	[tracksAndLocations release];
 	[trackNames release];
@@ -188,7 +201,7 @@
 	if (!recording) {
 		
 		// start updating location
-		[locationController.locationManager startUpdatingLocation];
+		[[LocationController sharedInstance].locationManager startUpdatingLocation];
 		
 		[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:nil];
 		
@@ -253,7 +266,7 @@
 		
 		[[AVAudioSession sharedInstance] setActive:NO error:nil];
 		
-		[locationController.locationManager stopUpdatingLocation];
+		[[LocationController sharedInstance].locationManager stopUpdatingLocation];
 		locationLabel.text = @""; // clear label
 		NSLog(@"locationManager stopped.");
 		

@@ -8,6 +8,7 @@
 
 #import "LocationController.h"
 
+static LocationController* sharedCLDelegate = nil;
 
 @implementation LocationController
 @synthesize locationManager;
@@ -20,7 +21,7 @@
 	if (self != nil) {
 		self.locationManager = [[[CLLocationManager alloc] init] autorelease];
 		self.locationManager.delegate = self;
-		self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+		//self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	}
 	return self;
 }
@@ -107,6 +108,50 @@
 	[alert show];
 	[alert release];
 }
+
+#pragma mark -
+#pragma mark Singleton Object Methods
+
++ (LocationController*)sharedInstance {
+    @synchronized(self) {
+        if (sharedCLDelegate == nil) {
+            [[self alloc] init]; // assignment not done here
+        }
+    }
+    return sharedCLDelegate;
+}
+
++ (id)allocWithZone:(NSZone *)zone {
+    @synchronized(self) {
+        if (sharedCLDelegate == nil) {
+            sharedCLDelegate = [super allocWithZone:zone];
+            return sharedCLDelegate;  // assignment and return on first allocation
+        }
+    }
+    return nil; // on subsequent allocation attempts return nil
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    return self;
+}
+
+- (id)retain {
+    return self;
+}
+
+- (unsigned)retainCount {
+    return UINT_MAX;  // denotes an object that cannot be released
+}
+
+- (void)release {
+    //do nothing
+}
+
+- (id)autorelease {
+    return self;
+}
+
 
 
 @end

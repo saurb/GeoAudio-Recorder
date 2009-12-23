@@ -169,7 +169,7 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
 	trackDetailViewController.title = selectedTrack;
 	trackDetailViewController.message = selectedTrack;
-	[selectedTrack release];
+	//[selectedTrack release];
 	//[detailMessage release];
 	
 	// get the according plist file
@@ -191,7 +191,6 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath*)indexPath
 {
 	NSUInteger row = [indexPath row];
-	
 	NSString* selectedTrack = [[self.tracks objectAtIndex:row] retain];
 	
 	// get the according plist & audio file
@@ -212,7 +211,6 @@ forRowAtIndexPath:(NSIndexPath*)indexPath
 	[self.tracks removeObjectAtIndex:row];
 	[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
 					 withRowAnimation:UITableViewRowAnimationFade];
-	
 		
 }
 

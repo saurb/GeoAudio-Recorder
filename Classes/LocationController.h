@@ -29,4 +29,6 @@
 @property (nonatomic, retain) CLLocation* location;
 @property (nonatomic, assign) id <LocationControllerDelegate> delegate;
 
++ (LocationController*)sharedInstance;
+
 @end

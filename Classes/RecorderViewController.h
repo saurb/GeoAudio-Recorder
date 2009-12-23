@@ -27,8 +27,7 @@
 	UIImage* recordEnabled, *recordPressed;
 	
 	// for location
-	LocationController* locationController;
-	//UISwitch* geoSwitch;
+	// LocationController* locationController; // try to use singleton object
 	IBOutlet UILabel* locationLabel;
 	
 	IBOutlet UIActivityIndicatorView* spinner;
@@ -41,7 +40,6 @@
 
 @property (nonatomic, retain) AVAudioRecorder* recorder;
 @property (nonatomic, retain) IBOutlet UIButton* recordButton;
-@property (nonatomic, retain) LocationController* locationController;
 @property (nonatomic, retain) NSMutableDictionary* tracksAndLocations;
 @property (nonatomic, retain) NSMutableArray* trackNames;
 @property (nonatomic, retain) NSMutableArray* trackLocations;
