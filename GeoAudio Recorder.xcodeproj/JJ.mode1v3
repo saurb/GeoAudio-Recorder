@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>33</integer>
+									<integer>31</integer>
 									<integer>17</integer>
 									<integer>0</integer>
 								</array>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TrackDetailViewController.m</string>
+								<string>RecorderViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,35 +325,38 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TrackDetailViewController.m</string>
+										<string>RecorderViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28B02FF710E17A8A0034A0C8</string>
+										<string>28B0309010E1966A0034A0C8</string>
 										<key>history</key>
 										<array>
 											<string>28D3B76010DD3FD900C96A80</string>
 											<string>280A890A10DD7A2F005CF926</string>
-											<string>28C1AFB410E03F7D00DBBB55</string>
 											<string>28C1B06410E098A900DBBB55</string>
 											<string>28C1B06710E098A900DBBB55</string>
 											<string>28C1B06810E098A900DBBB55</string>
-											<string>28C1B06910E098A900DBBB55</string>
 											<string>28C1B06A10E098A900DBBB55</string>
-											<string>28C1B06C10E098A900DBBB55</string>
 											<string>28C1B06E10E098A900DBBB55</string>
 											<string>28C1B06F10E098A900DBBB55</string>
 											<string>28B02E0E10E125A00034A0C8</string>
 											<string>28B02E1310E125A00034A0C8</string>
 											<string>28B02E9710E138E10034A0C8</string>
-											<string>28B02EBF10E13D970034A0C8</string>
 											<string>28B02EFE10E145A80034A0C8</string>
 											<string>28B02EFF10E145A80034A0C8</string>
 											<string>28B02F0010E145A80034A0C8</string>
-											<string>28B02F0110E145A80034A0C8</string>
 											<string>28B02F4010E1495C0034A0C8</string>
-											<string>28B02FBE10E175090034A0C8</string>
-											<string>28B02FB810E173B70034A0C8</string>
+											<string>28B0302910E18B930034A0C8</string>
+											<string>28B0302A10E18B930034A0C8</string>
+											<string>28B0302B10E18B930034A0C8</string>
+											<string>28B0302C10E18B930034A0C8</string>
+											<string>28B0302D10E18B930034A0C8</string>
+											<string>28B0306110E193E60034A0C8</string>
+											<string>28B0306210E193E60034A0C8</string>
+											<string>28B0308510E1958E0034A0C8</string>
+											<string>28B0308610E1958E0034A0C8</string>
+											<string>28B0303D10E18E060034A0C8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -580,7 +583,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TrackDetailViewController.m</string>
+								<string>RecorderViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

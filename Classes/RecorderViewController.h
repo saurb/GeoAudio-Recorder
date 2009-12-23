@@ -28,8 +28,10 @@
 	
 	// for location
 	LocationController* locationController;
-	UISwitch* geoSwitch;
+	//UISwitch* geoSwitch;
 	IBOutlet UILabel* locationLabel;
+	
+	IBOutlet UIActivityIndicatorView* spinner;
 	
 	NSMutableDictionary* tracksAndLocations;
 	NSMutableArray* trackNames;
@@ -40,12 +42,12 @@
 @property (nonatomic, retain) AVAudioRecorder* recorder;
 @property (nonatomic, retain) IBOutlet UIButton* recordButton;
 @property (nonatomic, retain) LocationController* locationController;
-@property (nonatomic, retain) IBOutlet UISwitch* geoSwitch;
 @property (nonatomic, retain) NSMutableDictionary* tracksAndLocations;
 @property (nonatomic, retain) NSMutableArray* trackNames;
 @property (nonatomic, retain) NSMutableArray* trackLocations;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView* spinner;
 
 - (IBAction)recordOrStop:(id)sender;
-- (IBAction)switchChanged:(id)sender;
+//- (IBAction)switchChanged:(id)sender;
 
 @end

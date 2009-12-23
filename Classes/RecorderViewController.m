@@ -12,7 +12,7 @@
 @synthesize recorder;
 @synthesize recordButton;
 @synthesize locationController;
-@synthesize geoSwitch;
+@synthesize spinner;
 @synthesize tracksAndLocations;
 @synthesize trackNames;
 @synthesize trackLocations;
@@ -53,8 +53,8 @@
 		[[NSFileManager defaultManager] createDirectoryAtPath:plistFilePath attributes:nil];
 	}
 	
-	recordEnabled = [[UIImage imageNamed:@"RecordEnabled.png"] retain];
-	recordPressed = [[UIImage imageNamed:@"RecordPressed.png"] retain];
+	recordEnabled = [[[UIImage imageNamed:@"RecordEnabled.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
+	recordPressed = [[[UIImage imageNamed:@"RecordPressed.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	
 	[recordButton setImage:recordEnabled forState:UIControlStateNormal];
 	
@@ -112,7 +112,7 @@
 	self.recorder = nil;
 	self.recordButton = nil;
 	self.locationController = nil;
-	self.geoSwitch = nil;
+	self.spinner = nil;
 	self.tracksAndLocations = nil;
 	self.trackNames = nil;
 	self.trackLocations = nil;
@@ -123,14 +123,14 @@
 	[recorder release];
 	[recordButton release];
 	[locationController release];
-	[geoSwitch release];
+	[spinner release];
 	[tracksAndLocations release];
 	[trackNames release];
 	[tracksAndLocations release];
     [super dealloc];
 }
 
-- (IBAction)switchChanged:(id)sender
+/*- (IBAction)switchChanged:(id)sender
 {
 	geoSwitch = sender;
 	if (geoSwitch.on) {
@@ -140,7 +140,7 @@
 		NSLog(@"geoSwitch is off");
 	}
 
-}
+}*/
 
 #pragma mark -
 #pragma mark LocationControllerDelegate Methods
@@ -188,9 +188,7 @@
 	if (!recording) {
 		
 		// start updating location
-		if (geoSwitch.on) {
-			[locationController.locationManager startUpdatingLocation];
-		}
+		[locationController.locationManager startUpdatingLocation];
 		
 		[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:nil];
 		
@@ -240,11 +238,13 @@
 		[recordButton setImage:recordPressed forState:UIControlStateNormal];
 		
 		recording = YES;
+		[spinner startAnimating];
 	}
 	else {
 		
 		[recorder stop];
 		recording = NO;
+		[spinner stopAnimating];
 		self.recorder = nil;
 		
 		//[recordButton setTitle:@"Record" forState:UIControlStateNormal];
