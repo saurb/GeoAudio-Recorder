@@ -14,6 +14,11 @@
 @implementation TracksTableViewController
 @synthesize tracks;
 
+- (IBAction)toggleEdit:(id)sender
+{
+	[self.tableView setEditing:!self.tableView.editing animated:YES];
+}
+
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -67,8 +72,20 @@
 	
 	NSString* audioPath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"audio"] retain];
 	NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:audioPath error:nil];
+	NSLog(@"%@", files);
+	NSMutableArray* array = [[NSMutableArray alloc] initWithCapacity:[files count]];
+	[array addObjectsFromArray:files];
+	self.tracks = array;
+	[array release];
 	
-	self.tracks = files;
+	UIBarButtonItem* editButton = [[UIBarButtonItem alloc]
+								   initWithTitle:@"Delete"
+								   style:UIBarButtonItemStyleBordered
+								   target:self
+								   action:@selector(toggleEdit:)];
+	self.navigationItem.rightBarButtonItem = editButton;
+	[editButton release];
+	
 	[super viewDidLoad];
 }
 
@@ -116,7 +133,7 @@
 	NSUInteger row = [indexPath row];
 	NSString* rowString = [tracks objectAtIndex:row];
 	cell.textLabel.text = rowString;
-	cell.textLabel.font = [UIFont systemFontOfSize:13.0];
+	cell.textLabel.font = [UIFont systemFontOfSize:16.0];
 	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 	
     return cell;
@@ -167,6 +184,36 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	}
 
 	[self.navigationController pushViewController:trackDetailViewController animated:YES];
+}
+
+- (void)tableView:(UITableView*)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath*)indexPath
+{
+	NSUInteger row = [indexPath row];
+	
+	NSString* selectedTrack = [[self.tracks objectAtIndex:row] retain];
+	
+	// get the according plist & audio file
+	NSArray* array = [selectedTrack componentsSeparatedByString:@"."];
+	NSString* fileName = [array objectAtIndex:0];
+	NSString* audioPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"audio", fileName, @"caf"] retain];
+	NSString* plistPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"plist", fileName, @"plist" ] retain];
+	// delete those files
+	if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath] && [[NSFileManager defaultManager] fileExistsAtPath:audioPath]) {
+		[[NSFileManager defaultManager] removeItemAtPath:audioPath error:nil];
+		[[NSFileManager defaultManager] removeItemAtPath:plistPath error:nil];
+	}
+	else {
+		NSLog(@"file doesn't exist to delete");
+	}
+
+	
+	[self.tracks removeObjectAtIndex:row];
+	[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+					 withRowAnimation:UITableViewRowAnimationFade];
+	
+		
 }
 
 

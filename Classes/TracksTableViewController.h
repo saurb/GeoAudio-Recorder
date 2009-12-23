@@ -14,10 +14,13 @@
 
 @interface TracksTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
 	IBOutlet UITableView* tracksTableView;
-	NSArray* tracks;
+	NSMutableArray* tracks;
 	TrackDetailViewController* trackDetailViewController;
 
 }
 
-@property (nonatomic, retain) NSArray* tracks;
+@property (nonatomic, retain) NSMutableArray* tracks;
+
+- (IBAction)toggleEdit:(id)sender;
+
 @end
