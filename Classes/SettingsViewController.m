@@ -100,6 +100,14 @@
 	if (filterToSet != previousFilter) {
 		[LocationController sharedInstance].locationManager.distanceFilter = filterToSet;
 	}
+	
+	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"!" 
+													message:@"Your new settings have been saved." 
+												   delegate:nil 
+										  cancelButtonTitle:@"OK" 
+										  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
 }
 
 // Toggles the "enabled" state all of the controls associated with the filter value
