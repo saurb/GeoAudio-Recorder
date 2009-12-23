@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>17</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RecorderViewController.m</string>
+								<string>SettingsViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RecorderViewController.m</string>
+										<string>SettingsViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>281EDFC410E2A6CF0079F967</string>
+										<string>281EDFF910E2BE950079F967</string>
 										<key>history</key>
 										<array>
 											<string>28D3B76010DD3FD900C96A80</string>
@@ -349,14 +349,17 @@
 											<string>28B0308510E1958E0034A0C8</string>
 											<string>2810562110E1E6DF00F100D6</string>
 											<string>2810562210E1E6DF00F100D6</string>
-											<string>281EDFB410E2A5780079F967</string>
 											<string>281EDFB510E2A5780079F967</string>
-											<string>281EDFB610E2A5780079F967</string>
-											<string>281EDFB710E2A5780079F967</string>
 											<string>281EDFB910E2A5780079F967</string>
 											<string>281EDFBA10E2A5780079F967</string>
-											<string>281EDFC010E2A6C60079F967</string>
-											<string>281EDFC110E2A6C60079F967</string>
+											<string>281EDFDE10E2B84B0079F967</string>
+											<string>281EDFE010E2B84B0079F967</string>
+											<string>281EDFE110E2B84B0079F967</string>
+											<string>281EDFE210E2B84B0079F967</string>
+											<string>281EDFE310E2B84B0079F967</string>
+											<string>281EDFE410E2B84B0079F967</string>
+											<string>281EDFEE10E2BDE10079F967</string>
+											<string>281EDFF610E2BE1F0079F967</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -581,7 +584,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LocationController.m</string>
+								<string>SettingsViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

@@ -21,7 +21,7 @@ static LocationController* sharedCLDelegate = nil;
 	if (self != nil) {
 		self.locationManager = [[[CLLocationManager alloc] init] autorelease];
 		self.locationManager.delegate = self;
-		//self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+		self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	}
 	return self;
 }
