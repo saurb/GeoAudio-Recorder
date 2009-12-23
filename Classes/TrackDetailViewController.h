@@ -24,14 +24,12 @@
 	
 	// for map
 	IBOutlet MKMapView* mapView;
-	IBOutlet UILabel* trackTitle;
 	NSString* message;
 	NSArray* locations;
 	LocationAnnotation* locationAnnotation;
 }
 
 @property (nonatomic, retain) AVAudioPlayer* audioPlayer;
-@property (nonatomic, retain) IBOutlet UILabel* trackTitle;
 @property (nonatomic, retain) NSString* message;
 @property (nonatomic, retain) NSArray* locations;
 @property (nonatomic, retain) IBOutlet UIButton* playButton;

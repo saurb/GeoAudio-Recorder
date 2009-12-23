@@ -72,7 +72,6 @@
 	
 	NSString* audioPath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"audio"] retain];
 	NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:audioPath error:nil];
-	NSLog(@"%@", files);
 	NSMutableArray* array = [[NSMutableArray alloc] initWithCapacity:[files count]];
 	[array addObjectsFromArray:files];
 	self.tracks = array;
@@ -163,11 +162,12 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 		trackDetailViewController = [[TrackDetailViewController alloc] initWithNibName:@"TrackDetailViewController" bundle:nil];
 	}
 	
-	trackDetailViewController.title = @"Detailed Info";
+	//trackDetailViewController.title = @"Detailed Info";
 	
 	NSUInteger row = [indexPath row];
 	NSString* selectedTrack = [[tracks objectAtIndex:row] retain];
 	//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
+	trackDetailViewController.title = selectedTrack;
 	trackDetailViewController.message = selectedTrack;
 	[selectedTrack release];
 	//[detailMessage release];

@@ -11,7 +11,6 @@
 
 @implementation TrackDetailViewController
 @synthesize audioPlayer;
-@synthesize trackTitle;
 @synthesize message;
 @synthesize locations;
 @synthesize playButton;
@@ -45,7 +44,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	trackTitle.text = message;
 	
 	playBtnBG = [[[UIImage imageNamed:@"play.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	pauseBtnBG = [[[UIImage imageNamed:@"pause.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
@@ -97,7 +95,6 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
-	self.trackTitle = nil;
 	self.locations = nil;
 	self.audioPlayer = nil;
 	self.playButton = nil;
@@ -108,7 +105,6 @@
 
 - (void)dealloc {
 	[audioPlayer release];
-	[trackTitle release];
 	[message release];
 	[locations release];
 	[playButton release];
