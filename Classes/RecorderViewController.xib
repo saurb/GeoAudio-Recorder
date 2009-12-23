@@ -57,7 +57,7 @@
 					<object class="IBUIImageView" id="214657849">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{55, 246}, {215, 91}}</string>
+						<string key="NSFrame">{{55, 314}, {215, 92}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -71,7 +71,7 @@
 					<object class="IBUIActivityIndicatorView" id="649527050">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{149, 301}, {20, 20}}</string>
+						<string key="NSFrame">{{150, 371}, {20, 20}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -81,7 +81,7 @@
 					<object class="IBUIButton" id="389996866">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{139, 354}, {40, 42}}</string>
+						<string key="NSFrame">{{140, 279}, {40, 42}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -112,15 +112,15 @@
 					<object class="IBUILabel" id="417487142">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{47, 253}, {223, 77}}</string>
+						<string key="NSFrame">{{47, 321}, {223, 77}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="IBUIText"/>
 						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">16</double>
+							<string key="NSName">BankGothic-Medium</string>
+							<double key="NSSize">18</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<object class="NSColor" key="IBUITextColor">
@@ -205,9 +205,9 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="846699526"/>
 							<reference ref="214657849"/>
-							<reference ref="389996866"/>
 							<reference ref="649527050"/>
 							<reference ref="417487142"/>
+							<reference ref="389996866"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>

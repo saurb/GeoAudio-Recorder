@@ -274,8 +274,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>31</integer>
-									<integer>17</integer>
+									<integer>5</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28B0309010E1966A0034A0C8</string>
+										<string>28B030A110E19C440034A0C8</string>
 										<key>history</key>
 										<array>
 											<string>28D3B76010DD3FD900C96A80</string>
@@ -356,7 +356,7 @@
 											<string>28B0306210E193E60034A0C8</string>
 											<string>28B0308510E1958E0034A0C8</string>
 											<string>28B0308610E1958E0034A0C8</string>
-											<string>28B0303D10E18E060034A0C8</string>
+											<string>28B030A010E19C440034A0C8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -556,10 +556,10 @@
 	<array>
 		<string>28B02EE010E140EE0034A0C8</string>
 		<string>28B02ED810E140C40034A0C8</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>28E76F7D10DAE34F0025C0D1</string>
 		<string>/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio Recorder.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>2 106 1440 769 0 0 1440 878 </string>
@@ -943,7 +943,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

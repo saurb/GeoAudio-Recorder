@@ -2949,6 +2949,76 @@
 		vrLen = 922;
 		vrLoc = 7169;
 	};
+	28B0309310E199AE0034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 16";
+		rLen = 0;
+		rLoc = 337;
+		rType = 0;
+		vrLen = 585;
+		vrLoc = 196;
+	};
+	28B0309510E199B00034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 233";
+		rLen = 0;
+		rLoc = 7301;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 7169;
+	};
+	28B0309B10E19BB10034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 16";
+		rLen = 0;
+		rLoc = 337;
+		rType = 0;
+		vrLen = 585;
+		vrLoc = 196;
+	};
+	28B0309C10E19BB50034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 233";
+		rLen = 0;
+		rLoc = 7301;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 7169;
+	};
+	28B030A010E19C440034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 233";
+		rLen = 0;
+		rLoc = 7301;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 7169;
+	};
+	28B030A110E19C440034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 257";
+		rLen = 0;
+		rLoc = 8073;
+		rType = 0;
+		vrLen = 956;
+		vrLoc = 7302;
+	};
+	28B030A210E19C5D0034A0C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */;
+		name = "RecorderViewController.m: 16";
+		rLen = 0;
+		rLoc = 337;
+		rType = 0;
+		vrLen = 585;
+		vrLoc = 196;
+	};
 	28C1AEED10E0167C00DBBB55 /* LocationAnnotation.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1171, 413}}";
@@ -3208,17 +3278,17 @@
 	};
 	28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 702}}";
+			sepNavIntBoundsRect = "{{0, 0}, {936, 702}}";
 			sepNavSelRange = "{1478, 0}";
-			sepNavVisRange = "{560, 997}";
+			sepNavVisRange = "{540, 1023}";
 			sepNavWindowFrame = "{{15, 295}, {972, 578}}";
 		};
 	};
 	28E76F7010DAE3420025C0D1 /* RecorderViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 3549}}";
-			sepNavSelRange = "{7301, 0}";
-			sepNavVisRange = "{7169, 922}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 3640}}";
+			sepNavSelRange = "{337, 0}";
+			sepNavVisRange = "{196, 585}";
 		};
 	};
 	28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */ = {
@@ -3612,6 +3682,13 @@
 			28B0308B10E195FF0034A0C8 /* PBXTextBookmark */ = 28B0308B10E195FF0034A0C8 /* PBXTextBookmark */;
 			28B0308F10E196630034A0C8 /* PBXTextBookmark */ = 28B0308F10E196630034A0C8 /* PBXTextBookmark */;
 			28B0309010E1966A0034A0C8 /* PBXTextBookmark */ = 28B0309010E1966A0034A0C8 /* PBXTextBookmark */;
+			28B0309310E199AE0034A0C8 /* PBXTextBookmark */ = 28B0309310E199AE0034A0C8 /* PBXTextBookmark */;
+			28B0309510E199B00034A0C8 /* PBXTextBookmark */ = 28B0309510E199B00034A0C8 /* PBXTextBookmark */;
+			28B0309B10E19BB10034A0C8 /* PBXTextBookmark */ = 28B0309B10E19BB10034A0C8 /* PBXTextBookmark */;
+			28B0309C10E19BB50034A0C8 /* PBXTextBookmark */ = 28B0309C10E19BB50034A0C8 /* PBXTextBookmark */;
+			28B030A010E19C440034A0C8 /* PBXTextBookmark */ = 28B030A010E19C440034A0C8 /* PBXTextBookmark */;
+			28B030A110E19C440034A0C8 /* PBXTextBookmark */ = 28B030A110E19C440034A0C8 /* PBXTextBookmark */;
+			28B030A210E19C5D0034A0C8 /* PBXTextBookmark */ = 28B030A210E19C5D0034A0C8 /* PBXTextBookmark */;
 			28C1AFB410E03F7D00DBBB55 = 28C1AFB410E03F7D00DBBB55 /* PBXTextBookmark */;
 			28C1AFBC10E03FBD00DBBB55 = 28C1AFBC10E03FBD00DBBB55 /* PBXTextBookmark */;
 			28C1AFC210E03FCF00DBBB55 = 28C1AFC210E03FCF00DBBB55 /* PBXTextBookmark */;

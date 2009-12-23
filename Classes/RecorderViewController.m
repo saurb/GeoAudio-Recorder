@@ -254,6 +254,7 @@
 		[[AVAudioSession sharedInstance] setActive:NO error:nil];
 		
 		[locationController.locationManager stopUpdatingLocation];
+		locationLabel.text = @""; // clear label
 		NSLog(@"locationManager stopped.");
 		
 		// save to plist
