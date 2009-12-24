@@ -13,7 +13,6 @@
     UIWindow *window;
 	UITabBarController* rootController;
 	TracksNavController* tracksNavController;
-	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

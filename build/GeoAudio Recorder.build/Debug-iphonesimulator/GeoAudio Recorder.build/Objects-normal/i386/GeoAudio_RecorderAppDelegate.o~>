@@ -1,7 +1,1 @@
-In file included from /Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/GeoAudio_RecorderAppDelegate.m:10:
-/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/TracksNavController.h:12: error: cannot find interface declaration for 'UINavigationViewController', superclass of 'TracksNavController'
-/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/GeoAudio_RecorderAppDelegate.m: In function '-[GeoAudio_RecorderAppDelegate dealloc]':
-/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/GeoAudio_RecorderAppDelegate.m:27: warning: 'TracksNavController' may not respond to '-release'
-/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/GeoAudio_RecorderAppDelegate.m:27: warning: (Messages without a matching method signature
-/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/GeoAudio_RecorderAppDelegate.m:27: warning: will be assumed to return 'id' and accept
-/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/GeoAudio_RecorderAppDelegate.m:27: warning: '...' as arguments.)
+/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/GeoAudio_RecorderAppDelegate.h:12: warning: 'recordQuality' defined but not used

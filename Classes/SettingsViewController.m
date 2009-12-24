@@ -8,6 +8,8 @@
 
 #import "SettingsViewController.h"
 
+#define kSwitchesSegmentIndex 0
+
 
 @implementation SettingsViewController
 
@@ -41,6 +43,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+// set up global variable
+BOOL recordQuality;
+
++ (BOOL)recordQuality { return recordQuality; }
++ (void)setRecordQuality:(BOOL)new
+{
+	recordQuality = new;
+}
 
 - (void)viewDidLoad
 {
@@ -159,6 +170,19 @@
 	[self updateSliderLabel];
 	[self setFilterControlsEnabled:[distanceFilterSwitch isOn]];
 }	
+
+- (IBAction)toggleQuality:(id)sender
+{
+	if ([sender selectedSegmentIndex] == kSwitchesSegmentIndex) {
+		
+		recordQuality = NO;
+	}
+	else {
+		
+		recordQuality = YES;
+	}
+
+}
 
 
 

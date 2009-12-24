@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "LocationController.h"
+#import "RecorderViewController.h"
+
+extern BOOL recordQuality; //global variable
 
 @interface SettingsViewController : UIViewController {
 	
@@ -37,6 +40,7 @@
 - (IBAction)doneButtonPressed:(id)sender;
 - (IBAction)switchAction:(id)sender;
 - (IBAction)sliderValueChanged:(id)sender;
+- (IBAction)toggleQuality:(id)sender;
 - (void)setControlStatesFromSource:(LocationController *)clDelegate;
 
 @end

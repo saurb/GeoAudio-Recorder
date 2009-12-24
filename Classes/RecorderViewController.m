@@ -9,6 +9,7 @@
 #import "RecorderViewController.h"
 
 @implementation RecorderViewController
+
 @synthesize recorder;
 @synthesize recordButton;
 @synthesize spinner;
@@ -197,8 +198,7 @@
 #pragma mark -
 #pragma mark recorder methods
 - (IBAction)recordOrStop:(id)sender
-{
-	
+{	
 	if (!recording) {
 		
 		// start updating location
@@ -208,10 +208,26 @@
 		
 		NSMutableDictionary* recordSetting = [[NSMutableDictionary alloc] init];
 		
-		[recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
-		[recordSetting setValue:[NSNumber numberWithInt:kAudioFormatAppleLossless] forKey:AVFormatIDKey];
-		[recordSetting setValue:[NSNumber numberWithInt:2] forKey:AVNumberOfChannelsKey];
-		[recordSetting setValue:[NSNumber numberWithInt:AVAudioQualityMax] forKey:AVEncoderAudioQualityKey];
+		if (recordQuality == NO) {
+			[recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
+			[recordSetting setValue:[NSNumber numberWithInt:kAudioFormatAppleLossless] forKey:AVFormatIDKey];
+			[recordSetting setValue:[NSNumber numberWithInt:2] forKey:AVNumberOfChannelsKey];
+			[recordSetting setValue:[NSNumber numberWithInt:AVAudioQualityMax] forKey:AVEncoderAudioQualityKey];
+			NSLog(@"quality normal");
+		}
+		else {
+			[recordSetting setValue :[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
+			[recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey]; 
+			[recordSetting setValue:[NSNumber numberWithInt: 2] forKey:AVNumberOfChannelsKey];
+			
+			[recordSetting setValue :[NSNumber numberWithInt:16] forKey:AVLinearPCMBitDepthKey];
+			[recordSetting setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsBigEndianKey];
+			[recordSetting setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsFloatKey];
+			NSLog(@"quality best");
+			
+		}
+
+		
 		
 		// create a new dated file
 		NSDate* now = [NSDate dateWithTimeIntervalSinceNow:0];
