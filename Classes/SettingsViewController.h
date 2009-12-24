@@ -21,6 +21,7 @@ extern BOOL recordQuality; //global variable
 	IBOutlet UILabel *distanceFilterSliderLabel2;
 	IBOutlet UILabel *distanceFilterSliderLabel3;
 	IBOutlet UILabel *distanceFilterSliderLabel4;
+	IBOutlet UILabel* recordQualityLabel;
 	
 	NSArray* filterControls;
 	
@@ -35,6 +36,7 @@ extern BOOL recordQuality; //global variable
 @property (nonatomic, retain) UILabel *distanceFilterSliderLabel2;
 @property (nonatomic, retain) UILabel *distanceFilterSliderLabel3;
 @property (nonatomic, retain) UILabel *distanceFilterSliderLabel4;
+@property (nonatomic, retain) UILabel* recordQualityLabel;
 @property (nonatomic, retain) NSArray *filterControls;
 
 - (IBAction)doneButtonPressed:(id)sender;

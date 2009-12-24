@@ -84,7 +84,7 @@
 		fRef = 281EDFCF10E2B3FF0079F967 /* SettingsViewController.h */;
 		name = "SettingsViewController.h: 26";
 		rLen = 0;
-		rLoc = 753;
+		rLoc = 792;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 403;
@@ -94,7 +94,7 @@
 		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
 		name = "SettingsViewController.m: 59";
 		rLen = 0;
-		rLoc = 2029;
+		rLoc = 2101;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 4182;
@@ -186,16 +186,16 @@
 	};
 	281EDFCF10E2B3FF0079F967 /* SettingsViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 702}}";
-			sepNavSelRange = "{160, 0}";
-			sepNavVisRange = "{0, 702}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 637}}";
+			sepNavSelRange = "{1309, 0}";
+			sepNavVisRange = "{672, 929}";
 		};
 	};
 	281EDFD010E2B3FF0079F967 /* SettingsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 2561}}";
-			sepNavSelRange = "{1389, 0}";
-			sepNavVisRange = "{1067, 741}";
+			sepNavIntBoundsRect = "{{0, 0}, {1356, 2496}}";
+			sepNavSelRange = "{5699, 0}";
+			sepNavVisRange = "{5156, 793}";
 		};
 	};
 	281EDFDE10E2B84B0079F967 /* PBXBookmark */ = {
@@ -336,7 +336,7 @@
 		fRef = 281EDFCF10E2B3FF0079F967 /* SettingsViewController.h */;
 		name = "SettingsViewController.h: 40";
 		rLen = 0;
-		rLoc = 1427;
+		rLoc = 1525;
 		rType = 0;
 		vrLen = 972;
 		vrLoc = 450;
@@ -654,7 +654,7 @@
 		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 177;
+		rLoc = 183;
 		rType = 1;
 	};
 	28BDCB6610E3D4CC00454F19 /* PBXTextBookmark */ = {
@@ -662,7 +662,7 @@
 		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
 		name = "SettingsViewController.m: 169";
 		rLen = 0;
-		rLoc = 5670;
+		rLoc = 5805;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 5404;
@@ -702,7 +702,7 @@
 		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
 		name = "SettingsViewController.m: 181";
 		rLen = 0;
-		rLoc = 5727;
+		rLoc = 5901;
 		rType = 0;
 		vrLen = 722;
 		vrLoc = 4995;
@@ -742,7 +742,7 @@
 		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
 		name = "SettingsViewController.m: 177";
 		rLen = 0;
-		rLoc = 5670;
+		rLoc = 5805;
 		rType = 0;
 		vrLen = 552;
 		vrLoc = 5128;
@@ -782,7 +782,7 @@
 		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
 		name = "SettingsViewController.m: 177";
 		rLen = 0;
-		rLoc = 5670;
+		rLoc = 5805;
 		rType = 0;
 		vrLen = 552;
 		vrLoc = 5128;
@@ -802,7 +802,7 @@
 		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
 		name = "SettingsViewController.m: 47";
 		rLen = 0;
-		rLoc = 1389;
+		rLoc = 1421;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 1067;
@@ -826,6 +826,56 @@
 		rType = 0;
 		vrLen = 702;
 		vrLoc = 0;
+	};
+	28BDCB8710E3DD5900454F19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 281EDFCF10E2B3FF0079F967 /* SettingsViewController.h */;
+		name = "SettingsViewController.h: 39";
+		rLen = 0;
+		rLoc = 1309;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 672;
+	};
+	28BDCB8810E3DD5900454F19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
+		name = "SettingsViewController.m: 47";
+		rLen = 0;
+		rLoc = 1421;
+		rType = 0;
+		vrLen = 739;
+		vrLoc = 1067;
+	};
+	28BDCB8910E3DD5900454F19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
+		name = "SettingsViewController.m: 189";
+		rLen = 0;
+		rLoc = 5939;
+		rType = 0;
+		vrLen = 793;
+		vrLoc = 5156;
+	};
+	28BDCB8D10E3DDDC00454F19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
+		name = "SettingsViewController.m: 183";
+		rLen = 0;
+		rLoc = 5805;
+		rType = 0;
+		vrLen = 849;
+		vrLoc = 4888;
+	};
+	28BDCB8E10E3DDDE00454F19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */;
+		name = "SettingsViewController.m: 178";
+		rLen = 0;
+		rLoc = 5699;
+		rType = 0;
+		vrLen = 793;
+		vrLoc = 5156;
 	};
 	28C1AEED10E0167C00DBBB55 /* LocationAnnotation.h */ = {
 		uiCtxt = {
@@ -1129,6 +1179,11 @@
 			28BDCB8210E3DB7A00454F19 /* PBXTextBookmark */ = 28BDCB8210E3DB7A00454F19 /* PBXTextBookmark */;
 			28BDCB8310E3DB7A00454F19 /* PBXTextBookmark */ = 28BDCB8310E3DB7A00454F19 /* PBXTextBookmark */;
 			28BDCB8410E3DB7A00454F19 /* PBXTextBookmark */ = 28BDCB8410E3DB7A00454F19 /* PBXTextBookmark */;
+			28BDCB8710E3DD5900454F19 /* PBXTextBookmark */ = 28BDCB8710E3DD5900454F19 /* PBXTextBookmark */;
+			28BDCB8810E3DD5900454F19 /* PBXTextBookmark */ = 28BDCB8810E3DD5900454F19 /* PBXTextBookmark */;
+			28BDCB8910E3DD5900454F19 /* PBXTextBookmark */ = 28BDCB8910E3DD5900454F19 /* PBXTextBookmark */;
+			28BDCB8D10E3DDDC00454F19 /* PBXTextBookmark */ = 28BDCB8D10E3DDDC00454F19 /* PBXTextBookmark */;
+			28BDCB8E10E3DDDE00454F19 /* PBXTextBookmark */ = 28BDCB8E10E3DDDE00454F19 /* PBXTextBookmark */;
 			28C1B06710E098A900DBBB55 = 28C1B06710E098A900DBBB55 /* PBXBookmark */;
 			28C1B06810E098A900DBBB55 = 28C1B06810E098A900DBBB55 /* PBXBookmark */;
 			28C1B06A10E098A900DBBB55 = 28C1B06A10E098A900DBBB55 /* PBXBookmark */;

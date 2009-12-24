@@ -17,6 +17,7 @@
 @synthesize distanceFilterSlider;
 @synthesize distanceFilterValueLabel;
 @synthesize distanceFilterSliderLabel1, distanceFilterSliderLabel2, distanceFilterSliderLabel3, distanceFilterSliderLabel4;
+@synthesize recordQualityLabel;
 @synthesize filterControls;
 
 /*
@@ -67,6 +68,8 @@ BOOL recordQuality;
 {
 	// Set up the controls to the right initial values, based on the current state of the CoreLocation object
 	[self setControlStatesFromSource:[LocationController sharedInstance]];
+	
+	recordQualityLabel.text = @"Normal";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,6 +89,7 @@ BOOL recordQuality;
 	self.distanceFilterSliderLabel2 = nil;
 	self.distanceFilterSliderLabel3 = nil;
 	self.distanceFilterSliderLabel4 = nil;
+	self.recordQualityLabel = nil;
 	self.filterControls = nil;
 }
 
@@ -98,6 +102,7 @@ BOOL recordQuality;
 	[distanceFilterSliderLabel2 release];
 	[distanceFilterSliderLabel3 release];
 	[distanceFilterSliderLabel4 release];
+	[recordQualityLabel release];
     
 	[filterControls release];
 	
@@ -176,10 +181,12 @@ BOOL recordQuality;
 	if ([sender selectedSegmentIndex] == kSwitchesSegmentIndex) {
 		
 		recordQuality = NO;
+		recordQualityLabel.text = @"Normal";
 	}
 	else {
 		
 		recordQuality = YES;
+		recordQualityLabel.text = @"Best";
 	}
 
 }
