@@ -94,6 +94,7 @@
 	locationController.delegate = self;*/
 	// set up for location manager
 	[LocationController sharedInstance].delegate = self;
+	
 	// Check to see if the user has disabled location services all together
     // In that case, we just print a message and disable the "Start" button
     if ( ! [LocationController sharedInstance].locationManager.locationServicesEnabled ) {

@@ -1,7 +1,7 @@
 TGeoAudio Recorder
 v7
 r0
-t283296332.698847
+t283328054.743182
 cCheck dependencies
 cProcessInfoPlistFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/Info.plist" GeoAudio_Recorder-Info.plist
 cCompileXIB "/Users/JJ/Git Projects/GeoAudio-Recorder/MainWindow.xib"
@@ -165,8 +165,8 @@ s4358
 i"LocationController.h"
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.h
-c000000004B326F4500000000000005DF
-t1261596485
+c000000004B330C7600000000000005DF
+t1261636726
 s1503
 i<UIKit/UIKit.h>
 i<AVFoundation/AVFoundation.h>
@@ -174,9 +174,9 @@ i<CoreAudio/CoreAudioTypes.h>
 i"LocationController.h"
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m
-c000000004B326F450000000000002458
-t1261596485
-s9304
+c000000004B330475000000000000245A
+t1261634677
+s9306
 i"RecorderViewController.h"
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.xib
@@ -192,9 +192,9 @@ i<UIKit/UIKit.h>
 i"LocationController.h"
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m
-c000000004B328ACC00000000000014F7
-t1261603532
-s5367
+c000000004B328B660000000000001506
+t1261603686
+s5382
 i"SettingsViewController.h"
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.xib
@@ -303,11 +303,11 @@ t1261525016
 s130627
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app
-t1261603532
+t1261634678
 s952
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM
-t1261603532
+t1261634678
 s102
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/104-index-cards.png
@@ -319,7 +319,7 @@ t2
 s0
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder
-t1261603532
+t1261634678
 s73484
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/Info.plist
@@ -444,12 +444,12 @@ t1261600953
 s30636
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/RecorderViewController.o
-t1261596485
+t1261634677
 s62208
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/SettingsViewController.o
-t1261603532
-s51560
+t1261603687
+s51576
 
 N/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/ThirdLevelViewController.o
 t1261151216
@@ -806,7 +806,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies283296332#283296332#0(0"0(0#1#0"4300882208#0"0#
+lSLF07#2@18"Check dependencies283328054#283328054#0(0"0(0#1#0"4300882208#0"0#
 
 CCompileC "build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/AudioPlayer.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/AudioPlayer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s283197636.003721
@@ -874,8 +874,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/JJ/Git Projects/GeoAudio-Recorder/Classes/LocationController.m283293753#283293753#0(0"0(0#0#69"/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/LocationController.m4300882208#2137"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-generated-files.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-own-target-headers.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-all-target-headers.hmap" -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-project-headers.hmap" "-F/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/include" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources/i386" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources" -include /var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-aexruonlwqmbargwvjtsfecdchje/GeoAudio_Recorder_Prefix.pch -c "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/LocationController.m" -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/LocationController.o"0#
 
 CCompileC "build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/RecorderViewController.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s283289285.430236
-e283289285.594281
+s283327477.734986
+e283327477.989441
 r1
 xCompileC
 xbuild/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/RecorderViewController.o
@@ -884,7 +884,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m283289285#283289285#0(0"0(0#0#73"/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m4300882208#2145"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-generated-files.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-own-target-headers.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-all-target-headers.hmap" -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-project-headers.hmap" "-F/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/include" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources/i386" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources" -include /var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-aexruonlwqmbargwvjtsfecdchje/GeoAudio_Recorder_Prefix.pch -c "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m" -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/RecorderViewController.o"0#
+lSLF07#2@81"Compile /Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m283327477#283327477#0(0"0(0#0#73"/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m4300882208#2145"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-generated-files.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-own-target-headers.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-all-target-headers.hmap" -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-project-headers.hmap" "-F/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/include" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources/i386" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources" -include /var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-aexruonlwqmbargwvjtsfecdchje/GeoAudio_Recorder_Prefix.pch -c "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/RecorderViewController.m" -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/RecorderViewController.o"0#
 
 CCompileC "build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/RecorderViewController.o" "/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/RecorderViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s282801447.234859
@@ -913,8 +913,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/SecondLevelViewController.m282801373#282801373#0(0"0(0#0#78"/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/SecondLevelViewController.m4300882208#2173"    cd "/Users/JJ/Xcode Projects/GeoAudio Recorder"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-generated-files.hmap" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-own-target-headers.hmap" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-all-target-headers.hmap" -iquote "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-project-headers.hmap" "-F/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/include" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources/i386" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources" -include /var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-bcmqljmmhgitqvcgtqbemdtjxbnf/GeoAudio_Recorder_Prefix.pch -c "/Users/JJ/Xcode Projects/GeoAudio Recorder/Classes/SecondLevelViewController.m" -o "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/SecondLevelViewController.o"0#
 
 CCompileC "build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/SettingsViewController.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s283296332.371905
-e283296332.647043
+s283296486.872562
+e283296487.073243
 r1
 xCompileC
 xbuild/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/SettingsViewController.o
@@ -923,7 +923,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m283296332#283296332#0(0"0(0#0#73"/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m4300882208#2145"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-generated-files.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-own-target-headers.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-all-target-headers.hmap" -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-project-headers.hmap" "-F/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/include" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources/i386" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources" -include /var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-aexruonlwqmbargwvjtsfecdchje/GeoAudio_Recorder_Prefix.pch -c "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m" -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/SettingsViewController.o"0#
+lSLF07#2@81"Compile /Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m283296486#283296487#0(0"0(0#0#73"/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m4300882208#2145"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-generated-files.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-own-target-headers.hmap" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-all-target-headers.hmap" -iquote "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-project-headers.hmap" "-F/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/include" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources/i386" "-I/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources" -include /var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-aexruonlwqmbargwvjtsfecdchje/GeoAudio_Recorder_Prefix.pch -c "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m" -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/SettingsViewController.o"0#
 
 CCompileC "build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/ThirdLevelViewController.o" "/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/ThirdLevelViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s282844016.664372
@@ -1288,13 +1288,13 @@ xtracks.png
 lSLF07#2@15"Copy tracks.png282894525#282894525#0(0"0(0#0#51"/Users/JJ/Git Projects/GeoAudio-Recorder/tracks.png4300882208#476"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/JJ/Git Projects/GeoAudio-Recorder/tracks.png" "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app"0#
 
 CGenerateDSYMFile "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM" "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder"
-s283296332.672767
-e283296332.696105
+s283327478.013593
+e283327478.035968
 r1
 xGenerateDSYMFile
 x/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM
 x/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder
-lSLF07#2@143"GenerateDSYMFile "build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM" "build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder"283296332#283296332#0(0"0(0#0#108"/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder4300882208#425"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder" -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM"0#
+lSLF07#2@143"GenerateDSYMFile "build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM" "build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder"283327478#283327478#0(0"0(0#0#108"/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder4300882208#425"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder" -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM"0#
 
 CGenerateDSYMFile "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM" "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder"
 s282805298.734568
@@ -1306,14 +1306,14 @@ x/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/GeoAudio
 lSLF07#2@143"GenerateDSYMFile "build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM" "build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder"282805298#282805298#0(0"0(0#0#110"/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder4300882208#431"    cd "/Users/JJ/Xcode Projects/GeoAudio Recorder"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder" -o "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app.dSYM"0#
 
 CLd "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder" normal i386
-s283296332.647128
-e283296332.672672
+s283327477.989531
+e283327478.013493
 r1
 xLd
 x/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder
 xnormal
 xi386
-lSLF07#2@113"Link /Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder283296332#283296332#0(0"0(0#0#0"4300882208#998"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk "-L/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" "-F/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" -filelist "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/GeoAudio Recorder.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -framework CoreLocation -framework MapKit -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder"0#
+lSLF07#2@113"Link /Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder283327477#283327478#0(0"0(0#0#0"4300882208#998"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk "-L/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" "-F/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator" -filelist "/Users/JJ/Git Projects/GeoAudio-Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/Objects-normal/i386/GeoAudio Recorder.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -framework CoreLocation -framework MapKit -o "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder"0#
 
 CLd "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app/GeoAudio Recorder" normal i386
 s282805298.711812
@@ -1364,12 +1364,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@39"Precompile GeoAudio_Recorder_Prefix.pch282780583#282780583#0(0"0(0#0#71"/Users/JJ/Xcode Projects/GeoAudio Recorder/GeoAudio_Recorder_Prefix.pch4300882208#1999"    cd "/Users/JJ/Xcode Projects/GeoAudio Recorder"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-generated-files.hmap" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-own-target-headers.hmap" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-all-target-headers.hmap" -iquote "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/GeoAudio Recorder-project-headers.hmap" "-F/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/include" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources/i386" "-I/Users/JJ/Xcode Projects/GeoAudio Recorder/build/GeoAudio Recorder.build/Debug-iphonesimulator/GeoAudio Recorder.build/DerivedSources" -c "/Users/JJ/Xcode Projects/GeoAudio Recorder/GeoAudio_Recorder_Prefix.pch" -o /var/folders/uz/uzahD1HWFmikNK0aGzROaU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GeoAudio_Recorder_Prefix-bcmqljmmhgitqvcgtqbemdtjxbnf/GeoAudio_Recorder_Prefix.pch.gch0#
 
 CTouch "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app"
-s283296332.696194
-e283296332.698815
+s283327478.036052
+e283327478.038511
 r1
 xTouch
 x/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app
-lSLF07#2@96"Touch /Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app283296332#283296332#0(0"0(0#0#0"4300882208#296"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app"0#
+lSLF07#2@96"Touch /Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app283327478#283327478#0(0"0(0#0#0"4300882208#296"    cd "/Users/JJ/Git Projects/GeoAudio-Recorder"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/JJ/Git Projects/GeoAudio-Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app"0#
 
 CTouch "/Users/JJ/Xcode Projects/GeoAudio Recorder/build/Debug-iphonesimulator/GeoAudio Recorder.app"
 s282806501.872166

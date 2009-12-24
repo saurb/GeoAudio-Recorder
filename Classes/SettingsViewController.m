@@ -101,7 +101,7 @@
 		[LocationController sharedInstance].locationManager.distanceFilter = filterToSet;
 	}
 	
-	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"!" 
+	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Settings Changed" 
 													message:@"Your new settings have been saved." 
 												   delegate:nil 
 										  cancelButtonTitle:@"OK" 
