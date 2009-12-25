@@ -39,6 +39,7 @@ extern BOOL recordQuality; //global variable
 @property (nonatomic, retain) UILabel* recordQualityLabel;
 @property (nonatomic, retain) NSArray *filterControls;
 
+
 - (IBAction)doneButtonPressed:(id)sender;
 - (IBAction)switchAction:(id)sender;
 - (IBAction)sliderValueChanged:(id)sender;

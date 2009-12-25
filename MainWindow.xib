@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="16"/>
+			<integer value="35"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -52,19 +52,38 @@
 			<object class="IBUITabBarController" id="764279193">
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-				<object class="IBUIViewController" key="IBUISelectedViewController" id="855922344">
-					<string key="IBUITitle">Settings</string>
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="32569794">
-						<string key="IBUITitle">Settings</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="933307326">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="293482278">
+						<string key="IBUITitle">Tracks</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">settings.png</string>
+							<string key="NSResourceName">tracks.png</string>
 						</object>
 						<reference key="IBUITabBar"/>
 					</object>
 					<reference key="IBUIToolbarItems" ref="0"/>
 					<reference key="IBUIParentViewController" ref="764279193"/>
-					<string key="IBUINibName">SettingsViewController</string>
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="739217973">
+						<nil key="NSNextResponder"/>
+						<int key="NSvFlags">256</int>
+						<string key="NSFrameSize">{320, 44}</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<bool key="IBUIMultipleTouchEnabled">YES</bool>
+						<int key="IBUIBarStyle">1</int>
+					</object>
+					<object class="NSMutableArray" key="IBUIViewControllers">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="IBUIViewController" id="675308363">
+							<reference key="IBUIToolbarItems" ref="0"/>
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="979431457">
+								<reference key="IBUINavigationBar"/>
+								<string key="IBUITitle">Item</string>
+							</object>
+							<reference key="IBUIParentViewController" ref="933307326"/>
+							<string key="IBUINibName">TrackTableView</string>
+						</object>
+					</object>
 				</object>
 				<object class="NSMutableArray" key="IBUIViewControllers">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -80,43 +99,21 @@
 						<reference key="IBUIParentViewController" ref="764279193"/>
 						<string key="IBUINibName">RecorderViewController</string>
 					</object>
-					<object class="IBUINavigationController" id="933307326">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="293482278">
-							<string key="IBUITitle">Tracks</string>
+					<reference ref="933307326"/>
+					<object class="IBUIViewController" id="855922344">
+						<string key="IBUITitle">Settings</string>
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="32569794">
+							<string key="IBUITitle">Settings</string>
 							<object class="NSCustomResource" key="IBUIImage">
 								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">tracks.png</string>
+								<string key="NSResourceName">settings.png</string>
 							</object>
 							<reference key="IBUITabBar"/>
 						</object>
 						<reference key="IBUIToolbarItems" ref="0"/>
 						<reference key="IBUIParentViewController" ref="764279193"/>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="739217973">
-							<nil key="NSNextResponder"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrameSize">{320, 44}</string>
-							<bool key="IBUIOpaque">NO</bool>
-							<bool key="IBUIClipsSubviews">YES</bool>
-							<bool key="IBUIMultipleTouchEnabled">YES</bool>
-							<int key="IBUIBarStyle">1</int>
-							<object class="NSColor" key="IBUITintColor">
-								<int key="NSColorSpace">1</int>
-								<bytes key="NSRGB">MCAwLjI1MDk4MDQwNyAwLjUwMTk2MDgxNAA</bytes>
-							</object>
-						</object>
-						<object class="NSMutableArray" key="IBUIViewControllers">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIViewController" id="675308363">
-								<reference key="IBUIToolbarItems" ref="0"/>
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="979431457">
-									<string key="IBUITitle">Item</string>
-								</object>
-								<reference key="IBUIParentViewController" ref="933307326"/>
-								<string key="IBUINibName">TrackTableView</string>
-							</object>
-						</object>
+						<string key="IBUINibName">SettingsViewController</string>
 					</object>
-					<reference ref="855922344"/>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="452162585">
 					<nil key="NSNextResponder"/>
@@ -417,9 +414,11 @@
 							<string>doneButtonPressed:</string>
 							<string>sliderValueChanged:</string>
 							<string>switchAction:</string>
+							<string>toggleQuality:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -436,6 +435,7 @@
 							<string>distanceFilterSliderLabel4</string>
 							<string>distanceFilterSwitch</string>
 							<string>distanceFilterValueLabel</string>
+							<string>recordQualityLabel</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -445,6 +445,7 @@
 							<string>UILabel</string>
 							<string>UILabel</string>
 							<string>UISwitch</string>
+							<string>UILabel</string>
 							<string>UILabel</string>
 						</object>
 					</object>

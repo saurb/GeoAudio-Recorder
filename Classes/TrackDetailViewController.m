@@ -16,6 +16,10 @@
 @synthesize playButton;
 @synthesize ffwButton;
 @synthesize rewButton;
+@synthesize progressBar;
+@synthesize currentTime;
+@synthesize duration;
+@synthesize updateTimer;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -42,12 +46,21 @@
 }
 */
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidLoad
 {
+	self.duration.adjustsFontSizeToFitWidth = YES;
+	self.currentTime.adjustsFontSizeToFitWidth = YES;
+	self.progressBar.minimumValue = 0.0;
+	
+	updateTimer = nil;
 	
 	playBtnBG = [[[UIImage imageNamed:@"play.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	pauseBtnBG = [[[UIImage imageNamed:@"pause.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	[playButton setImage:playBtnBG forState:UIControlStateNormal];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
 	
 	NSString* filePath = [[NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", message] retain];
 	NSURL* fileURL = [[[NSURL alloc] initFileURLWithPath:filePath] retain];
@@ -56,6 +69,10 @@
 	[newPlayer release];
 	[audioPlayer prepareToPlay];
 	[audioPlayer setDelegate:self];
+	
+	// update player info
+	self.duration.text = [NSString stringWithFormat:@"%d:%02d", (int)self.audioPlayer.duration / 60, (int)self.audioPlayer.duration % 60, nil];
+	self.progressBar.maximumValue = self.audioPlayer.duration;
 	
 	MKCoordinateRegion region;
 	MKCoordinateSpan span;
@@ -100,6 +117,9 @@
 	self.playButton = nil;
 	self.ffwButton = nil;
 	self.rewButton = nil;
+	self.progressBar = nil;
+	self.currentTime = nil;
+	self.duration = nil;
 }
 
 
@@ -110,6 +130,9 @@
 	[playButton release];
 	[ffwButton release];
 	[rewButton release];
+	[progressBar release];
+	[currentTime release];
+	[duration release];
     [super dealloc];
 }
 
@@ -131,12 +154,38 @@
 		[self.playButton setImage:playBtnBG forState:UIControlStateHighlighted];
 		[self.playButton setImage:playBtnBG forState:UIControlStateNormal];
 		[self.audioPlayer pause];
+		self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(updateCurrentTime) userInfo:self.audioPlayer repeats:YES];
 	}
 	else {
 		[self.playButton setImage:pauseBtnBG forState:UIControlStateHighlighted];
 		[self.playButton setImage:pauseBtnBG forState:UIControlStateNormal];
 		[self.audioPlayer play];
+		[self updateViewForPlayerState];
 	}
+
+}
+
+- (void)updateCurrentTime
+{
+	self.currentTime.text = [NSString stringWithFormat:@"%d:%02d", (int)self.audioPlayer.currentTime / 60, (int)self.audioPlayer.currentTime % 60, nil];
+	self.progressBar.value = self.audioPlayer.currentTime;
+}
+
+- (void)updateViewForPlayerState
+{
+	[self updateCurrentTime];
+	
+	if (self.updateTimer) {
+		[self.updateTimer invalidate];
+	}
+	
+	if (self.audioPlayer.playing) {
+		self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(updateCurrentTime) userInfo:self.audioPlayer repeats:YES];
+	}
+	else {
+		self.updateTimer = nil;
+	}
+
 
 }
 
@@ -148,9 +197,11 @@
 		[self.playButton setImage:playBtnBG forState:UIControlStateHighlighted];
 		[self.playButton setImage:playBtnBG forState:UIControlStateNormal];
 		[self.audioPlayer stop];
+		self.progressBar.value = self.audioPlayer.duration;
 	}
 	else {
 		self.audioPlayer.currentTime = time;
+		self.progressBar.value = time;
 		[self.audioPlayer play];
 	}
 
@@ -159,17 +210,25 @@
 - (IBAction)rewButtonPressed:(UIButton*)sender
 {
 	NSTimeInterval time = self.audioPlayer.currentTime;
-	time -= 3.0;
+	time -= 2.0;
 	if (time < 0) {
 		[self.playButton setImage:playBtnBG forState:UIControlStateHighlighted];
 		[self.playButton setImage:playBtnBG forState:UIControlStateNormal];
 		[self.audioPlayer stop];
+		self.progressBar.value = 0;
 	}
 	else {
 		self.audioPlayer.currentTime = time;
+		self.progressBar.value = time;
 		[self.audioPlayer play];
 	}
 
+}
+
+- (IBAction)progressSliderMoved:(UISlider *)sender
+{
+	self.audioPlayer.currentTime = sender.value;
+	[self updateCurrentTime];
 }
 
 #pragma mark -
@@ -178,6 +237,7 @@
                         successfully: (BOOL) completed {
     if (completed == YES) {
         [self.playButton setImage: playBtnBG forState: UIControlStateNormal];
+		[self.audioPlayer setCurrentTime:0.];
     }
 }
 

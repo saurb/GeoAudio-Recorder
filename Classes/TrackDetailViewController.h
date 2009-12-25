@@ -22,6 +22,13 @@
 	IBOutlet UIButton* rewButton;
 	UIImage* playBtnBG, * pauseBtnBG;
 	
+	IBOutlet UISlider* progressBar;
+	IBOutlet UILabel* currentTime;
+	IBOutlet UILabel* duration;
+	
+	NSTimer* updateTimer;
+
+	
 	// for map
 	IBOutlet MKMapView* mapView;
 	NSString* message;
@@ -35,8 +42,13 @@
 @property (nonatomic, retain) IBOutlet UIButton* playButton;
 @property (nonatomic, retain) IBOutlet UIButton* ffwButton;
 @property (nonatomic, retain) IBOutlet UIButton* rewButton;
+@property (nonatomic, retain) UISlider*	progressBar;
+@property (nonatomic, retain) UILabel*	currentTime;
+@property (nonatomic, retain) UILabel*	duration;
+@property (nonatomic, retain) NSTimer* updateTimer;
 
 - (IBAction)playButtonPressed:(UIButton*)sender;
 - (IBAction)ffwButtonPressed:(UIButton*)sender;
 - (IBAction)rewButtonPressed:(UIButton*)sender;
+- (IBAction)progressSliderMoved:(UISlider *)sender;
 @end
