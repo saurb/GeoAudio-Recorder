@@ -20,6 +20,7 @@
     // Override point for customization after application launch
 	[window addSubview:rootController.view];
     [window makeKeyAndVisible];
+	application.idleTimerDisabled = YES;
 }
 
 

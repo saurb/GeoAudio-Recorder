@@ -36,6 +36,8 @@
 		28D304CC10DB3669002E43EC /* TracksNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D304CA10DB3669002E43EC /* TracksNavController.xib */; };
 		28D304DE10DB38B7002E43EC /* TracksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D304DD10DB38B7002E43EC /* TracksTableViewController.m */; };
 		28D304ED10DB3BF4002E43EC /* TrackTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D304EC10DB3BF4002E43EC /* TrackTableView.xib */; };
+		28D9BD9910E53CD8003ADC71 /* cassette.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D9BD9810E53CD8003ADC71 /* cassette.png */; };
+		28D9BDAA10E54252003ADC71 /* tape.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D9BDA910E54252003ADC71 /* tape.png */; };
 		28E76F7210DAE3420025C0D1 /* RecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E76F7010DAE3420025C0D1 /* RecorderViewController.m */; };
 		28E76F7310DAE3420025C0D1 /* RecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E76F7110DAE3420025C0D1 /* RecorderViewController.xib */; };
 		28E76F9D10DAE8970025C0D1 /* disclosureButtonControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */; };
@@ -78,6 +80,8 @@
 		28D304DC10DB38B7002E43EC /* TracksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksTableViewController.h; sourceTree = "<group>"; };
 		28D304DD10DB38B7002E43EC /* TracksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksTableViewController.m; sourceTree = "<group>"; };
 		28D304EC10DB3BF4002E43EC /* TrackTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackTableView.xib; sourceTree = "<group>"; };
+		28D9BD9810E53CD8003ADC71 /* cassette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cassette.png; sourceTree = "<group>"; };
+		28D9BDA910E54252003ADC71 /* tape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tape.png; sourceTree = "<group>"; };
 		28E76F6F10DAE3420025C0D1 /* RecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderViewController.h; sourceTree = "<group>"; };
 		28E76F7010DAE3420025C0D1 /* RecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderViewController.m; sourceTree = "<group>"; };
 		28E76F7110DAE3420025C0D1 /* RecorderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RecorderViewController.xib; path = Classes/RecorderViewController.xib; sourceTree = "<group>"; };
@@ -184,7 +188,9 @@
 			children = (
 				28C1B05E10E0988800DBBB55 /* images */,
 				28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */,
+				28D9BD9810E53CD8003ADC71 /* cassette.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				28D9BDA910E54252003ADC71 /* tape.png */,
 				281EDFD110E2B3FF0079F967 /* SettingsViewController.xib */,
 				28E76F7110DAE3420025C0D1 /* RecorderViewController.xib */,
 				28D304CA10DB3669002E43EC /* TracksNavController.xib */,
@@ -265,6 +271,8 @@
 				28B0305B10E193310034A0C8 /* locationwindow.png in Resources */,
 				281EDFC710E2B3320079F967 /* settings.png in Resources */,
 				281EDFD310E2B3FF0079F967 /* SettingsViewController.xib in Resources */,
+				28D9BD9910E53CD8003ADC71 /* cassette.png in Resources */,
+				28D9BDAA10E54252003ADC71 /* tape.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
