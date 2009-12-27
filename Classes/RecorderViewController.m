@@ -16,7 +16,8 @@
 @synthesize tracksAndLocations;
 @synthesize trackNames;
 @synthesize trackLocations;
-
+@synthesize timer;
+@synthesize updateTimer;
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -39,6 +40,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+	self.updateTimer = nil;
 	
 	// create a audio folder
 	audioFilePath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"audio"] retain];
@@ -132,6 +134,8 @@
 	self.tracksAndLocations = nil;
 	self.trackNames = nil;
 	self.trackLocations = nil;
+	self.timer = nil;
+	self.updateTimer = nil;
 }
 
 
@@ -142,6 +146,8 @@
 	[tracksAndLocations release];
 	[trackNames release];
 	[tracksAndLocations release];
+	[timer release];
+	[updateTimer release];
     [super dealloc];
 }
 
@@ -263,6 +269,8 @@
 		// start recording
 		[recorder record];
 		
+		self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(updateCurrentTime) userInfo:self.recorder repeats:YES];
+		
 		//[recordButton setTitle:@"Stop" forState:UIControlStateNormal];
 		//[recordButton setTitle:@"Stop" forState:UIControlStateHighlighted];
 		[recordButton setImage:recordPressed forState:UIControlStateNormal];
@@ -274,6 +282,7 @@
 		
 		[recorder stop];
 		recording = NO;
+		self.updateTimer = nil;
 		[spinner stopAnimating];
 		self.recorder = nil;
 		
@@ -303,6 +312,11 @@
 		[plistName release];
 	}
 
+}
+
+- (void)updateCurrentTime
+{
+	self.timer.text = [NSString stringWithFormat:@"%02d:%02d", (int)self.recorder.currentTime / 60, (int)self.recorder.currentTime % 60, nil];
 }
 
 

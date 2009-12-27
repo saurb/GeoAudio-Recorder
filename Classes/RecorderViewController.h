@@ -27,6 +27,8 @@
 	BOOL recording;
 	IBOutlet UIButton* recordButton;
 	UIImage* recordEnabled, *recordPressed;
+	IBOutlet UILabel* timer;
+	NSTimer* updateTimer;
 	
 	// for location
 	// LocationController* locationController; // try to use singleton object
@@ -46,6 +48,8 @@
 @property (nonatomic, retain) NSMutableArray* trackNames;
 @property (nonatomic, retain) NSMutableArray* trackLocations;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView* spinner;
+@property (nonatomic, retain) IBOutlet UILabel* timer;
+@property (nonatomic, retain) NSTimer* updateTimer;
 
 - (IBAction)recordOrStop:(id)sender;
 //- (IBAction)switchChanged:(id)sender;
