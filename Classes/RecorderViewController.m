@@ -316,7 +316,7 @@
 
 - (void)updateCurrentTime
 {
-	self.timer.text = [NSString stringWithFormat:@"%02d:%02d", (int)self.recorder.currentTime / 60, (int)self.recorder.currentTime % 60, nil];
+	self.timer.text = [NSString stringWithFormat:@"%02d:%02d:%02d", (int)self.recorder.currentTime / 3600, (int)((int)self.recorder.currentTime % 3600 / 60), (int)((int)self.recorder.currentTime % 3600 % 60), nil];
 }
 
 

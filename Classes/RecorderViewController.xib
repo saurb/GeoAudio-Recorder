@@ -69,7 +69,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">stopwatch.png</string>
+							<string key="NSResourceName">clock.png</string>
 						</object>
 					</object>
 					<object class="IBUIActivityIndicatorView" id="649527050">
@@ -116,12 +116,12 @@
 					<object class="IBUILabel" id="897046984">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{90, 82}, {198, 69}}</string>
+						<string key="NSFrame">{{96, 82}, {198, 69}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">00:00</string>
+						<string key="IBUIText">00:00:00</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">BankGothic-Medium</string>
 							<double key="NSSize">48</double>
@@ -140,7 +140,7 @@
 					<object class="IBUILabel" id="417487142">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{65, 159}, {223, 77}}</string>
+						<string key="NSFrame">{{71, 159}, {223, 77}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="825472024"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -178,7 +178,7 @@
 					<object class="IBUIImageView" id="370877928">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{28, 174}, {35, 37}}</string>
+						<string key="NSFrame">{{24, 174}, {43, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -186,7 +186,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">radar.png</string>
+							<string key="NSResourceName">world.png</string>
 						</object>
 					</object>
 				</object>
@@ -267,11 +267,11 @@
 							<reference ref="649527050"/>
 							<reference ref="389996866"/>
 							<reference ref="1030260584"/>
-							<reference ref="417487142"/>
-							<reference ref="897046984"/>
 							<reference ref="32795913"/>
 							<reference ref="214657849"/>
 							<reference ref="370877928"/>
+							<reference ref="897046984"/>
+							<reference ref="417487142"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
