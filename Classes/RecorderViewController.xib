@@ -43,7 +43,7 @@
 					<object class="IBUIImageView" id="214657849">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{-91, -80}, {502, 491}}</string>
+						<string key="NSFrame">{{-91, 29}, {502, 491}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="825472024">
 							<int key="NSColorSpace">3</int>
@@ -55,7 +55,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">window.png</string>
+							<string key="NSResourceName">windowwithmap.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="32795913">
@@ -70,6 +70,20 @@
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">clock.png</string>
+						</object>
+					</object>
+					<object class="IBUIImageView" id="370877928">
+						<reference key="NSNextResponder" ref="191373211"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{24, 179}, {43, 37}}</string>
+						<reference key="NSSuperview" ref="191373211"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+						<int key="IBUIContentMode">4</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">world.png</string>
 						</object>
 					</object>
 					<object class="IBUIActivityIndicatorView" id="649527050">
@@ -175,20 +189,6 @@
 							</object>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="370877928">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{24, 179}, {43, 37}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">world.png</string>
-						</object>
-					</object>
 				</object>
 				<string key="NSFrameSize">{320, 411}</string>
 				<reference key="NSSuperview"/>
@@ -271,10 +271,10 @@
 							<reference ref="389996866"/>
 							<reference ref="1030260584"/>
 							<reference ref="32795913"/>
-							<reference ref="214657849"/>
-							<reference ref="370877928"/>
 							<reference ref="897046984"/>
 							<reference ref="417487142"/>
+							<reference ref="214657849"/>
+							<reference ref="370877928"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
