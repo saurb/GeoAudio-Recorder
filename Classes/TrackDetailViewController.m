@@ -70,7 +70,8 @@
 	[audioPlayer prepareToPlay];
 	[audioPlayer setDelegate:self];
 	
-	// update player info
+	// update player info 
+	//TODO: what if file exceeds in minutes?
 	self.duration.text = [NSString stringWithFormat:@"%d:%02d", (int)self.audioPlayer.duration / 60, (int)self.audioPlayer.duration % 60, nil];
 	self.progressBar.maximumValue = self.audioPlayer.duration;
 	
@@ -165,6 +166,7 @@
 
 }
 
+// TODO:exceeds minutes?
 - (void)updateCurrentTime
 {
 	self.currentTime.text = [NSString stringWithFormat:@"%d:%02d", (int)self.audioPlayer.currentTime / 60, (int)self.audioPlayer.currentTime % 60, nil];
