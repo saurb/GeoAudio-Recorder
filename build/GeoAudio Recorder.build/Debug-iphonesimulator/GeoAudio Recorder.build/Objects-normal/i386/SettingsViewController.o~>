@@ -1,6 +1,0 @@
-/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m:197: warning: property 'progressBar' requires method '-progressBar' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m:197: warning: property 'progressBar' requires the method 'setProgressBar:' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m:197: warning: property 'currentTime' requires method '-currentTime' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m:197: warning: property 'currentTime' requires the method 'setCurrentTime:' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m:197: warning: property 'duration' requires method '-duration' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/SettingsViewController.m:197: warning: property 'duration' requires the method 'setDuration:' to be defined - use @synthesize, @dynamic or provide a method implementation

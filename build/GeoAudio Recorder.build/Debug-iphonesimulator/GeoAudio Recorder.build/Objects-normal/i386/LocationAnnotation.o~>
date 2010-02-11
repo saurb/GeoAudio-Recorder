@@ -1,2 +1,0 @@
-/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/LocationAnnotation.m:23: warning: property 'subTitle' requires method '-subTitle' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/JJ/Git Projects/GeoAudio-Recorder/Classes/LocationAnnotation.m:23: warning: property 'subTitle' requires the method 'setSubTitle:' to be defined - use @synthesize, @dynamic or provide a method implementation
