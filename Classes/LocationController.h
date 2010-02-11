@@ -21,6 +21,7 @@
 	
 	CLLocationManager* locationManager;
 	CLLocation* location;
+	NSDate* locationManagerStartDate;
 	id delegate;
 
 }
@@ -28,7 +29,9 @@
 @property (nonatomic, retain) CLLocationManager* locationManager;
 @property (nonatomic, retain) CLLocation* location;
 @property (nonatomic, assign) id <LocationControllerDelegate> delegate;
+@property (nonatomic, retain) NSDate* locationManagerStartDate;
 
 + (LocationController*)sharedInstance;
+- (BOOL)isValidLocation:(CLLocation *)newLocation withOldLocation:(CLLocation *)oldLocation;
 
 @end

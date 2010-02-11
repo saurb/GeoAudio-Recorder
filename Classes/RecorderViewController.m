@@ -209,6 +209,7 @@
 		
 		// start updating location
 		[[LocationController sharedInstance].locationManager startUpdatingLocation];
+		[LocationController sharedInstance].locationManagerStartDate = [[NSDate date] retain]; // for the bad location filter
 		
 		[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:nil];
 		

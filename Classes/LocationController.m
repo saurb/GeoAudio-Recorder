@@ -14,6 +14,7 @@ static LocationController* sharedCLDelegate = nil;
 @synthesize locationManager;
 @synthesize location;
 @synthesize delegate;
+@synthesize locationManagerStartDate;
 
 - (id)init
 {
@@ -22,6 +23,7 @@ static LocationController* sharedCLDelegate = nil;
 		self.locationManager = [[[CLLocationManager alloc] init] autorelease];
 		self.locationManager.delegate = self;
 		self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+		self.locationManagerStartDate = [[NSDate date] retain];
 	}
 	return self;
 }
@@ -31,6 +33,7 @@ static LocationController* sharedCLDelegate = nil;
 	[self.locationManager release];
 	[self.location release];
 	[self.delegate release];
+	[self.locationManagerStartDate release];
 	[super dealloc];
 }
 
@@ -41,7 +44,12 @@ static LocationController* sharedCLDelegate = nil;
 	didUpdateToLocation:(CLLocation*)newLocation
 		   fromLocation:(CLLocation*)oldLocation
 {
-	[self.delegate locationUpdate:newLocation];
+	BOOL isLocationGood = [self isValidLocation:newLocation
+								withOldLocation:oldLocation];
+	
+	if (isLocationGood) {
+		[self.delegate locationUpdate:newLocation];
+	}
 	
 	if (location == nil) {
 		self.location = newLocation;
@@ -107,6 +115,46 @@ static LocationController* sharedCLDelegate = nil;
 										  otherButtonTitles:nil];
 	[alert show];
 	[alert release];
+}
+
+#pragma mark -
+#pragma mark Bad Location Filter Methods
+
+- (BOOL)isValidLocation:(CLLocation *)newLocation
+		withOldLocation:(CLLocation *)oldLocation
+{
+    // Filter out nil locations
+    if (!newLocation)
+    {
+        return NO;
+    }
+    
+    // Filter out points by invalid accuracy
+    if (newLocation.horizontalAccuracy < 0)
+    {
+        return NO;
+    }
+    
+    // Filter out points that are out of order
+    NSTimeInterval secondsSinceLastPoint =
+	[newLocation.timestamp timeIntervalSinceDate:oldLocation.timestamp];
+    
+    if (secondsSinceLastPoint < 0)
+    {
+        return NO;
+    }
+    
+    // Filter out points created before the manager was initialized
+    NSTimeInterval secondsSinceManagerStarted =
+	[newLocation.timestamp timeIntervalSinceDate:locationManagerStartDate];
+    
+    if (secondsSinceManagerStarted < 0)
+    {
+        return NO;
+    }
+    
+    // The newLocation is good to use
+    return YES;
 }
 
 #pragma mark -
