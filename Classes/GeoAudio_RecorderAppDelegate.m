@@ -17,14 +17,18 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 
-    // Override point for customization after application launch
+    
+	// Override point for customization after application launch
 	[window addSubview:rootController.view];
     [window makeKeyAndVisible];
 	application.idleTimerDisabled = YES;
+	
 }
 
 
+
 - (void)dealloc {
+	
 	[tracksNavController release];
 	[rootController release];
     [window release];

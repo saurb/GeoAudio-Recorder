@@ -13,12 +13,12 @@
     UIWindow *window;
 	UITabBarController* rootController;
 	TracksNavController* tracksNavController;
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController* rootController;
 @property (nonatomic, retain) IBOutlet TracksNavController* tracksNavController;
-
 
 @end
 
