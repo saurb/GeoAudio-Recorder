@@ -23,6 +23,12 @@
 		284E63A5115C23D200CA0ED9 /* SoundwalksNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E63A3115C23D200CA0ED9 /* SoundwalksNavController.m */; };
 		284E63A6115C23D200CA0ED9 /* SoundwalksNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284E63A4115C23D200CA0ED9 /* SoundwalksNavController.xib */; };
 		284E63BA115C290100CA0ED9 /* disk.png in Resources */ = {isa = PBXBuildFile; fileRef = 284E63B9115C290100CA0ED9 /* disk.png */; };
+		284E63CC115C2ADB00CA0ED9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E63C1115C2ADB00CA0ED9 /* NSObject+SBJSON.m */; };
+		284E63CD115C2ADB00CA0ED9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E63C3115C2ADB00CA0ED9 /* NSString+SBJSON.m */; };
+		284E63CE115C2ADB00CA0ED9 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E63C5115C2ADB00CA0ED9 /* SBJSON.m */; };
+		284E63CF115C2ADB00CA0ED9 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E63C7115C2ADB00CA0ED9 /* SBJsonBase.m */; };
+		284E63D0115C2ADB00CA0ED9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E63C9115C2ADB00CA0ED9 /* SBJsonParser.m */; };
+		284E63D1115C2ADB00CA0ED9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E63CB115C2ADB00CA0ED9 /* SBJsonWriter.m */; };
 		2868292210E811760043FB61 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2868292110E811760043FB61 /* clock.png */; };
 		2868292510E811AA0043FB61 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = 2868292410E811AA0043FB61 /* world.png */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -75,6 +81,19 @@
 		284E63A3115C23D200CA0ED9 /* SoundwalksNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundwalksNavController.m; sourceTree = "<group>"; };
 		284E63A4115C23D200CA0ED9 /* SoundwalksNavController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SoundwalksNavController.xib; path = Classes/SoundwalksNavController.xib; sourceTree = "<group>"; };
 		284E63B9115C290100CA0ED9 /* disk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disk.png; sourceTree = "<group>"; };
+		284E63BF115C2ADB00CA0ED9 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		284E63C0115C2ADB00CA0ED9 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		284E63C1115C2ADB00CA0ED9 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		284E63C2115C2ADB00CA0ED9 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		284E63C3115C2ADB00CA0ED9 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		284E63C4115C2ADB00CA0ED9 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		284E63C5115C2ADB00CA0ED9 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		284E63C6115C2ADB00CA0ED9 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		284E63C7115C2ADB00CA0ED9 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		284E63C8115C2ADB00CA0ED9 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		284E63C9115C2ADB00CA0ED9 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		284E63CA115C2ADB00CA0ED9 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		284E63CB115C2ADB00CA0ED9 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		2868292110E811760043FB61 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		2868292410E811AA0043FB61 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +152,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				284E63BE115C2ADB00CA0ED9 /* JSON */,
 				284E635F115C1A3100CA0ED9 /* Soundwalks.org */,
 				280C3875114FFA8700CA0EFD /* Recorder */,
 			);
@@ -179,6 +199,26 @@
 				284E63A3115C23D200CA0ED9 /* SoundwalksNavController.m */,
 			);
 			name = Soundwalks.org;
+			sourceTree = "<group>";
+		};
+		284E63BE115C2ADB00CA0ED9 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				284E63BF115C2ADB00CA0ED9 /* JSON.h */,
+				284E63C0115C2ADB00CA0ED9 /* NSObject+SBJSON.h */,
+				284E63C1115C2ADB00CA0ED9 /* NSObject+SBJSON.m */,
+				284E63C2115C2ADB00CA0ED9 /* NSString+SBJSON.h */,
+				284E63C3115C2ADB00CA0ED9 /* NSString+SBJSON.m */,
+				284E63C4115C2ADB00CA0ED9 /* SBJSON.h */,
+				284E63C5115C2ADB00CA0ED9 /* SBJSON.m */,
+				284E63C6115C2ADB00CA0ED9 /* SBJsonBase.h */,
+				284E63C7115C2ADB00CA0ED9 /* SBJsonBase.m */,
+				284E63C8115C2ADB00CA0ED9 /* SBJsonParser.h */,
+				284E63C9115C2ADB00CA0ED9 /* SBJsonParser.m */,
+				284E63CA115C2ADB00CA0ED9 /* SBJsonWriter.h */,
+				284E63CB115C2ADB00CA0ED9 /* SBJsonWriter.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		28C1B05E10E0988800DBBB55 /* images */ = {
@@ -348,6 +388,12 @@
 				281EDFD210E2B3FF0079F967 /* SettingsViewController.m in Sources */,
 				284E6373115C1B9D00CA0ED9 /* SoundwalksTableViewController.m in Sources */,
 				284E63A5115C23D200CA0ED9 /* SoundwalksNavController.m in Sources */,
+				284E63CC115C2ADB00CA0ED9 /* NSObject+SBJSON.m in Sources */,
+				284E63CD115C2ADB00CA0ED9 /* NSString+SBJSON.m in Sources */,
+				284E63CE115C2ADB00CA0ED9 /* SBJSON.m in Sources */,
+				284E63CF115C2ADB00CA0ED9 /* SBJsonBase.m in Sources */,
+				284E63D0115C2ADB00CA0ED9 /* SBJsonParser.m in Sources */,
+				284E63D1115C2ADB00CA0ED9 /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
