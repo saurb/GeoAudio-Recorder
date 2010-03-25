@@ -8,12 +8,14 @@
 
 #import "GeoAudio_RecorderAppDelegate.h"
 #import "TracksNavController.h"
+#import "SoundwalksNavController.h"
 
 @implementation GeoAudio_RecorderAppDelegate
 
 @synthesize window;
 @synthesize rootController;
 @synthesize tracksNavController;
+@synthesize soundwalksNavController;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 
@@ -30,6 +32,7 @@
 - (void)dealloc {
 	
 	[tracksNavController release];
+	[soundwalksNavController release];
 	[rootController release];
     [window release];
     [super dealloc];

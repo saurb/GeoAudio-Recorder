@@ -18,6 +18,11 @@
 		281EDFC710E2B3320079F967 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 281EDFC610E2B3320079F967 /* settings.png */; };
 		281EDFD210E2B3FF0079F967 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281EDFD010E2B3FF0079F967 /* SettingsViewController.m */; };
 		281EDFD310E2B3FF0079F967 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281EDFD110E2B3FF0079F967 /* SettingsViewController.xib */; };
+		284E6373115C1B9D00CA0ED9 /* SoundwalksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E6372115C1B9D00CA0ED9 /* SoundwalksTableViewController.m */; };
+		284E6375115C1BD600CA0ED9 /* SoundwalksTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284E6374115C1BD600CA0ED9 /* SoundwalksTableView.xib */; };
+		284E63A5115C23D200CA0ED9 /* SoundwalksNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E63A3115C23D200CA0ED9 /* SoundwalksNavController.m */; };
+		284E63A6115C23D200CA0ED9 /* SoundwalksNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284E63A4115C23D200CA0ED9 /* SoundwalksNavController.xib */; };
+		284E63BA115C290100CA0ED9 /* disk.png in Resources */ = {isa = PBXBuildFile; fileRef = 284E63B9115C290100CA0ED9 /* disk.png */; };
 		2868292210E811760043FB61 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2868292110E811760043FB61 /* clock.png */; };
 		2868292510E811AA0043FB61 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = 2868292410E811AA0043FB61 /* world.png */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -63,6 +68,13 @@
 		281EDFCF10E2B3FF0079F967 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		281EDFD010E2B3FF0079F967 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		281EDFD110E2B3FF0079F967 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Classes/SettingsViewController.xib; sourceTree = "<group>"; };
+		284E6371115C1B9D00CA0ED9 /* SoundwalksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundwalksTableViewController.h; sourceTree = "<group>"; };
+		284E6372115C1B9D00CA0ED9 /* SoundwalksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundwalksTableViewController.m; sourceTree = "<group>"; };
+		284E6374115C1BD600CA0ED9 /* SoundwalksTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundwalksTableView.xib; sourceTree = "<group>"; };
+		284E63A2115C23D200CA0ED9 /* SoundwalksNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundwalksNavController.h; sourceTree = "<group>"; };
+		284E63A3115C23D200CA0ED9 /* SoundwalksNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundwalksNavController.m; sourceTree = "<group>"; };
+		284E63A4115C23D200CA0ED9 /* SoundwalksNavController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SoundwalksNavController.xib; path = Classes/SoundwalksNavController.xib; sourceTree = "<group>"; };
+		284E63B9115C290100CA0ED9 /* disk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disk.png; sourceTree = "<group>"; };
 		2868292110E811760043FB61 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		2868292410E811AA0043FB61 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +133,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				284E635F115C1A3100CA0ED9 /* Soundwalks.org */,
 				280C3875114FFA8700CA0EFD /* Recorder */,
 			);
 			path = Classes;
@@ -155,6 +168,17 @@
 				281EDFD010E2B3FF0079F967 /* SettingsViewController.m */,
 			);
 			name = Recorder;
+			sourceTree = "<group>";
+		};
+		284E635F115C1A3100CA0ED9 /* Soundwalks.org */ = {
+			isa = PBXGroup;
+			children = (
+				284E6371115C1B9D00CA0ED9 /* SoundwalksTableViewController.h */,
+				284E6372115C1B9D00CA0ED9 /* SoundwalksTableViewController.m */,
+				284E63A2115C23D200CA0ED9 /* SoundwalksNavController.h */,
+				284E63A3115C23D200CA0ED9 /* SoundwalksNavController.m */,
+			);
+			name = Soundwalks.org;
 			sourceTree = "<group>";
 		};
 		28C1B05E10E0988800DBBB55 /* images */ = {
@@ -206,17 +230,20 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				284E63A4115C23D200CA0ED9 /* SoundwalksNavController.xib */,
+				281EDFD110E2B3FF0079F967 /* SettingsViewController.xib */,
+				28E76F7110DAE3420025C0D1 /* RecorderViewController.xib */,
+				284E6374115C1BD600CA0ED9 /* SoundwalksTableView.xib */,
+				28D304CA10DB3669002E43EC /* TracksNavController.xib */,
+				28D304EC10DB3BF4002E43EC /* TrackTableView.xib */,
+				28B5597F10DBDCC3004D75B4 /* TrackDetailViewController.xib */,
 				28C1B05E10E0988800DBBB55 /* images */,
 				28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */,
 				28D9BD9810E53CD8003ADC71 /* cassette.png */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				284E63B9115C290100CA0ED9 /* disk.png */,
 				28D9BDA910E54252003ADC71 /* tape.png */,
-				281EDFD110E2B3FF0079F967 /* SettingsViewController.xib */,
-				28E76F7110DAE3420025C0D1 /* RecorderViewController.xib */,
-				28D304CA10DB3669002E43EC /* TracksNavController.xib */,
 				8D1107310486CEB800E47090 /* GeoAudio_Recorder-Info.plist */,
-				28D304EC10DB3BF4002E43EC /* TrackTableView.xib */,
-				28B5597F10DBDCC3004D75B4 /* TrackDetailViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -297,6 +324,9 @@
 				2868292210E811760043FB61 /* clock.png in Resources */,
 				2868292510E811AA0043FB61 /* world.png in Resources */,
 				289025D610EBC2AC00F4E72B /* windowwithmap.png in Resources */,
+				284E6375115C1BD600CA0ED9 /* SoundwalksTableView.xib in Resources */,
+				284E63A6115C23D200CA0ED9 /* SoundwalksNavController.xib in Resources */,
+				284E63BA115C290100CA0ED9 /* disk.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +346,8 @@
 				280A898310DDE9EF005CF926 /* LocationController.m in Sources */,
 				28C1AEEF10E0167C00DBBB55 /* LocationAnnotation.m in Sources */,
 				281EDFD210E2B3FF0079F967 /* SettingsViewController.m in Sources */,
+				284E6373115C1B9D00CA0ED9 /* SoundwalksTableViewController.m in Sources */,
+				284E63A5115C23D200CA0ED9 /* SoundwalksNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
