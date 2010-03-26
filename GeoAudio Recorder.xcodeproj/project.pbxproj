@@ -57,6 +57,8 @@
 		28E76F7310DAE3420025C0D1 /* RecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E76F7110DAE3420025C0D1 /* RecorderViewController.xib */; };
 		28E76F9D10DAE8970025C0D1 /* disclosureButtonControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */; };
 		28E76FAD10DAF50B0025C0D1 /* TrackDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */; };
+		28FE7CC7115D3F520022A95A /* SoundsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FE7CC6115D3F520022A95A /* SoundsTableViewController.m */; };
+		28FE7CC9115D3FAA0022A95A /* SoundsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FE7CC8115D3FAA0022A95A /* SoundsTableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +129,9 @@
 		28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosureButtonControllerIcon.png; sourceTree = "<group>"; };
 		28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackDetailViewController.h; sourceTree = "<group>"; };
 		28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackDetailViewController.m; sourceTree = "<group>"; };
+		28FE7CC5115D3F520022A95A /* SoundsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundsTableViewController.h; sourceTree = "<group>"; };
+		28FE7CC6115D3F520022A95A /* SoundsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundsTableViewController.m; sourceTree = "<group>"; };
+		28FE7CC8115D3FAA0022A95A /* SoundsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundsTableView.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* GeoAudio_Recorder_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoAudio_Recorder_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* GeoAudio_Recorder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GeoAudio_Recorder-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -197,6 +202,8 @@
 				284E6372115C1B9D00CA0ED9 /* SoundwalksTableViewController.m */,
 				284E63A2115C23D200CA0ED9 /* SoundwalksNavController.h */,
 				284E63A3115C23D200CA0ED9 /* SoundwalksNavController.m */,
+				28FE7CC5115D3F520022A95A /* SoundsTableViewController.h */,
+				28FE7CC6115D3F520022A95A /* SoundsTableViewController.m */,
 			);
 			name = Soundwalks.org;
 			sourceTree = "<group>";
@@ -278,6 +285,7 @@
 				28D304CA10DB3669002E43EC /* TracksNavController.xib */,
 				28D304EC10DB3BF4002E43EC /* TrackTableView.xib */,
 				28B5597F10DBDCC3004D75B4 /* TrackDetailViewController.xib */,
+				28FE7CC8115D3FAA0022A95A /* SoundsTableView.xib */,
 				28C1B05E10E0988800DBBB55 /* images */,
 				28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */,
 				28D9BD9810E53CD8003ADC71 /* cassette.png */,
@@ -367,6 +375,7 @@
 				284E6375115C1BD600CA0ED9 /* SoundwalksTableView.xib in Resources */,
 				284E63A6115C23D200CA0ED9 /* SoundwalksNavController.xib in Resources */,
 				284E63BA115C290100CA0ED9 /* disk.png in Resources */,
+				28FE7CC9115D3FAA0022A95A /* SoundsTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +403,7 @@
 				284E63CF115C2ADB00CA0ED9 /* SBJsonBase.m in Sources */,
 				284E63D0115C2ADB00CA0ED9 /* SBJsonParser.m in Sources */,
 				284E63D1115C2ADB00CA0ED9 /* SBJsonWriter.m in Sources */,
+				28FE7CC7115D3F520022A95A /* SoundsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

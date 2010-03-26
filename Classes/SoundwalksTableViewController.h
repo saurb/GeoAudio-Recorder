@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SoundsTableViewController;
 
 
 @interface SoundwalksTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>{
 	IBOutlet UITableView* soundwalksTableView;
 	NSMutableData* responseData;
 	NSMutableArray* soundwalkIDs;
+	SoundsTableViewController* soundsTableViewController;
 }
-@property(nonatomic, retain)NSArray* soundwalkIDs;
+@property(nonatomic, retain)NSMutableArray* soundwalkIDs;
+@property(nonatomic, retain)NSMutableData* responseData;
+@property(nonatomic, retain)SoundsTableViewController* soundsTableViewController;
 
 - (void)getSoundwalkIDs;
 @end

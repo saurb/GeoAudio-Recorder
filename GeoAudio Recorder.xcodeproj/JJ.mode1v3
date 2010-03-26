@@ -282,7 +282,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {239, 710}}</string>
+							<string>{{0, 30}, {239, 710}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28FE7CB5115D202A0022A95A</string>
+										<string>28FE7D07115D54CB0022A95A</string>
 										<key>history</key>
 										<array>
 											<string>28C1B06F10E098A900DBBB55</string>
@@ -345,17 +345,20 @@
 											<string>284E63B0115C24B100CA0ED9</string>
 											<string>284E63D4115C2B9100CA0ED9</string>
 											<string>284E63D5115C2B9100CA0ED9</string>
-											<string>28B400AE115C697C000F7420</string>
 											<string>28B400AF115C697C000F7420</string>
 											<string>28B400B0115C697C000F7420</string>
 											<string>28B400B1115C697C000F7420</string>
 											<string>28B400B2115C697C000F7420</string>
 											<string>28B400B3115C697C000F7420</string>
-											<string>28B40182115C7D79000F7420</string>
-											<string>28B401CD115C80DD000F7420</string>
-											<string>28B40283115C88BA000F7420</string>
-											<string>28FE7CB2115D1FF10022A95A</string>
-											<string>28FE7CB3115D1FF10022A95A</string>
+											<string>28FE7CCE115D3FCF0022A95A</string>
+											<string>28FE7CCF115D3FCF0022A95A</string>
+											<string>28FE7CEC115D52410022A95A</string>
+											<string>28FE7CED115D52410022A95A</string>
+											<string>28FE7CEE115D52410022A95A</string>
+											<string>28FE7CEF115D52410022A95A</string>
+											<string>28FE7D05115D54CB0022A95A</string>
+											<string>28FE7D06115D54CB0022A95A</string>
+											<string>28FE7CFC115D538B0022A95A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -580,7 +583,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>SoundwalksTableViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -597,6 +600,8 @@
 							<string>231pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
