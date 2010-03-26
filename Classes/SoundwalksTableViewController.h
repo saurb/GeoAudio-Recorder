@@ -11,7 +11,10 @@
 
 @interface SoundwalksTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>{
 	IBOutlet UITableView* soundwalksTableView;
-
+	NSMutableData* responseData;
+	NSArray* soundwalkIDs;
 }
+@property(nonatomic, retain)NSArray* soundwalkIDs;
 
+- (void)getSoundwalkIDs;
 @end
