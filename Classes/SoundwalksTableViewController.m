@@ -26,6 +26,8 @@
 
 - (void)viewDidLoad {
 	
+	soundwalkIDs = [[NSMutableArray alloc] init];
+	
 	[self getSoundwalkIDs];
 	
     [super viewDidLoad];
@@ -67,13 +69,14 @@
 	self.title = @"Latest Soundwalks";
 	
 	NSString* responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-	soundwalkIDs = [responseString JSONValue];
-	[soundwalkIDs retain]; // RETAIN IT!
+	NSArray* IDs = [responseString JSONValue];
+	[IDs retain]; // RETAIN IT!
 	
-	/*for (int i =0; i<[soundwalkIDs count]; i++) {
-		NSLog(@"%@", [soundwalkIDs objectAtIndex:i]);
-	}*/
-	
+	for (NSDictionary* ID in IDs) {
+
+		NSString* soundwalkID = [ID objectForKey:@"id"];
+		[soundwalkIDs addObject:soundwalkID];
+	}
 
 	[soundwalksTableView reloadData];
 }
@@ -135,7 +138,6 @@
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-	NSLog(@"%d",[soundwalkIDs count]);
 	 return [soundwalkIDs count];
 }
 
