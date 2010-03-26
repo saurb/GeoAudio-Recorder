@@ -12,7 +12,17 @@
 @interface SoundsTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>{
 	
 	IBOutlet UITableView* soundsTableView;
+	NSString* soundwalkID;
+	NSMutableArray* soundIDs;
+	NSString* soundsURL;
+	
+	NSMutableData* responseData;
 
 }
+@property(nonatomic, retain)NSString* soundwalkID;
+@property(nonatomic, retain)NSMutableArray* soundIDs;
+@property(nonatomic, retain)NSMutableData* responseData;
+@property(nonatomic, retain)NSString* soundsURL;
 
+- (void)getSoundIDs;
 @end

@@ -177,14 +177,15 @@
 - (void)tableView:(UITableView*)tableView
 accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 {
-	if (soundsTableViewController == nil) {
-		soundsTableViewController = [[SoundsTableViewController alloc] initWithNibName:@"SoundsTableView" bundle:nil];
-	}
+	soundsTableViewController = [[SoundsTableViewController alloc] initWithNibName:@"SoundsTableView" bundle:nil];
 	
 	soundsTableViewController.title = @"Sounds";
 	
 	NSUInteger row = [indexPath row];
-	NSString* selectedTrack = [[soundwalkIDs objectAtIndex:row] retain];
+	NSString* selectedSoundwalk = [[soundwalkIDs objectAtIndex:row] retain];
+	soundsTableViewController.soundwalkID = selectedSoundwalk;
+	soundsTableViewController.soundsURL = [NSString stringWithFormat:@"http://soundwalks.org/soundwalks/%@/sounds.json", selectedSoundwalk];
+
 	/*//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
 	trackDetailViewController.title = selectedTrack;
 	trackDetailViewController.message = selectedTrack;

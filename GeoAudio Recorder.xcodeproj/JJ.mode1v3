@@ -275,7 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>9</integer>
 									<integer>3</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SoundwalksTableViewController.m</string>
+								<string>SoundsTableViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SoundwalksTableViewController.m</string>
+										<string>SoundsTableViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28FE7D07115D54CB0022A95A</string>
+										<string>28FE7D48115D60AF0022A95A</string>
 										<key>history</key>
 										<array>
 											<string>28C1B06F10E098A900DBBB55</string>
@@ -355,10 +355,10 @@
 											<string>28FE7CEC115D52410022A95A</string>
 											<string>28FE7CED115D52410022A95A</string>
 											<string>28FE7CEE115D52410022A95A</string>
-											<string>28FE7CEF115D52410022A95A</string>
-											<string>28FE7D05115D54CB0022A95A</string>
-											<string>28FE7D06115D54CB0022A95A</string>
-											<string>28FE7CFC115D538B0022A95A</string>
+											<string>28FE7D43115D60690022A95A</string>
+											<string>28FE7D46115D60AF0022A95A</string>
+											<string>28FE7D47115D60AF0022A95A</string>
+											<string>28FE7D42115D60690022A95A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
