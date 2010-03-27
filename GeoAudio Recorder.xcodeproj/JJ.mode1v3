@@ -275,14 +275,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
+									<integer>11</integer>
 									<integer>3</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 30}, {239, 710}}</string>
+							<string>{{0, 44}, {239, 710}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SoundsTableViewController.m</string>
+								<string>SoundDetailViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,22 +327,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SoundsTableViewController.m</string>
+										<string>SoundDetailViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28FE7D48115D60AF0022A95A</string>
+										<string>28FE7D9A115D81F40022A95A</string>
 										<key>history</key>
 										<array>
 											<string>28C1B06F10E098A900DBBB55</string>
-											<string>28D8128410E8074F0069B325</string>
-											<string>28D8128510E8074F0069B325</string>
-											<string>28C1D9BF1123BE33006896CB</string>
-											<string>28C1D9C01123BE33006896CB</string>
 											<string>284E63AB115C244C00CA0ED9</string>
-											<string>284E63AC115C244C00CA0ED9</string>
 											<string>284E63AD115C244C00CA0ED9</string>
-											<string>284E63B0115C24B100CA0ED9</string>
 											<string>284E63D4115C2B9100CA0ED9</string>
 											<string>284E63D5115C2B9100CA0ED9</string>
 											<string>28B400AF115C697C000F7420</string>
@@ -350,15 +344,23 @@
 											<string>28B400B1115C697C000F7420</string>
 											<string>28B400B2115C697C000F7420</string>
 											<string>28B400B3115C697C000F7420</string>
-											<string>28FE7CCE115D3FCF0022A95A</string>
-											<string>28FE7CCF115D3FCF0022A95A</string>
-											<string>28FE7CEC115D52410022A95A</string>
-											<string>28FE7CED115D52410022A95A</string>
-											<string>28FE7CEE115D52410022A95A</string>
-											<string>28FE7D43115D60690022A95A</string>
-											<string>28FE7D46115D60AF0022A95A</string>
-											<string>28FE7D47115D60AF0022A95A</string>
-											<string>28FE7D42115D60690022A95A</string>
+											<string>28FE7D72115D7C770022A95A</string>
+											<string>28FE7D73115D7C770022A95A</string>
+											<string>28FE7D74115D7C770022A95A</string>
+											<string>28FE7D75115D7C770022A95A</string>
+											<string>28FE7D76115D7C770022A95A</string>
+											<string>28FE7D77115D7C770022A95A</string>
+											<string>28FE7D7A115D7C770022A95A</string>
+											<string>28FE7D7B115D7C770022A95A</string>
+											<string>28FE7D7C115D7C770022A95A</string>
+											<string>28FE7D7D115D7C770022A95A</string>
+											<string>28FE7D8D115D81250022A95A</string>
+											<string>28FE7D8E115D81250022A95A</string>
+											<string>28FE7D8F115D81250022A95A</string>
+											<string>28FE7D90115D81250022A95A</string>
+											<string>28FE7D91115D81250022A95A</string>
+											<string>28FE7D92115D81250022A95A</string>
+											<string>28FE7D93115D81250022A95A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -370,14 +372,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1179, 521}}</string>
+								<string>{{0, 0}, {1179, 637}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 109 1440 769 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>521pt</string>
+							<string>637pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -390,14 +392,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 526}, {1179, 202}}</string>
+								<string>{{0, 642}, {1179, 86}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 109 1440 769 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>202pt</string>
+							<string>86pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -583,7 +585,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SoundwalksTableViewController.m</string>
+								<string>SoundsTableViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class SoundDetailViewController;
 
 @interface SoundsTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>{
 	
@@ -17,12 +17,15 @@
 	NSString* soundsURL;
 	
 	NSMutableData* responseData;
+	
+	SoundDetailViewController* soundDetailViewController;
 
 }
 @property(nonatomic, retain)NSString* soundwalkID;
 @property(nonatomic, retain)NSMutableArray* soundIDs;
 @property(nonatomic, retain)NSMutableData* responseData;
 @property(nonatomic, retain)NSString* soundsURL;
+@property(nonatomic, retain)SoundDetailViewController* soundDetailViewController;
 
 - (void)getSoundIDs;
 @end

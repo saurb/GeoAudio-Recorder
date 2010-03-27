@@ -7,10 +7,11 @@
 //
 
 #import "SoundsTableViewController.h"
+#import "SoundDetailViewController.h"
 
 
 @implementation SoundsTableViewController
-@synthesize soundwalkID, soundIDs, responseData, soundsURL;
+@synthesize soundwalkID, soundIDs, responseData, soundsURL, soundDetailViewController;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -65,17 +66,6 @@
 	
 	NSString* responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
 	soundIDs = [[responseString JSONValue] retain];
-	
-	/*for (int i=0; i<[IDs count]; i++) {
-		NSLog(@"id: %@",[IDs objectAtIndex:i]);
-	}*/
-	
-	/*// Pass object in IDs into Dictionary
-	for (NSDictionary* ID in IDs) {
-		
-		NSString* soundwalkID = [ID objectForKey:@"id"];
-		[soundwalkIDs addObject:soundwalkID];
-	}*/
 	
 	[soundsTableView reloadData];
 }
@@ -166,6 +156,36 @@
 	// [anotherViewController release];
 }
 
+- (void)tableView:(UITableView*)tableView
+accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
+{
+	soundDetailViewController = [[SoundDetailViewController alloc] initWithNibName:@"SoundDetailViewController" bundle:nil];
+		
+	NSUInteger row = [indexPath row];
+	NSString* selectedSound = [[soundIDs objectAtIndex:row] retain];
+	soundDetailViewController.soundURL = [NSString stringWithFormat:@"http://soundwalks.org/soundwalks/%@/sounds/%@.json", soundwalkID, selectedSound];
+	
+	/*//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
+	 trackDetailViewController.title = selectedTrack;
+	 trackDetailViewController.message = selectedTrack;
+	 //[selectedTrack release];
+	 //[detailMessage release];
+	 
+	 // get the according plist file
+	 NSArray* array = [selectedTrack componentsSeparatedByString:@"."];
+	 NSString* fileName = [array objectAtIndex:0];
+	 NSString* plistPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"plist", fileName, @"plist" ] retain];
+	 // read locations
+	 if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+	 NSArray* trackLocations = [[NSArray alloc] initWithContentsOfFile:plistPath];
+	 trackDetailViewController.locations = trackLocations;
+	 [trackLocations release];
+	 }*/
+	
+	[self.navigationController pushViewController:soundDetailViewController animated:YES];
+}
+
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -212,6 +232,7 @@
 	[soundIDs release];
 	[responseData release];
 	[soundsURL release];
+	[soundDetailViewController release];
     [super dealloc];
 }
 
