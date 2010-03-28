@@ -7,9 +7,12 @@
 //
 
 #import "SoundDetailViewController.h"
+#import "Sound.h"
 
 
 @implementation SoundDetailViewController
+@synthesize sound;
+@synthesize soundID;
 @synthesize audioPlayer;
 @synthesize soundURL;
 @synthesize responseData;
@@ -47,6 +50,10 @@
 	NSString* filePath = [[soundURL stringByReplacingOccurrencesOfString:@".json" withString:@".wav"] retain];
 	NSLog(@"audio path %@", filePath);
 	NSURL* fileURL = [[[NSURL alloc] initFileURLWithPath:filePath] retain];
+	Sound* newSound = [[Sound alloc] initWithFilePath:filePath];
+	[filePath release];
+	self.sound = newSound;
+	[sound downloadToFile:soundID];
 	AVAudioPlayer* newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
 	self.audioPlayer = newPlayer;
 	[newPlayer release];
@@ -238,6 +245,8 @@
 
 
 - (void)dealloc {
+	[sound release];
+	[soundID release];
 	[audioPlayer release];
 	[soundURL release];
 	[responseData release];

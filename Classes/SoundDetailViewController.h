@@ -10,9 +10,12 @@
 #import <MapKit/MapKit.h>
 #import "LocationAnnotation.h"
 #import <AVFoundation/AVFoundation.h>
-
+@class Sound;
 
 @interface SoundDetailViewController : UIViewController <MKMapViewDelegate, AVAudioPlayerDelegate> {
+	
+	Sound* sound;
+	NSString* soundID;
 	
 	// for JSON
 	NSString* soundURL;
@@ -38,6 +41,8 @@
 	LocationAnnotation* locationAnnotation;
 
 }
+@property (nonatomic, retain) Sound* sound;
+@property (nonatomic, retain) NSString* soundID;
 @property (nonatomic, retain) NSString* soundURL;
 @property (nonatomic, retain) NSMutableData* responseData;
 @property (nonatomic, retain) AVAudioPlayer* audioPlayer;

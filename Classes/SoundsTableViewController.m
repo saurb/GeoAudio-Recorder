@@ -38,7 +38,14 @@
 	self.title = @"Getting Sounds ...";
 	responseData = [[NSMutableData data] retain];
 	NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:soundsURL]];
-	[[NSURLConnection alloc] initWithRequest:request delegate:self];
+	NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	
+	if (connection) {
+		responseData = [[NSMutableData data] retain];
+	}
+	else {
+		NSLog(@" Getting soundsURL Connection Failed");
+	}
 }
 
 #pragma mark -
@@ -164,6 +171,7 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	NSUInteger row = [indexPath row];
 	NSString* selectedSound = [[soundIDs objectAtIndex:row] retain];
 	soundDetailViewController.soundURL = [NSString stringWithFormat:@"http://soundwalks.org/soundwalks/%@/sounds/%@.json", soundwalkID, selectedSound];
+	soundDetailViewController.soundID = selectedSound;
 	
 	/*//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
 	 trackDetailViewController.title = selectedTrack;
