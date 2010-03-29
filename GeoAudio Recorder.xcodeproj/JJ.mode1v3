@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,8 +267,6 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>284E635F115C1A3100CA0ED9</string>
-								<string>280C3875114FFA8700CA0EFD</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -275,9 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -312,14 +310,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Sound.m</string>
+								<string>GeoAudio_RecorderAppDelegate.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +323,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Sound.m</string>
+										<string>GeoAudio_RecorderAppDelegate.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28AD370611602D33005BDFB7</string>
+										<string>28AD370E11602E47005BDFB7</string>
 										<key>history</key>
 										<array>
 											<string>28C1B06F10E098A900DBBB55</string>
@@ -342,13 +338,11 @@
 											<string>28B400B1115C697C000F7420</string>
 											<string>28B400B2115C697C000F7420</string>
 											<string>28B400B3115C697C000F7420</string>
-											<string>28FE7D72115D7C770022A95A</string>
 											<string>28FE7D73115D7C770022A95A</string>
 											<string>28FE7D74115D7C770022A95A</string>
 											<string>28FE7D75115D7C770022A95A</string>
 											<string>28FE7D7A115D7C770022A95A</string>
 											<string>28FE7D7B115D7C770022A95A</string>
-											<string>28FE7D7D115D7C770022A95A</string>
 											<string>28FE7D8E115D81250022A95A</string>
 											<string>28C4AC53115EB5F5008CCE6F</string>
 											<string>28C4AC54115EB5F5008CCE6F</string>
@@ -364,7 +358,9 @@
 											<string>28AD36F511602AF4005BDFB7</string>
 											<string>28AD36F711602AF4005BDFB7</string>
 											<string>28AD370411602D33005BDFB7</string>
-											<string>28AD370511602D33005BDFB7</string>
+											<string>28AD370A11602E15005BDFB7</string>
+											<string>28AD370B11602E15005BDFB7</string>
+											<string>28FE7D72115D7C770022A95A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -562,10 +558,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>28E76F7D10DAE34F0025C0D1</string>
 		<string>/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio Recorder.xcodeproj</string>
-		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 109 1440 769 0 0 1440 878 </string>
@@ -939,7 +935,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
