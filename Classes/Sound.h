@@ -14,12 +14,12 @@
 	
 	NSURL* webURL;
 	NSString* localFilePath;
-	NSMutableData* responseData;
+	NSFileHandle* audioFile;
 
 }
 @property (nonatomic, retain) NSURL* webURL;
 @property (nonatomic, retain) NSString* localFilePath;
-@property (nonatomic, retain) NSMutableData* responseData;
+@property (nonatomic, retain) NSFileHandle* audioFile;
 
 - (id)initWithFilePath:(NSString*)URL;
 - (void)downloadToFile:(NSString*)name;

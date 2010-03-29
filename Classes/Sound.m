@@ -10,7 +10,7 @@
 
 
 @implementation Sound
-@synthesize webURL, localFilePath, responseData;
+@synthesize webURL, localFilePath, audioFile;
 
 - (id)initWithFilePath:(NSString*)URL
 {
@@ -24,19 +24,25 @@
 	NSString* filePath = [[NSString stringWithFormat:@"%@/%@.wav", TEMP_FOLDER, name] retain];
 	NSLog(@"temp file path %@", filePath);// show the saved path
 	localFilePath = filePath;
-	[filePath release];
-
-	// Open the connection
-	NSLog(@"weburl %@", webURL);
-	NSURLRequest* request = [NSURLRequest requestWithURL:webURL];
-	NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	
-	if (connection) {
-		responseData = [[NSMutableData data] retain];
+	// create file for download
+	BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:localFilePath];
+	if (!fileExist) {
+		[[NSFileManager defaultManager] createFileAtPath:localFilePath contents:nil attributes:nil];
+		
+		// set up FileHandle
+		audioFile = [[NSFileHandle fileHandleForWritingAtPath:localFilePath] retain];
+		[filePath release];
+		
+		// Open the connection
+		NSLog(@"weburl %@", webURL);
+		NSURLRequest* request = [NSURLRequest 
+								 requestWithURL:webURL
+								 cachePolicy:NSURLRequestUseProtocolCachePolicy
+								 timeoutInterval:60.0];
+		NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	}
-	else {
-		NSLog(@" Downloading Sound Connection Failed");
-	}
+	
 
 }
 
@@ -44,12 +50,12 @@
 #pragma mark NSURLConnection methods
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse*)response
 {
-	[responseData setLength:0];
+	//[responseData setLength:0];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
 {
-	[responseData appendData:data];
+	[audioFile writeData:data];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError*)error
@@ -61,12 +67,7 @@
 {
 	[connection release];
 	
-	NSLog(@"Succeeded! Received %d bytes of data",[responseData length]);
-	//[responseData writeToFile:localFilePath atomically:YES];
-	/*NSFileHandle *handle = [NSFileHandle fileHandleForWritingAtPath:localFilePath];
-	[handle seekToEndOfFile];
-	[handle writeData:responseData];
-	[handle closeFile];*/
+	[audioFile closeFile];
 	
 }
 
@@ -75,7 +76,7 @@
 {
 	[webURL release];
 	[localFilePath release];
-	[responseData release];
+	[audioFile release];
 	[super dealloc];
 }
 
