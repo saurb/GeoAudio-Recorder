@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define TEMP_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"]
+#define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 
 @interface Sound : NSObject {
 	

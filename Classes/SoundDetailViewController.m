@@ -37,6 +37,16 @@
 	
 	[self getSoundInfo];
 	
+	NSString* filePath = [[soundURL stringByReplacingOccurrencesOfString:@".json" withString:@".mp3"] retain];
+	Sound* newSound = [[Sound alloc] initWithFilePath:filePath];
+	[filePath release];
+	self.sound = newSound;
+	[sound downloadToFile:soundID];
+	[self loadPlayer];
+	
+		
+	//NSLog(@"audio path %@", sound.localFilePath);
+	
     [super viewDidLoad];
 	
 	
@@ -46,16 +56,18 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	
-	NSString* filePath = [[soundURL stringByReplacingOccurrencesOfString:@".json" withString:@".wav"] retain];
-	NSLog(@"audio path %@", filePath);
-	NSURL* fileURL = [[[NSURL alloc] initFileURLWithPath:filePath] retain];
-	Sound* newSound = [[Sound alloc] initWithFilePath:filePath];
-	[filePath release];
-	self.sound = newSound;
-	[sound downloadToFile:soundID];
-	AVAudioPlayer* newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+	//[self loadPlayer];
+	[super viewWillAppear:animated];
+}
+
+- (void)loadPlayer
+{
+	// load audio to player
+	NSURL* localFileURL = [[[NSURL alloc] initFileURLWithPath:sound.localFilePath] retain];
+	AVAudioPlayer* newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:localFileURL error:nil];
 	self.audioPlayer = newPlayer;
+	NSLog(@"player duration %d", audioPlayer.duration);
+	
 	[newPlayer release];
 	[audioPlayer prepareToPlay];
 	[audioPlayer setDelegate:self];
@@ -64,8 +76,6 @@
 	//TODO: what if file exceeds in minutes?
 	self.duration.text = [NSString stringWithFormat:@"%d:%02d", (int)self.audioPlayer.duration / 60, (int)self.audioPlayer.duration % 60, nil];
 	self.progressBar.maximumValue = self.audioPlayer.duration;
-	
-	[super viewWillAppear:animated];
 }
 
 

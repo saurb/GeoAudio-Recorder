@@ -21,7 +21,7 @@
 
 - (void)downloadToFile:(NSString*)name
 {
-	NSString* filePath = [[NSString stringWithFormat:@"%@/%@.wav", TEMP_FOLDER, name] retain];
+	NSString* filePath = [[NSString stringWithFormat:@"%@/%@/%@.mp3", DOCUMENTS_FOLDER, @"tmp", name] retain];
 	NSLog(@"temp file path %@", filePath);// show the saved path
 	localFilePath = filePath;
 	

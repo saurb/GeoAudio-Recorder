@@ -54,6 +54,12 @@
 	if (!plistDirectoryExist) {
 		[[NSFileManager defaultManager] createDirectoryAtPath:plistFilePath attributes:nil];
 	}
+	// create a tmp folder
+	NSString* tmpFilePath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"tmp"] retain];
+	BOOL tmpDirectoryExist = [[NSFileManager defaultManager] fileExistsAtPath:tmpFilePath];
+	if (!tmpDirectoryExist) {
+		[[NSFileManager defaultManager] createDirectoryAtPath:tmpFilePath attributes:nil];
+	}
 	
 	recordEnabled = [[[UIImage imageNamed:@"RecordEnabled.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	recordPressed = [[[UIImage imageNamed:@"RecordPressed.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];

@@ -55,6 +55,7 @@
 @property (nonatomic, retain) NSTimer* updateTimer;
 
 - (void)getSoundInfo;
+- (void)loadPlayer;
 
 - (IBAction)playButtonPressed:(UIButton*)sender;
 - (IBAction)ffwButtonPressed:(UIButton*)sender;
