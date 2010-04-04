@@ -10,41 +10,36 @@
 
 
 @implementation Sound
-@synthesize webURL, localFilePath, audioFile;
+@synthesize webURL, localFilePath, audioFile, delegate;
 
 - (id)initWithFilePath:(NSString*)URL
 {
 	[super init];
-	webURL = [NSURL URLWithString:URL];
+	self.webURL = [NSURL URLWithString:URL];
+	//self.delegate = self;
 	return self;
 }
 
-- (void)downloadToFile:(NSString*)name
+- (void)downloadToFile
 {
-	NSString* filePath = [[NSString stringWithFormat:@"%@/%@/%@.mp3", DOCUMENTS_FOLDER, @"tmp", name] retain];
-	NSLog(@"temp file path %@", filePath);// show the saved path
-	localFilePath = filePath;
 	
 	// create file for download
-	BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:localFilePath];
-	if (!fileExist) {
-		[[NSFileManager defaultManager] createFileAtPath:localFilePath contents:nil attributes:nil];
+	[[NSFileManager defaultManager] createFileAtPath:localFilePath contents:nil attributes:nil];
 		
-		// set up FileHandle
-		audioFile = [[NSFileHandle fileHandleForWritingAtPath:localFilePath] retain];
-		[filePath release];
+	// set up FileHandle
+	audioFile = [[NSFileHandle fileHandleForWritingAtPath:localFilePath] retain];
 		
-		// Open the connection
-		NSLog(@"weburl %@", webURL);
-		NSURLRequest* request = [NSURLRequest 
-								 requestWithURL:webURL
-								 cachePolicy:NSURLRequestUseProtocolCachePolicy
-								 timeoutInterval:60.0];
-		NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-	}
+	// Open the connection
+	//NSLog(@"weburl %@", webURL);
+	NSURLRequest* request = [NSURLRequest 
+								requestWithURL:webURL
+								cachePolicy:NSURLRequestUseProtocolCachePolicy
+								timeoutInterval:60.0];
+	NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	
 
 }
+
 
 #pragma mark -
 #pragma mark NSURLConnection methods
@@ -66,8 +61,9 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	[connection release];
-	
 	[audioFile closeFile];
+	
+	[delegate finished]; // notify delegate download finished
 	
 }
 
@@ -77,6 +73,7 @@
 	[webURL release];
 	[localFilePath release];
 	[audioFile release];
+	[delegate release];
 	[super dealloc];
 }
 

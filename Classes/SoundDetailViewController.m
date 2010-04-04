@@ -24,6 +24,13 @@
 @synthesize duration;
 @synthesize updateTimer;
 
+// DownloadCompleteDelegate Method
+- (void)finished
+{
+	[self loadPlayer];
+	
+}
+
 - (void)viewDidLoad {
 	
 	self.duration.adjustsFontSizeToFitWidth = YES;
@@ -37,14 +44,27 @@
 	
 	[self getSoundInfo];
 	
-	NSString* filePath = [[soundURL stringByReplacingOccurrencesOfString:@".json" withString:@".mp3"] retain];
-	Sound* newSound = [[Sound alloc] initWithFilePath:filePath];
-	[filePath release];
+	NSString* fileURLPath = [[soundURL stringByReplacingOccurrencesOfString:@".json" withString:@".mp3"] retain];
+	Sound* newSound = [[Sound alloc] initWithFilePath:fileURLPath];
+	[fileURLPath release];
 	self.sound = newSound;
-	[sound downloadToFile:soundID];
-	[self loadPlayer];
+	self.sound.delegate = self;
 	
-		
+	// Check to see if sound already exists
+	NSString* filePath = [[NSString stringWithFormat:@"%@/%@/%@.mp3", DOCUMENTS_FOLDER, @"tmp", soundID] retain];
+	self.sound.localFilePath = filePath;
+	[filePath release];
+	BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:self.sound.localFilePath];
+	
+	if (!fileExist) {
+		[sound downloadToFile];
+	}
+	else {
+		[self loadPlayer];
+	}
+
+	
+	
 	//NSLog(@"audio path %@", sound.localFilePath);
 	
     [super viewDidLoad];
@@ -56,7 +76,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	//[self loadPlayer];
 	[super viewWillAppear:animated];
 }
 

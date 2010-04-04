@@ -173,23 +173,6 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	soundDetailViewController.soundURL = [NSString stringWithFormat:@"http://soundwalks.org/soundwalks/%@/sounds/%@.json", soundwalkID, selectedSound];
 	soundDetailViewController.soundID = selectedSound;
 	
-	/*//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
-	 trackDetailViewController.title = selectedTrack;
-	 trackDetailViewController.message = selectedTrack;
-	 //[selectedTrack release];
-	 //[detailMessage release];
-	 
-	 // get the according plist file
-	 NSArray* array = [selectedTrack componentsSeparatedByString:@"."];
-	 NSString* fileName = [array objectAtIndex:0];
-	 NSString* plistPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"plist", fileName, @"plist" ] retain];
-	 // read locations
-	 if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-	 NSArray* trackLocations = [[NSArray alloc] initWithContentsOfFile:plistPath];
-	 trackDetailViewController.locations = trackLocations;
-	 [trackLocations release];
-	 }*/
-	
 	[self.navigationController pushViewController:soundDetailViewController animated:YES];
 }
 

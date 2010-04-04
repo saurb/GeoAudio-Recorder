@@ -7,20 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
-#define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 
-@interface Sound : NSObject {
+@protocol DownloadCompleteDelegate <NSObject>
+@required
+- (void)finished;
+@end
+
+
+@interface Sound : NSObject <DownloadCompleteDelegate> {
 	
 	NSURL* webURL;
 	NSString* localFilePath;
 	NSFileHandle* audioFile;
+	id delegate;
 
 }
 @property (nonatomic, retain) NSURL* webURL;
 @property (nonatomic, retain) NSString* localFilePath;
 @property (nonatomic, retain) NSFileHandle* audioFile;
+@property (nonatomic, assign) id <DownloadCompleteDelegate> delegate; 
 
 - (id)initWithFilePath:(NSString*)URL;
-- (void)downloadToFile:(NSString*)name;
+- (void)downloadToFile;
 @end

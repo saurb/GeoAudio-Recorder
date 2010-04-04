@@ -10,9 +10,12 @@
 #import <MapKit/MapKit.h>
 #import "LocationAnnotation.h"
 #import <AVFoundation/AVFoundation.h>
-@class Sound;
+#import "Sound.h"
 
-@interface SoundDetailViewController : UIViewController <MKMapViewDelegate, AVAudioPlayerDelegate> {
+#define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+
+
+@interface SoundDetailViewController : UIViewController <MKMapViewDelegate, AVAudioPlayerDelegate, DownloadCompleteDelegate> {
 	
 	Sound* sound;
 	NSString* soundID;
