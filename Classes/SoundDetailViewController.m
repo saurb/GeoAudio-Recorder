@@ -64,9 +64,6 @@
 	}
 
 	
-	
-	//NSLog(@"audio path %@", sound.localFilePath);
-	
     [super viewDidLoad];
 	
 	
@@ -85,7 +82,6 @@
 	NSURL* localFileURL = [[[NSURL alloc] initFileURLWithPath:sound.localFilePath] retain];
 	AVAudioPlayer* newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:localFileURL error:nil];
 	self.audioPlayer = newPlayer;
-	NSLog(@"player duration %d", audioPlayer.duration);
 	
 	[newPlayer release];
 	[audioPlayer prepareToPlay];
