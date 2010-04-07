@@ -278,8 +278,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>51</integer>
-									<integer>42</integer>
+									<integer>27</integer>
+									<integer>25</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -322,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SoundwalksTableViewController.m</string>
+								<string>GeoAudio_RecorderAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SoundwalksTableViewController.m</string>
+										<string>GeoAudio_RecorderAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2817DC35116CEDE900691B80</string>
+										<string>2817DC3D116CEF3900691B80</string>
 										<key>history</key>
 										<array>
 											<string>28C1B06F10E098A900DBBB55</string>
@@ -365,7 +365,6 @@
 											<string>28113DA0116A90C9006CC54A</string>
 											<string>28113DA1116A90C9006CC54A</string>
 											<string>28866B9F116C05E30006977B</string>
-											<string>28866BA0116C05E30006977B</string>
 											<string>28866BA1116C05E30006977B</string>
 											<string>28866BA2116C05E30006977B</string>
 											<string>28866BA6116C05E30006977B</string>
@@ -386,8 +385,6 @@
 											<string>28C60787116C5DBB003EE763</string>
 											<string>28C60788116C5DBB003EE763</string>
 											<string>28C607BA116C6138003EE763</string>
-											<string>28C607BB116C6138003EE763</string>
-											<string>28C607BC116C6138003EE763</string>
 											<string>28C607BE116C6138003EE763</string>
 											<string>28C607BF116C6138003EE763</string>
 											<string>28C607C0116C6138003EE763</string>
@@ -396,7 +393,10 @@
 											<string>2817DC27116CED0700691B80</string>
 											<string>2817DC28116CED0700691B80</string>
 											<string>2817DC29116CED0700691B80</string>
-											<string>2817DC2A116CED0700691B80</string>
+											<string>2817DC39116CEF2000691B80</string>
+											<string>2817DC3A116CEF2000691B80</string>
+											<string>2817DC3B116CEF2000691B80</string>
+											<string>28C607BC116C6138003EE763</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

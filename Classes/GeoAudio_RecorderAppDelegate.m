@@ -70,6 +70,9 @@
 }
 
 - (void)authenticate {
+	
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES; // indicate authentication
+	
     if ([user hasCredentials]) {
         NSError *error = nil;
         BOOL authenticated = [self.user authenticate:&error];
@@ -80,6 +83,9 @@
     } else {
         [self showAuthentication:self.user];
     }
+	
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
 }
 
 - (void)addUserObservers:(User *)aUser {
