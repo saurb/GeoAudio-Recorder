@@ -28,4 +28,5 @@
 @property(nonatomic, retain)SoundDetailViewController* soundDetailViewController;
 
 - (void)getSoundIDs;
+- (void)toggleEdit;
 @end

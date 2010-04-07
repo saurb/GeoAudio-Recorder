@@ -229,19 +229,30 @@ forRowAtIndexPath:(NSIndexPath*)indexPath
 											 encoding:NSUTF8StringEncoding];
 	
 	NSLog(@"Response Code: %d", [urlResponse statusCode]);
-	if ([urlResponse statusCode] >= 200 && [urlResponse statusCode] < 300)
+	if ([urlResponse statusCode] >= 200 && [urlResponse statusCode] < 300){
+		
+		// Remove row at tableview
+		[self.soundwalkIDs removeObjectAtIndex:row];
+		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+						 withRowAnimation:UITableViewRowAnimationFade];
 		NSLog(@"Response: %@", result);
+
+	}
+	else {
+		UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"!" 
+														message:@"Hey, you can't delete other people's soundwalk." 
+													   delegate:nil
+											  cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+
 	[url release];
 	[req release];
 	[result release];
 	
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-	
-	
-	// Remove row at tableview
-	[self.soundwalkIDs removeObjectAtIndex:row];
-	[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
-					 withRowAnimation:UITableViewRowAnimationFade];
 	
 }
 

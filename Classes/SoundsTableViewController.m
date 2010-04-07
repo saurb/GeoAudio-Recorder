@@ -22,11 +22,23 @@
 }
 */
 
+- (IBAction)toggleEdit:(id)sender
+{
+	[self.tableView setEditing:!self.tableView.editing animated:YES];
+}
+
 
 - (void)viewDidLoad {
 	
 	soundIDs = [[NSMutableArray alloc] init];
 	[self getSoundIDs];
+	UIBarButtonItem* editButton = [[UIBarButtonItem alloc]
+								   initWithTitle:@"Delete"
+								   style:UIBarButtonItemStyleBordered
+								   target:self
+								   action:@selector(toggleEdit:)];
+	self.navigationItem.rightBarButtonItem = editButton;
+	[editButton release];
     [super viewDidLoad];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -175,6 +187,57 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	
 	[self.navigationController pushViewController:soundDetailViewController animated:YES];
 }
+
+- (void)tableView:(UITableView*)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath*)indexPath
+{
+	NSUInteger row = [indexPath row];
+	NSString* path = [NSString stringWithFormat:@"http://soundwalks.org/soundwalks/%@/sounds/%@",soundwalkID,[self.soundIDs objectAtIndex:row]];
+	
+	// Delete Request
+	//TODO: Error Handling
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+	
+	NSURL *url = [[NSURL alloc] initWithString:path];
+	NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:url];
+	[req setHTTPMethod:@"DELETE"];
+	NSHTTPURLResponse* urlResponse = nil;  
+	NSError *error = [[NSError alloc] init];  
+	NSData *response = [NSURLConnection sendSynchronousRequest:req 
+											 returningResponse:&urlResponse
+														 error:&error];  
+	NSString *result = [[NSString alloc] initWithData:response 
+											 encoding:NSUTF8StringEncoding];
+	
+	NSLog(@"Response Code: %d", [urlResponse statusCode]);
+	if ([urlResponse statusCode] >= 200 && [urlResponse statusCode] < 300){
+		
+		// Remove row at tableview
+		[self.soundIDs removeObjectAtIndex:row];
+		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+						 withRowAnimation:UITableViewRowAnimationFade];
+		NSLog(@"Response: %@", result);
+		
+	}
+	else {
+		UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"!" 
+														message:@"Hey, you can't delete other people's sound." 
+													   delegate:nil
+											  cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+	
+	[url release];
+	[req release];
+	[result release];
+	
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	
+}
+
 
 
 
