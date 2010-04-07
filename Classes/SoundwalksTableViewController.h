@@ -21,4 +21,5 @@
 @property(nonatomic, retain)SoundsTableViewController* soundsTableViewController;
 
 - (void)getSoundwalkIDs;
+- (IBAction)toggleEdit:(id)sender;
 @end

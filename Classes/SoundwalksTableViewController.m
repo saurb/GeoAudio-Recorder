@@ -9,6 +9,10 @@
 #import "SoundwalksTableViewController.h"
 #import "JSON/JSON.h"
 #import "SoundsTableViewController.h"
+#import "Response.h"
+#import "Connection.h"
+#import "NSObject+ObjectiveResource.h"
+#import "ConnectionManager.h"
 
 #define SOUNDWALKS_ID_URL @"http://soundwalks.org/soundwalks.json"
 
@@ -24,12 +28,25 @@
 }
 */
 
+- (IBAction)toggleEdit:(id)sender
+{
+	[self.tableView setEditing:!self.tableView.editing animated:YES];
+}
+
 
 - (void)viewDidLoad {
 	
 	soundwalkIDs = [[NSMutableArray alloc] init];
 	
 	[self getSoundwalkIDs];
+	
+	UIBarButtonItem* editButton = [[UIBarButtonItem alloc]
+								   initWithTitle:@"Delete"
+								   style:UIBarButtonItemStyleBordered
+								   target:self
+								   action:@selector(toggleEdit:)];
+	self.navigationItem.rightBarButtonItem = editButton;
+	[editButton release];
 	
     [super viewDidLoad];
 	
@@ -185,26 +202,49 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	NSString* selectedSoundwalk = [[soundwalkIDs objectAtIndex:row] retain];
 	soundsTableViewController.soundwalkID = selectedSoundwalk;
 	soundsTableViewController.soundsURL = [NSString stringWithFormat:@"http://soundwalks.org/soundwalks/%@/sounds.json", selectedSoundwalk];
-
-	/*//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
-	trackDetailViewController.title = selectedTrack;
-	trackDetailViewController.message = selectedTrack;
-	//[selectedTrack release];
-	//[detailMessage release];
-	
-	// get the according plist file
-	NSArray* array = [selectedTrack componentsSeparatedByString:@"."];
-	NSString* fileName = [array objectAtIndex:0];
-	NSString* plistPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"plist", fileName, @"plist" ] retain];
-	// read locations
-	if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-		NSArray* trackLocations = [[NSArray alloc] initWithContentsOfFile:plistPath];
-		trackDetailViewController.locations = trackLocations;
-		[trackLocations release];
-	}*/
 	
 	[self.navigationController pushViewController:soundsTableViewController animated:YES];
 }
+
+- (void)tableView:(UITableView*)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath*)indexPath
+{
+	NSUInteger row = [indexPath row];
+	NSString* path = [NSString stringWithFormat:@"http://soundwalks.org/soundwalks/%@",[self.soundwalkIDs objectAtIndex:row]];
+	
+	// Delete Request
+	//TODO: Error Handling
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+
+	NSURL *url = [[NSURL alloc] initWithString:path];
+	NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:url];
+	[req setHTTPMethod:@"DELETE"];
+	NSHTTPURLResponse* urlResponse = nil;  
+	NSError *error = [[NSError alloc] init];  
+	NSData *response = [NSURLConnection sendSynchronousRequest:req 
+											 returningResponse:&urlResponse
+														 error:&error];  
+	NSString *result = [[NSString alloc] initWithData:response 
+											 encoding:NSUTF8StringEncoding];
+	
+	NSLog(@"Response Code: %d", [urlResponse statusCode]);
+	if ([urlResponse statusCode] >= 200 && [urlResponse statusCode] < 300)
+		NSLog(@"Response: %@", result);
+	[url release];
+	[req release];
+	[result release];
+	
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	
+	
+	// Remove row at tableview
+	[self.soundwalkIDs removeObjectAtIndex:row];
+	[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+					 withRowAnimation:UITableViewRowAnimationFade];
+	
+}
+
 
 
 
