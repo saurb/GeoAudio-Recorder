@@ -7,6 +7,8 @@
 //
 
 #import "TrackDetailViewController.h"
+#import "ASIFormDataRequest.h"
+#import "ASINetworkQueue.h"
 
 
 @implementation TrackDetailViewController
@@ -20,6 +22,7 @@
 @synthesize currentTime;
 @synthesize duration;
 @synthesize updateTimer;
+@synthesize uploadButton;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -57,6 +60,9 @@
 	playBtnBG = [[[UIImage imageNamed:@"play.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	pauseBtnBG = [[[UIImage imageNamed:@"pause.png"] stretchableImageWithLeftCapWidth:12.0 topCapHeight:0.0] retain];
 	[playButton setImage:playBtnBG forState:UIControlStateNormal];
+	
+	// init networkqueue
+	networkQueue = [[ASINetworkQueue alloc] init];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -134,6 +140,7 @@
 	[progressBar release];
 	[currentTime release];
 	[duration release];
+	[networkQueue release]; // release networkqueue
     [super dealloc];
 }
 
@@ -242,6 +249,92 @@
 		[self.audioPlayer setCurrentTime:0.];
     }
 }
+
+#pragma mark -
+#pragma mark Upload Method
+- (IBAction)uploadButtonPressed:(UIButton*)sender
+{
+	/*[networkQueue cancelAllOperations];
+	[networkQueue setShowAccurateProgress:YES];
+	//[networkQueue setUploadProgressDelegate:progressIndicator];
+	[networkQueue setDelegate:self];*/
+	
+	// load file to data
+	NSString* filePath = [NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", message];
+	NSData* audioData = [[[NSData alloc] initWithContentsOfFile:filePath] autorelease];
+
+	ASIFormDataRequest *request = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.soundwalks.org/soundwalks/33/sounds"]];
+	[request setDelegate:self];
+	[request setDidFinishSelector:@selector(requestDone:)];
+	[request setDidFailSelector:@selector(requestWentWrong:)];
+	
+	[request setFile:filePath forKey:@"sound[uploaded_data]"];
+	[request setPostValue:message forKey:@"sound[description]"];
+	[request setPostValue:@"37.331689" forKey:@"sound[lat]"];
+	[request setPostValue:@"-122.030731" forKey:@"sound[lng]"];
+	[request setPostValue:@"2009-11-28 10:57:51 UTC" forKey:@"sound[recorded_at]"];
+	[request setTimeOutSeconds:500];
+	[request start];
+	
+	//[networkQueue addOperation:request];
+	
+	//[networkQueue go];
+	
+	
+	/*NSString* filePath = [NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", message];
+	NSData* audioData = [[[NSData alloc] initWithContentsOfFile:filePath] autorelease];
+	NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
+	[request setURL:[NSURL URLWithString:@"http://www.soundwalks.org/soundwalks/33/sounds"]];
+	[request setHTTPMethod:@"POST"];
+	
+	NSString *boundary = [NSString stringWithString:@"0xKhTmLbOuNdArY"];
+	NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+	[request addValue:contentType forHTTPHeaderField: @"Content-Type"];
+	
+	NSMutableData *body = [NSMutableData data];
+	[body appendData:[[NSString stringWithFormat:@"--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"sound[uploaded_data]\"; filename=\"s161.wav\"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];	
+	[body appendData:[[NSString stringWithString:@"Content-Type: application/octet-stream\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[NSData dataWithData:audioData]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"sound[description]\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"test"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"sound[lat]\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"37.331689"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"sound[lng]\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"-122.030731"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"sound[recorded_at]\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithString:@"2009-11-28 10:57:51 UTC"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[[NSString stringWithFormat:@"r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+	// setting the body of the post to the reqeust
+	[request setHTTPBody:body];
+	
+	// now lets make the connection to the web
+	NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
+	
+	NSLog(@"return %@",returnString);*/
+	
+	
+}
+
+- (void)requestDone:(ASIFormDataRequest *)request
+{
+	NSString *response = [request responseString];
+	NSLog(@"response %@", response);
+}
+
+- (void)requestWentWrong:(ASIFormDataRequest *)request
+{
+	NSError *error = [request error];
+	NSLog(@"error %@",[error localizedDescription]);
+
+}
+
+
 
 
 @end

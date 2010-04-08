@@ -11,6 +11,8 @@
 #import "LocationAnnotation.h"
 #import <AVFoundation/AVFoundation.h>
 
+@class ASINetworkQueue;
+
 #define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 
 @interface TrackDetailViewController : UIViewController <MKMapViewDelegate, AVAudioPlayerDelegate> {
@@ -34,6 +36,11 @@
 	NSString* message;
 	NSArray* locations;
 	LocationAnnotation* locationAnnotation;
+	
+	// for upload
+	IBOutlet UIButton* uploadButton;
+	ASINetworkQueue* networkQueue;
+	
 }
 
 @property (nonatomic, retain) AVAudioPlayer* audioPlayer;
@@ -46,9 +53,11 @@
 @property (nonatomic, retain) UILabel*	currentTime;
 @property (nonatomic, retain) UILabel*	duration;
 @property (nonatomic, retain) NSTimer* updateTimer;
+@property (nonatomic, retain) IBOutlet UIButton* uploadButton;
 
 - (IBAction)playButtonPressed:(UIButton*)sender;
 - (IBAction)ffwButtonPressed:(UIButton*)sender;
 - (IBAction)rewButtonPressed:(UIButton*)sender;
 - (IBAction)progressSliderMoved:(UISlider *)sender;
+- (IBAction)uploadButtonPressed:(UIButton*)sender;
 @end
