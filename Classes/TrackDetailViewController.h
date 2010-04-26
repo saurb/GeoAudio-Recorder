@@ -41,6 +41,11 @@
 	IBOutlet UIButton* uploadButton;
 	ASINetworkQueue* networkQueue;
 	
+	// for json query token
+	NSMutableData* responseData;
+	NSString* token;
+
+	
 }
 
 @property (nonatomic, retain) AVAudioPlayer* audioPlayer;
@@ -54,10 +59,14 @@
 @property (nonatomic, retain) UILabel*	duration;
 @property (nonatomic, retain) NSTimer* updateTimer;
 @property (nonatomic, retain) IBOutlet UIButton* uploadButton;
+@property (nonatomic, retain) NSMutableData* responseData;
+@property (nonatomic, retain) NSString* token;
 
 - (IBAction)playButtonPressed:(UIButton*)sender;
 - (IBAction)ffwButtonPressed:(UIButton*)sender;
 - (IBAction)rewButtonPressed:(UIButton*)sender;
 - (IBAction)progressSliderMoved:(UISlider *)sender;
 - (IBAction)uploadButtonPressed:(UIButton*)sender;
+
+- (void)getToken;
 @end

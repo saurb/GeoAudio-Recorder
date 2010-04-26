@@ -23,31 +23,23 @@
 @synthesize duration;
 @synthesize updateTimer;
 @synthesize uploadButton;
+@synthesize responseData;
+@synthesize token;
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
+- (void)getToken
+{
+	responseData = [[NSMutableData data] retain];
+	NSString* tokenURL = @"http://soundwalks.org/soundwalks/33/sounds/new.json";
+	NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:tokenURL]];
+	NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	
+	if (connection) {
+		responseData = [[NSMutableData data] retain];
+	}
+	else {
+		NSLog(@" Getting Token Connection Failed");
+	}
 }
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)viewDidLoad
 {
@@ -106,6 +98,10 @@
 		[mapView regionThatFits:region];
 		
 	}
+	
+	// get token for POST
+	[self getToken];
+	
 	[super viewWillAppear:animated];
 }
 
@@ -141,6 +137,8 @@
 	[currentTime release];
 	[duration release];
 	[networkQueue release]; // release networkqueue
+	[responseData release];
+	[token release];
     [super dealloc];
 }
 
@@ -273,6 +271,7 @@
 	[request setPostValue:@"37.331689" forKey:@"sound[lat]"];
 	[request setPostValue:@"-122.030731" forKey:@"sound[lng]"];
 	[request setPostValue:@"2009-11-28 10:57:51 UTC" forKey:@"sound[recorded_at]"];
+	[request setPostValue:self.token forKey:@"authenticity_token"];
 	[request setTimeOutSeconds:500];
 	[request start];
 	
@@ -333,6 +332,38 @@
 	NSLog(@"error %@",[error localizedDescription]);
 
 }
+
+#pragma mark -
+#pragma mark NSURLConnection methods
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse*)response
+{
+	[responseData setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
+{
+	[responseData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError*)error
+{
+	NSLog(@"Connection failed to getting token: %@", [error description]);
+	self.title = @"Error Getting Token";
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+	[connection release];
+	self.title = @"Sounds";
+	
+	NSString* responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+	NSDictionary* soundInfo = [[responseString JSONValue] retain];
+	self.token = [soundInfo valueForKey:@"authenticity_token"];
+	NSLog(@"token %@", self.token);
+
+}
+
+
 
 
 

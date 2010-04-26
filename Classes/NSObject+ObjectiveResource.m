@@ -150,6 +150,7 @@ static NSString *_activeResourcePrefix = nil;
 
 + (NSString *)getRemoteElementName {
 	NSString * remoteElementName = NSStringFromClass([self class]);
+	
 	if (_activeResourcePrefix != nil) {
 		remoteElementName = [remoteElementName substringFromIndex:[_activeResourcePrefix length]];
 	}
@@ -160,7 +161,8 @@ static NSString *_activeResourcePrefix = nil;
 }
 
 + (NSString *)getRemoteCollectionName {
-	return [[self getRemoteElementName] stringByAppendingString:@"s"];
+	
+		return [[self getRemoteElementName] stringByAppendingString:@"s"];
 }
 
 + (NSString *)getRemoteElementPath:(NSString *)elementId {
@@ -277,6 +279,7 @@ static NSString *_activeResourcePrefix = nil;
 }
 
 - (BOOL)createRemoteWithResponse:(NSError **)aError {
+	NSLog(@"collection path %@", [self getRemoteCollectionPath]);
 	return [self createRemoteAtPath:[self getRemoteCollectionPath] withResponse:aError];	
 }
 
