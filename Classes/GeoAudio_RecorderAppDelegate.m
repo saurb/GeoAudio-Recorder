@@ -50,6 +50,7 @@
     [ObjectiveResourceConfig setResponseType:XmlResponse];
     [ObjectiveResourceConfig setUser:self.user.login];
     [ObjectiveResourceConfig setPassword:self.user.password];
+	//[ObjectiveResourceConfig setPassword:@"1234"];
 }
 
 - (User *)user {

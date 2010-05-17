@@ -99,7 +99,8 @@
 	
 		// If we were given the path to a file, and the user didn't specify a mime type, we can detect it from the file extension
 		if (!contentType) {
-			contentType = [ASIHTTPRequest mimeTypeForFileAtPath:data];
+			//contentType = [ASIHTTPRequest mimeTypeForFileAtPath:data];
+			contentType = @"audio/wav";
 		}
 	}
 	
@@ -118,7 +119,8 @@
 		[self setFileData:[NSMutableDictionary dictionary]];
 	}
 	if (!contentType) {
-		contentType = @"application/octet-stream";
+		//contentType = @"application/octet-stream";
+		contentType = @"audio/wav"; //jinru
 	}
 	
 	NSDictionary *fileInfo = [NSDictionary dictionaryWithObjectsAndKeys:data, @"data", contentType, @"contentType", fileName, @"fileName", nil];
@@ -201,7 +203,7 @@
 		
 		[self appendPostString:[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", key, fileName]];
 		[self appendPostString:[NSString stringWithFormat:@"Content-Type: %@; charset=%@\r\n\r\n", contentType, charset]];
-		
+
 		if ([file isKindOfClass:[NSString class]]) {
 			[self appendPostDataFromFile:file];
 		} else {
