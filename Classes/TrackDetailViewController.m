@@ -9,6 +9,8 @@
 #import "TrackDetailViewController.h"
 #import "ASIFormDataRequest.h"
 #import "ASINetworkQueue.h"
+#import "ObjectiveResourceConfig.h"
+
 
 
 @implementation TrackDetailViewController
@@ -23,23 +25,7 @@
 @synthesize duration;
 @synthesize updateTimer;
 @synthesize uploadButton;
-@synthesize responseData;
-@synthesize token;
 
-- (void)getToken
-{
-	responseData = [[NSMutableData data] retain];
-	NSString* tokenURL = @"http://soundwalks.org/soundwalks/33/sounds/new.json";
-	NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:tokenURL]];
-	NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-	
-	if (connection) {
-		responseData = [[NSMutableData data] retain];
-	}
-	else {
-		NSLog(@" Getting Token Connection Failed");
-	}
-}
 
 - (void)viewDidLoad
 {
@@ -55,6 +41,7 @@
 	
 	// init networkqueue
 	networkQueue = [[ASINetworkQueue alloc] init];
+	
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -99,8 +86,6 @@
 		
 	}
 	
-	// get token for POST
-	[self getToken];
 	
 	[super viewWillAppear:animated];
 }
@@ -137,8 +122,6 @@
 	[currentTime release];
 	[duration release];
 	[networkQueue release]; // release networkqueue
-	[responseData release];
-	[token release];
     [super dealloc];
 }
 
@@ -261,12 +244,10 @@
 	NSString* filePath = [NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", message];
 	NSData* audioData = [[[NSData alloc] initWithContentsOfFile:filePath] autorelease];
 
-	//NSString *authString = [[@"jinru:850909" dataUsingEncoding:NSUTF8StringEncoding] base64Encoding];
 	ASIFormDataRequest *request = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.soundwalks.org/soundwalks/33/sounds"]];
-	//[request addValue:[NSString stringWithFormat:@"Basic %@", authString] forHTTPHeaderField:@"Authorization"];
-	[request setUsername:@"jinru"];
-	[request setPassword:@"850909"];
-	//[request.responseHeaders setValue:@"multipart/form-data" forKey:@"Content-Type"]; 
+	
+	[request setUsername:[ObjectiveResourceConfig getUser]];
+	[request setPassword:[ObjectiveResourceConfig getPassword]];
 	[request setDelegate:self];
 	[request setDidFinishSelector:@selector(requestDone:)];
 	[request setDidFailSelector:@selector(requestWentWrong:)];
@@ -276,8 +257,6 @@
 	[request setPostValue:@"37.331689" forKey:@"sound[lat]"];
 	[request setPostValue:@"-122.030731" forKey:@"sound[lng]"];
 	[request setPostValue:@"2009-11-28 10:57:51 UTC" forKey:@"sound[recorded_at]"];
-	//[request setPostValue:self.token forKey:@"authenticity_token"];
-	//[request setPostValue:@"xml" forKey:@"format"];
 	[request setTimeOutSeconds:500];
 	[request start];
 	
@@ -338,39 +317,6 @@
 	NSLog(@"error %@",[error localizedDescription]);
 
 }
-
-#pragma mark -
-#pragma mark NSURLConnection methods
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse*)response
-{
-	[responseData setLength:0];
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
-{
-	[responseData appendData:data];
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError*)error
-{
-	NSLog(@"Connection failed to getting token: %@", [error description]);
-	self.title = @"Error Getting Token";
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-	[connection release];
-	self.title = @"Sounds";
-	
-	NSString* responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-	NSDictionary* soundInfo = [[responseString JSONValue] retain];
-	self.token = [soundInfo valueForKey:@"authenticity_token"];
-	NSLog(@"token %@", self.token);
-
-}
-
-
-
 
 
 
