@@ -222,11 +222,18 @@
 		NSMutableDictionary* recordSetting = [[NSMutableDictionary alloc] init];
 		
 		if (recordQuality == NO) {
-			[recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
+			/*[recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
 			[recordSetting setValue:[NSNumber numberWithInt:kAudioFormatAppleLossless] forKey:AVFormatIDKey];
 			[recordSetting setValue:[NSNumber numberWithInt:2] forKey:AVNumberOfChannelsKey];
 			[recordSetting setValue:[NSNumber numberWithInt:AVAudioQualityMax] forKey:AVEncoderAudioQualityKey];
-			NSLog(@"quality normal");
+			NSLog(@"quality normal");*/
+			[recordSetting setValue :[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
+			[recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey]; 
+			[recordSetting setValue:[NSNumber numberWithInt: 1] forKey:AVNumberOfChannelsKey]; // no matter what the value, iphone will always use 1
+			
+			[recordSetting setValue :[NSNumber numberWithInt:16] forKey:AVLinearPCMBitDepthKey];
+			[recordSetting setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsBigEndianKey];
+			[recordSetting setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsFloatKey];
 		}
 		else {
 			[recordSetting setValue :[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
@@ -246,9 +253,10 @@
 		NSDate* now = [NSDate dateWithTimeIntervalSinceNow:0];
 		caldate = [now description];
 		
-		NSString* recorderFilePath = [[NSString stringWithFormat:@"%@/%@.caf", audioFilePath, caldate] retain];
+		NSString* recorderFilePath = [[NSString stringWithFormat:@"%@/%@.wav", audioFilePath, caldate] retain];
 		NSLog(@"%@", recorderFilePath);// show the saved path
 		NSURL* url = [NSURL fileURLWithPath:recorderFilePath];
+		[recorderFilePath release];
 		[caldate retain]; // retain so that when stop the location plist name will be the same as the audio file
 		
 		// init recorder with url

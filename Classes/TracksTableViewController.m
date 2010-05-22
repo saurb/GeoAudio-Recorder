@@ -70,12 +70,7 @@
 {
 	self.title = @"Tracks";
 	
-	NSString* audioPath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"audio"] retain];
-	NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:audioPath error:nil];
-	NSMutableArray* array = [[NSMutableArray alloc] initWithCapacity:[files count]];
-	[array addObjectsFromArray:files];
-	self.tracks = array;
-	[array release];
+	
 	
 	UIBarButtonItem* editButton = [[UIBarButtonItem alloc]
 								   initWithTitle:@"Delete"
@@ -87,6 +82,18 @@
 	
 	[super viewDidLoad];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+	NSString* audioPath = [[NSString stringWithFormat:@"%@/%@", DOCUMENTS_FOLDER, @"audio"] retain];
+	NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:audioPath error:nil];
+	NSMutableArray* array = [[NSMutableArray alloc] initWithCapacity:[files count]];
+	[array addObjectsFromArray:files];
+	self.tracks = array;
+	[array release];
+	[tracksTableView reloadData];
+    [super viewWillAppear:animated];
+}
+
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -196,7 +203,7 @@ forRowAtIndexPath:(NSIndexPath*)indexPath
 	// get the according plist & audio file
 	NSArray* array = [selectedTrack componentsSeparatedByString:@"."];
 	NSString* fileName = [array objectAtIndex:0];
-	NSString* audioPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"audio", fileName, @"caf"] retain];
+	NSString* audioPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"audio", fileName, @"wav"] retain];
 	NSString* plistPath = [[NSString stringWithFormat:@"%@/%@/%@.%@", DOCUMENTS_FOLDER, @"plist", fileName, @"plist" ] retain];
 	// delete those files
 	if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath] && [[NSFileManager defaultManager] fileExistsAtPath:audioPath]) {
