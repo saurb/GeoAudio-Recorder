@@ -14,12 +14,16 @@
 	IBOutlet UITableView* soundwalksTableView;
 	NSMutableData* responseData;
 	NSMutableArray* soundwalkIDs;
+	NSMutableArray* soundwalkTitles;
+	NSMutableArray* soundwalkSubtitles;
 	SoundsTableViewController* soundsTableViewController;
 }
 @property(nonatomic, retain)NSMutableArray* soundwalkIDs;
 @property(nonatomic, retain)NSMutableData* responseData;
+@property(nonatomic, retain)NSMutableArray* soundwalkTitles;
+@property(nonatomic, retain)NSMutableArray* soundwalkSubtitles;
 @property(nonatomic, retain)SoundsTableViewController* soundsTableViewController;
 
-- (void)getSoundwalkIDs;
+- (void)getSoundwalkInfo;
 - (IBAction)toggleEdit:(id)sender;
 @end

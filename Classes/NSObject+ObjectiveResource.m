@@ -279,7 +279,6 @@ static NSString *_activeResourcePrefix = nil;
 }
 
 - (BOOL)createRemoteWithResponse:(NSError **)aError {
-	NSLog(@"collection path %@", [self getRemoteCollectionPath]);
 	return [self createRemoteAtPath:[self getRemoteCollectionPath] withResponse:aError];	
 }
 

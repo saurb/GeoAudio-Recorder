@@ -279,14 +279,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>48</integer>
-									<integer>40</integer>
+									<integer>66</integer>
+									<integer>57</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 220}, {343, 710}}</string>
+							<string>{{0, 574}, {343, 710}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -323,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TrackDetailViewController.m</string>
+								<string>SoundwalksTableViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,17 +331,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TrackDetailViewController.m</string>
+										<string>SoundwalksTableViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>28A0CFCD11A85D5D00C238E5</string>
+										<string>28A0D00311A88C1300C238E5</string>
 										<key>history</key>
 										<array>
 											<string>28C1B06F10E098A900DBBB55</string>
 											<string>284E63D5115C2B9100CA0ED9</string>
 											<string>28FE7D7A115D7C770022A95A</string>
-											<string>28FE7D7B115D7C770022A95A</string>
 											<string>28C4990F1168F71500C4C492</string>
 											<string>286F9C4F1169B6CD00B960C9</string>
 											<string>286F9C6E1169B77800B960C9</string>
@@ -370,7 +369,6 @@
 											<string>28D7AF2A1172CBFF00D69EF1</string>
 											<string>28D7AF2B1172CBFF00D69EF1</string>
 											<string>285A9F9F11753E73009472FB</string>
-											<string>289561BB118121CA002E9D70</string>
 											<string>289561C7118121CA002E9D70</string>
 											<string>289561C8118121CA002E9D70</string>
 											<string>289561CA118121CA002E9D70</string>
@@ -389,16 +387,10 @@
 											<string>281D9E1D118643FE00A96121</string>
 											<string>281D9E1E118643FE00A96121</string>
 											<string>281D9E2A1186449A00A96121</string>
-											<string>28C2D045119CE40E00225D69</string>
 											<string>28C2D057119CE75700225D69</string>
 											<string>28C2D058119CE75700225D69</string>
-											<string>28C2D059119CE75700225D69</string>
 											<string>28C2D05A119CE75700225D69</string>
 											<string>28C2D05B119CE75700225D69</string>
-											<string>28C2D05C119CE75700225D69</string>
-											<string>28C2D05D119CE75700225D69</string>
-											<string>28C2D05E119CE75700225D69</string>
-											<string>28C2D05F119CE75700225D69</string>
 											<string>28C2D060119CE75700225D69</string>
 											<string>28C2D061119CE75700225D69</string>
 											<string>28C2D08A119CF28D00225D69</string>
@@ -411,9 +403,17 @@
 											<string>28A0CFB411A85C5600C238E5</string>
 											<string>28A0CFB511A85C5600C238E5</string>
 											<string>28A0CFB611A85C5600C238E5</string>
-											<string>28A0CFB711A85C5600C238E5</string>
-											<string>28A0CFB811A85C5600C238E5</string>
-											<string>28A0CFC611A85D0A00C238E5</string>
+											<string>28A0CFD611A8880E00C238E5</string>
+											<string>28A0CFD711A8880E00C238E5</string>
+											<string>28A0CFD811A8880E00C238E5</string>
+											<string>28A0CFD911A8880E00C238E5</string>
+											<string>28A0CFDA11A8880E00C238E5</string>
+											<string>28A0CFDB11A8880E00C238E5</string>
+											<string>28A0CFDC11A8880E00C238E5</string>
+											<string>28A0CFDD11A8880E00C238E5</string>
+											<string>28A0CFDE11A8880E00C238E5</string>
+											<string>28A0D00111A88C1300C238E5</string>
+											<string>28A0D00211A88C1300C238E5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -611,10 +611,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>28E76F7D10DAE34F0025C0D1</string>
 		<string>/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio Recorder.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 109 1440 769 0 0 1440 878 </string>
@@ -914,8 +915,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>2895619F11812086002E9D70</string>
-				<string>289561A011812086002E9D70</string>
+				<string>28A0CFFD11A88C1100C238E5</string>
+				<string>28A0CFFE11A88C1100C238E5</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -990,7 +991,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

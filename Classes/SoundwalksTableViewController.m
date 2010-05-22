@@ -17,7 +17,7 @@
 #define SOUNDWALKS_ID_URL @"http://soundwalks.org/soundwalks.json"
 
 @implementation SoundwalksTableViewController
-@synthesize soundwalkIDs, soundsTableViewController, responseData;
+@synthesize soundwalkIDs, soundsTableViewController, soundwalkTitles, soundwalkSubtitles, responseData;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -37,8 +37,10 @@
 - (void)viewDidLoad {
 	
 	soundwalkIDs = [[NSMutableArray alloc] init];
+	soundwalkTitles = [[NSMutableArray alloc] init];
+	soundwalkSubtitles = [[NSMutableArray alloc] init];
 	
-	[self getSoundwalkIDs];
+	[self getSoundwalkInfo];
 	
 	UIBarButtonItem* editButton = [[UIBarButtonItem alloc]
 								   initWithTitle:@"Delete"
@@ -55,7 +57,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)getSoundwalkIDs
+- (void)getSoundwalkInfo
 {
 	self.title = @"Getting Soundwalks ...";
 	responseData = [[NSMutableData data] retain];
@@ -93,58 +95,14 @@
 	for (NSDictionary* ID in IDs) {
 
 		NSString* soundwalkID = [ID objectForKey:@"id"];
+		NSString* tit = [ID objectForKey:@"title"];
+		NSString* subtitle = [ID objectForKey:@"description"];
 		[soundwalkIDs addObject:soundwalkID];
+		[soundwalkTitles addObject:tit];
+		[soundwalkSubtitles addObject:subtitle];
 	}
 
 	[soundwalksTableView reloadData];
-}
-
-
-
-
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-	self.soundwalkIDs = nil;
-	self.soundsTableViewController = nil;
-	self.responseData = nil;
-	[super viewDidUnload];
 }
 
 
@@ -169,15 +127,16 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Set up the cell...
 	NSUInteger row = [indexPath row];
-	NSString* rowString = [NSString stringWithFormat:@"Soundwalk %@",[soundwalkIDs objectAtIndex:row]]; // Cast to NSString first!
-	//NSLog(@"%@", rowString);
-	cell.textLabel.text = rowString;
-	cell.textLabel.font = [UIFont systemFontOfSize:16.0];
+	NSString* rowTitle = [NSString stringWithFormat:@"%@",[soundwalkTitles objectAtIndex:row]]; // Cast to NSString first
+	cell.textLabel.text = rowTitle;
+	//cell.textLabel.font = [UIFont systemFontOfSize:16.0];
+	NSString* rowSubtitle = [NSString stringWithFormat:@"%@",[soundwalkSubtitles objectAtIndex:row]];
+	cell.detailTextLabel.text = rowSubtitle;
 	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 	
     return cell;
@@ -298,11 +257,62 @@ forRowAtIndexPath:(NSIndexPath*)indexPath
 }
 */
 
+/*
+ - (void)viewWillAppear:(BOOL)animated {
+ [super viewWillAppear:animated];
+ }
+ */
+/*
+ - (void)viewDidAppear:(BOOL)animated {
+ [super viewDidAppear:animated];
+ }
+ */
+/*
+ - (void)viewWillDisappear:(BOOL)animated {
+ [super viewWillDisappear:animated];
+ }
+ */
+/*
+ - (void)viewDidDisappear:(BOOL)animated {
+ [super viewDidDisappear:animated];
+ }
+ */
+
+/*
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
+	self.soundwalkIDs = nil;
+	self.soundsTableViewController = nil;
+	self.responseData = nil;
+	self.soundwalkTitles = nil;
+	self.soundwalkSubtitles = nil;
+	[super viewDidUnload];
+}
+
+
+
 
 - (void)dealloc {
 	[soundwalkIDs release];
 	[soundsTableViewController release];
 	[responseData release];
+	[soundwalkTitles release];
+	[soundwalkSubtitles release];
     [super dealloc];
 }
 
