@@ -132,14 +132,28 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Set up the cell
 	NSUInteger row = [indexPath row];
 	NSString* rowString = [tracks objectAtIndex:row];
+	// Getting track detailed info
+	NSString* trackPath = [NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", [tracks objectAtIndex:row]];
+	NSFileManager* fileManager = [NSFileManager defaultManager];
+	NSDictionary* fileAttributes = [fileManager attributesOfItemAtPath:trackPath error:nil];
+
+	// Change the date format
+	NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init]  autorelease];
+	[dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+	[dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+	NSString *formattedDateString = [dateFormatter stringFromDate:[fileAttributes objectForKey:@"NSFileModificationDate"]];
+	NSString* detailedInfo = [NSString stringWithFormat:@"%@   %@kb", formattedDateString, [fileAttributes objectForKey:@"NSFileSize"]];
+
+
 	cell.textLabel.text = rowString;
-	cell.textLabel.font = [UIFont systemFontOfSize:16.0];
+	//cell.textLabel.font = [UIFont systemFontOfSize:16.0];
+	cell.detailTextLabel.text = detailedInfo;
 	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 	
     return cell;
@@ -168,16 +182,12 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath
 	if (trackDetailViewController == nil) {
 		trackDetailViewController = [[TrackDetailViewController alloc] initWithNibName:@"TrackDetailViewController" bundle:nil];
 	}
-	
-	//trackDetailViewController.title = @"Detailed Info";
-	
+		
 	NSUInteger row = [indexPath row];
 	NSString* selectedTrack = [[tracks objectAtIndex:row] retain];
-	//NSString* detailMessage = [[NSString alloc] initWithFormat:@"You selected track %@.", selectedTrack];
 	trackDetailViewController.title = selectedTrack;
 	trackDetailViewController.message = selectedTrack;
-	//[selectedTrack release];
-	//[detailMessage release];
+	[selectedTrack release];
 	
 	// get the according plist file
 	NSArray* array = [selectedTrack componentsSeparatedByString:@"."];
