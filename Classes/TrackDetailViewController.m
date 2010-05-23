@@ -254,8 +254,15 @@
 	
 	[request setFile:filePath forKey:@"sound[uploaded_data]"];
 	[request setPostValue:message forKey:@"sound[description]"];
-	[request setPostValue:@"37.331689" forKey:@"sound[lat]"];
-	[request setPostValue:@"-122.030731" forKey:@"sound[lng]"];
+	
+	// get location
+	//ISSUE: location different from website after uploading
+	NSString* loc = [locations objectAtIndex:0];
+	NSArray* array = [loc componentsSeparatedByString:@","];
+	NSString* lat = [NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
+	NSString* lon = [NSString stringWithFormat:@"%@",[array objectAtIndex:1]];
+	[request setPostValue:lat forKey:@"sound[lat]"];
+	[request setPostValue:lon forKey:@"sound[lng]"];
 	[request setPostValue:@"2009-11-28 10:57:51 UTC" forKey:@"sound[recorded_at]"];
 	[request setTimeOutSeconds:500];
 	[request start];

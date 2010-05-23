@@ -1,0 +1,5 @@
+1.sound's location gets changed after uploading
+2.sound's name gets truncated after uploading
+2.missing audio player for the sounds on the website
+3.how many locations for a single sound?
+4.need more info for json request on soundwalkID/sounds.json
