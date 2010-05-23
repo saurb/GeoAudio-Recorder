@@ -242,7 +242,10 @@
 	
 	// load file to data
 	NSString* filePath = [NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", message];
-	NSData* audioData = [[[NSData alloc] initWithContentsOfFile:filePath] autorelease];
+	// getting the date
+	NSFileManager* fileManager = [NSFileManager defaultManager];
+	NSDictionary* fileAttributes = [fileManager attributesOfItemAtPath:filePath error:nil];
+	NSString* date = [NSString stringWithFormat:@"%@", [fileAttributes objectForKey:NSFileModificationDate]];
 
 	ASIFormDataRequest *request = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.soundwalks.org/soundwalks/33/sounds"]];
 	
@@ -257,13 +260,14 @@
 	
 	// get location
 	//ISSUE: location different from website after uploading
+	// Only use the first location for now!
 	NSString* loc = [locations objectAtIndex:0];
 	NSArray* array = [loc componentsSeparatedByString:@","];
 	NSString* lat = [NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
 	NSString* lon = [NSString stringWithFormat:@"%@",[array objectAtIndex:1]];
 	[request setPostValue:lat forKey:@"sound[lat]"];
 	[request setPostValue:lon forKey:@"sound[lng]"];
-	[request setPostValue:@"2009-11-28 10:57:51 UTC" forKey:@"sound[recorded_at]"];
+	[request setPostValue:date forKey:@"sound[recorded_at]"];
 	[request setTimeOutSeconds:500];
 	[request start];
 	

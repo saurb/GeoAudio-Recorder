@@ -2,4 +2,5 @@
 2.sound's name gets truncated after uploading
 2.missing audio player for the sounds on the website
 3.how many locations for a single sound?
-4.need more info for json request on soundwalkID/sounds.json
+4.need more info for json request on ../soundwalkID/sounds.json (filename, username, etc)
+5.need more info for son request on ../soundwlaks.json (username)
