@@ -24,11 +24,19 @@
 @synthesize currentTime;
 @synthesize duration;
 @synthesize updateTimer;
-@synthesize uploadButton;
 
 
 - (void)viewDidLoad
 {
+	// upload button
+	UIBarButtonItem* uploadButton = [[UIBarButtonItem alloc]
+								   initWithTitle:@"Upload"
+								   style:UIBarButtonItemStyleBordered
+								   target:self
+								   action:@selector(uploadButtonPressed:)];
+	self.navigationItem.rightBarButtonItem = uploadButton;
+	[uploadButton release];
+	
 	self.duration.adjustsFontSizeToFitWidth = YES;
 	self.currentTime.adjustsFontSizeToFitWidth = YES;
 	self.progressBar.minimumValue = 0.0;
@@ -233,7 +241,7 @@
 
 #pragma mark -
 #pragma mark Upload Method
-- (IBAction)uploadButtonPressed:(UIButton*)sender
+- (void)uploadButtonPressed:(UIButton*)sender
 {
 	/*[networkQueue cancelAllOperations];
 	[networkQueue setShowAccurateProgress:YES];

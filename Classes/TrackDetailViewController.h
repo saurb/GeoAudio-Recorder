@@ -38,7 +38,6 @@
 	LocationAnnotation* locationAnnotation;
 	
 	// for upload
-	IBOutlet UIButton* uploadButton;
 	ASINetworkQueue* networkQueue;
 	
 }
@@ -53,12 +52,11 @@
 @property (nonatomic, retain) UILabel*	currentTime;
 @property (nonatomic, retain) UILabel*	duration;
 @property (nonatomic, retain) NSTimer* updateTimer;
-@property (nonatomic, retain) IBOutlet UIButton* uploadButton;
 
 - (IBAction)playButtonPressed:(UIButton*)sender;
 - (IBAction)ffwButtonPressed:(UIButton*)sender;
 - (IBAction)rewButtonPressed:(UIButton*)sender;
 - (IBAction)progressSliderMoved:(UISlider *)sender;
-- (IBAction)uploadButtonPressed:(UIButton*)sender;
+- (void)uploadButtonPressed:(UIButton*)sender;
 
 @end
