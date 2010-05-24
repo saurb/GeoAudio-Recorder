@@ -65,6 +65,8 @@
 		286F9C581169B6E200B960C9 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286F9C571169B6E200B960C9 /* AuthenticationViewController.m */; };
 		286F9C691169B73400B960C9 /* DateHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 286F9C641169B73400B960C9 /* DateHelpers.m */; };
 		286F9C6A1169B73400B960C9 /* UIHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 286F9C661169B73400B960C9 /* UIHelpers.m */; };
+		28802D9A11A9AFBF0085C8DA /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28802D9811A9AFBF0085C8DA /* UploadViewController.m */; };
+		28802D9B11A9AFBF0085C8DA /* UploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28802D9911A9AFBF0085C8DA /* UploadViewController.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		289025D610EBC2AC00F4E72B /* windowwithmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 289025D510EBC2AC00F4E72B /* windowwithmap.png */; };
 		28A78AE3116D3F6200B76A12 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A78AD8116D3F6200B76A12 /* ASIAuthenticationDialog.m */; };
@@ -223,6 +225,9 @@
 		286F9C651169B73400B960C9 /* UIHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHelpers.h; sourceTree = "<group>"; };
 		286F9C661169B73400B960C9 /* UIHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIHelpers.m; sourceTree = "<group>"; };
 		286F9C671169B73400B960C9 /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		28802D9711A9AFBF0085C8DA /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		28802D9811A9AFBF0085C8DA /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		28802D9911A9AFBF0085C8DA /* UploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UploadViewController.xib; path = Classes/UploadViewController.xib; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		289025D510EBC2AC00F4E72B /* windowwithmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windowwithmap.png; sourceTree = "<group>"; };
 		28A78AD6116D3F6200B76A12 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
@@ -554,6 +559,8 @@
 				28D304DD10DB38B7002E43EC /* TracksTableViewController.m */,
 				28E76FAA10DAF50B0025C0D1 /* TrackDetailViewController.h */,
 				28E76FAB10DAF50B0025C0D1 /* TrackDetailViewController.m */,
+				28802D9711A9AFBF0085C8DA /* UploadViewController.h */,
+				28802D9811A9AFBF0085C8DA /* UploadViewController.m */,
 				28D304C810DB3669002E43EC /* TracksNavController.h */,
 				28D304C910DB3669002E43EC /* TracksNavController.m */,
 				280A898110DDE9EF005CF926 /* LocationController.h */,
@@ -579,6 +586,7 @@
 				28D304CA10DB3669002E43EC /* TracksNavController.xib */,
 				28D304EC10DB3BF4002E43EC /* TrackTableView.xib */,
 				28B5597F10DBDCC3004D75B4 /* TrackDetailViewController.xib */,
+				28802D9911A9AFBF0085C8DA /* UploadViewController.xib */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -728,6 +736,7 @@
 				284E63BA115C290100CA0ED9 /* disk.png in Resources */,
 				28FE7CC9115D3FAA0022A95A /* SoundsTableView.xib in Resources */,
 				28FE7D55115D68170022A95A /* SoundDetailViewController.xib in Resources */,
+				28802D9B11A9AFBF0085C8DA /* UploadViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +808,7 @@
 				28A78AE7116D3F6200B76A12 /* ASINetworkQueue.m in Sources */,
 				28A78AE8116D3F6200B76A12 /* ASINSStringAdditions.m in Sources */,
 				28A78AF1116D3FD000B76A12 /* Reachability.m in Sources */,
+				28802D9A11A9AFBF0085C8DA /* UploadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

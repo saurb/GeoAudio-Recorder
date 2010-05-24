@@ -8,11 +8,12 @@
 
 #import "SoundwalksTableViewController.h"
 #import "JSON/JSON.h"
+#import "Connection.h"
+#import "ConnectionManager.h"
 #import "SoundsTableViewController.h"
 #import "Response.h"
-#import "Connection.h"
 #import "NSObject+ObjectiveResource.h"
-#import "ConnectionManager.h"
+
 
 #define SOUNDWALKS_ID_URL @"http://soundwalks.org/soundwalks.json"
 

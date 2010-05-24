@@ -10,7 +10,7 @@
 #import "ASIFormDataRequest.h"
 #import "ASINetworkQueue.h"
 #import "ObjectiveResourceConfig.h"
-
+#import "UploadViewController.h"
 
 
 @implementation TrackDetailViewController
@@ -24,10 +24,15 @@
 @synthesize currentTime;
 @synthesize duration;
 @synthesize updateTimer;
-
+@synthesize responseData;
+@synthesize soundwalkIDs;
 
 - (void)viewDidLoad
 {
+	soundwalkIDs = [[NSMutableArray alloc] init];
+	
+	[self getSoundwalkID];
+	
 	// upload button
 	UIBarButtonItem* uploadButton = [[UIBarButtonItem alloc]
 								   initWithTitle:@"Upload"
@@ -51,6 +56,49 @@
 	networkQueue = [[ASINetworkQueue alloc] init];
 	
 }
+
+
+- (void)getSoundwalkID
+{
+	NSString* url = [NSString stringWithFormat:@"http://www.soundwalks.org/%@.json", [ObjectiveResourceConfig getUser]];
+	responseData = [[NSMutableData data] retain];
+	NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+	[[NSURLConnection alloc] initWithRequest:request delegate:self];
+}
+
+#pragma mark -
+#pragma mark NSURLConnection methods
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse*)response
+{
+	[responseData setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData*)data
+{
+	[responseData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError*)error
+{
+	NSLog(@"Connection failed to getting user's soundwalk ids: %@", [error description]);
+	self.title = @"Error Getting User's Soundwalk IDs";
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+	[connection release];
+	
+	NSString* responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+	NSDictionary* info = [responseString JSONValue];
+	NSArray* IDs = [info objectForKey:@"soundwalks"];
+	for (NSDictionary* ID in IDs) {
+		NSString* soundwalkID = [ID objectForKey:@"id"];
+		[soundwalkIDs addObject:soundwalkID];
+	}
+	
+	
+}
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -116,6 +164,8 @@
 	self.progressBar = nil;
 	self.currentTime = nil;
 	self.duration = nil;
+	self.responseData = nil;
+	self.soundwalkIDs = nil;
 }
 
 
@@ -130,6 +180,8 @@
 	[currentTime release];
 	[duration release];
 	[networkQueue release]; // release networkqueue
+	[responseData release];
+	[soundwalkIDs release];
     [super dealloc];
 }
 
@@ -243,12 +295,18 @@
 #pragma mark Upload Method
 - (void)uploadButtonPressed:(UIButton*)sender
 {
+	if (uploadViewController == nil) {
+		uploadViewController = [[UploadViewController alloc] initWithNibName:@"UploadViewController" bundle:nil];
+	}
+	//TODO: get titles for the soundwalk ids!
+	uploadViewController.soundwalkIDs = self.soundwalkIDs;
+	[self.navigationController pushViewController:uploadViewController animated:YES];
 	/*[networkQueue cancelAllOperations];
 	[networkQueue setShowAccurateProgress:YES];
 	//[networkQueue setUploadProgressDelegate:progressIndicator];
 	[networkQueue setDelegate:self];*/
 	
-	// load file to data
+	/*// load file to data
 	NSString* filePath = [NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", message];
 	// getting the date
 	NSFileManager* fileManager = [NSFileManager defaultManager];
@@ -277,7 +335,7 @@
 	[request setPostValue:lon forKey:@"sound[lng]"];
 	[request setPostValue:date forKey:@"sound[recorded_at]"];
 	[request setTimeOutSeconds:500];
-	[request start];
+	[request start];*/
 	
 	//[networkQueue addOperation:request];
 	
