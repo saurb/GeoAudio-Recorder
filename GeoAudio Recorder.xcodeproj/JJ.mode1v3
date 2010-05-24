@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -268,6 +266,7 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>286F9BB41169B43000B960C9</string>
+								<string>28A78AE9116D3F6800B76A12</string>
 								<string>28AD370911602DE4005BDFB7</string>
 								<string>28AD370811602DBE005BDFB7</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
@@ -279,14 +278,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>58</integer>
-									<integer>47</integer>
-									<integer>46</integer>
+									<integer>31</integer>
+									<integer>21</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 367}, {343, 714}}</string>
+							<string>{{0, 43}, {343, 714}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -316,12 +315,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>UploadViewController.h</string>
+								<string>UploadViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>UploadViewController.h</string>
+										<string>UploadViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2801F3F711AAF6B10060F0B6</string>
+										<string>2801F41E11AAFF240060F0B6</string>
 										<key>history</key>
 										<array>
 											<string>28C1B06F10E098A900DBBB55</string>
@@ -412,8 +413,10 @@
 											<string>28802E3511AA473D0085C8DA</string>
 											<string>2801F3A711AAEF9E0060F0B6</string>
 											<string>2801F3A811AAEF9E0060F0B6</string>
-											<string>2801F3F611AAF6B10060F0B6</string>
-											<string>2801F3EF11AAF6270060F0B6</string>
+											<string>2801F41711AAFEBD0060F0B6</string>
+											<string>2801F41811AAFEBD0060F0B6</string>
+											<string>2801F41C11AAFF240060F0B6</string>
+											<string>2801F41D11AAFF240060F0B6</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -955,7 +958,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {843, 481}}</string>
 								<key>RubberWindowFrame</key>
-								<string>608 356 843 522 0 0 1440 878 </string>
+								<string>597 356 843 522 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -984,7 +987,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>608 356 843 522 0 0 1440 878 </string>
+			<string>597 356 843 522 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

@@ -225,6 +225,15 @@
 {
 	[self setRequestsCount:[self requestsCount]-1];
 	[self updateNetworkActivityIndicator];
+	
+	// added alertview when upload finishes
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload finished!"
+													message:@"You should be able to see the new sound in your soundwalk." 
+												   delegate:self 
+										  cancelButtonTitle:@"OK" 
+										  otherButtonTitles:nil];
+	[alert show]; 
+	[alert release];
 	if ([self requestDidFinishSelector]) {
 		[[self delegate] performSelector:[self requestDidFinishSelector] withObject:request];
 	}
