@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,14 +279,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
-									<integer>8</integer>
-									<integer>1</integer>
+									<integer>58</integer>
+									<integer>47</integer>
+									<integer>46</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 50}, {343, 714}}</string>
+							<string>{{0, 367}, {343, 714}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -314,8 +316,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -333,7 +333,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2801F3AB11AAEF9E0060F0B6</string>
+										<string>2801F3F711AAF6B10060F0B6</string>
 										<key>history</key>
 										<array>
 											<string>28C1B06F10E098A900DBBB55</string>
@@ -412,8 +412,8 @@
 											<string>28802E3511AA473D0085C8DA</string>
 											<string>2801F3A711AAEF9E0060F0B6</string>
 											<string>2801F3A811AAEF9E0060F0B6</string>
-											<string>2801F3A911AAEF9E0060F0B6</string>
-											<string>2801F3AA11AAEF9E0060F0B6</string>
+											<string>2801F3F611AAF6B10060F0B6</string>
+											<string>2801F3EF11AAF6270060F0B6</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -613,8 +613,8 @@
 	<array>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>28E76F7D10DAE34F0025C0D1</string>
-		<string>/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio Recorder.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/JJ/Git Projects/GeoAudio-Recorder/GeoAudio Recorder.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 105 1440 773 0 0 1440 878 </string>

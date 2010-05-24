@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+@class ASINetworkQueue;
+
 @interface UploadViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
 
 	UIPickerView* soundwalkPicker;
@@ -17,6 +19,8 @@
 	NSMutableArray* soundwalkIDs; //TODO: need to get titles later!
 	NSArray* locations;
 	
+	ASINetworkQueue* networkQueue;
+	IBOutlet UIProgressView* progressIndicator;
 }
 @property(nonatomic, retain) IBOutlet UIPickerView* soundwalkPicker;
 @property(nonatomic, retain) NSString* filename;

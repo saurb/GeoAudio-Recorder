@@ -27,7 +27,7 @@
 		fRef = 28802D9711A9AFBF0085C8DA /* UploadViewController.h */;
 		name = "UploadViewController.h: 17";
 		rLen = 0;
-		rLoc = 541;
+		rLoc = 566;
 		rType = 0;
 		vrLen = 679;
 		vrLoc = 0;
@@ -57,7 +57,7 @@
 		fRef = 28802D9811A9AFBF0085C8DA /* UploadViewController.m */;
 		name = "UploadViewController.m: 15";
 		rLen = 0;
-		rLoc = 333;
+		rLoc = 361;
 		rType = 0;
 		vrLen = 1271;
 		vrLoc = 0;
@@ -67,7 +67,7 @@
 		fRef = 28802D9711A9AFBF0085C8DA /* UploadViewController.h */;
 		name = "UploadViewController.h: 25";
 		rLen = 0;
-		rLoc = 829;
+		rLoc = 931;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 0;
@@ -77,9 +77,69 @@
 		fRef = 28802D9711A9AFBF0085C8DA /* UploadViewController.h */;
 		name = "UploadViewController.h: 11";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 296;
 		rType = 0;
 		vrLen = 867;
+		vrLoc = 0;
+	};
+	2801F3EF11AAF6270060F0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28802D9711A9AFBF0085C8DA /* UploadViewController.h */;
+		name = "UploadViewController.h: 32";
+		rLen = 0;
+		rLoc = 968;
+		rType = 0;
+		vrLen = 960;
+		vrLoc = 0;
+	};
+	2801F3F011AAF6270060F0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28802D9811A9AFBF0085C8DA /* UploadViewController.m */;
+		name = "UploadViewController.m: 24";
+		rLen = 0;
+		rLoc = 505;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 0;
+	};
+	2801F3F111AAF6270060F0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28802D9811A9AFBF0085C8DA /* UploadViewController.m */;
+		name = "UploadViewController.m: 124";
+		rLen = 0;
+		rLoc = 4138;
+		rType = 0;
+		vrLen = 996;
+		vrLoc = 3341;
+	};
+	2801F3F311AAF6460060F0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28802D9811A9AFBF0085C8DA /* UploadViewController.m */;
+		name = "UploadViewController.m: 117";
+		rLen = 0;
+		rLoc = 3921;
+		rType = 0;
+		vrLen = 996;
+		vrLoc = 3341;
+	};
+	2801F3F611AAF6B10060F0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28802D9811A9AFBF0085C8DA /* UploadViewController.m */;
+		name = "UploadViewController.m: 117";
+		rLen = 0;
+		rLoc = 3921;
+		rType = 0;
+		vrLen = 996;
+		vrLoc = 3341;
+	};
+	2801F3F711AAF6B10060F0B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28802D9711A9AFBF0085C8DA /* UploadViewController.h */;
+		name = "UploadViewController.h: 23";
+		rLen = 0;
+		rLoc = 610;
+		rType = 0;
+		vrLen = 969;
 		vrLoc = 0;
 	};
 	280A898110DDE9EF005CF926 /* LocationController.h */ = {
@@ -574,17 +634,17 @@
 	};
 	28802D9711A9AFBF0085C8DA /* UploadViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1014, 514}}";
-			sepNavSelRange = "{271, 0}";
-			sepNavVisRange = "{0, 867}";
+			sepNavIntBoundsRect = "{{0, 0}, {1014, 537}}";
+			sepNavSelRange = "{610, 0}";
+			sepNavVisRange = "{0, 969}";
 			sepNavWindowFrame = "{{-1905, 295}, {1215, 780}}";
 		};
 	};
 	28802D9811A9AFBF0085C8DA /* UploadViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1014, 1638}}";
-			sepNavSelRange = "{333, 0}";
-			sepNavVisRange = "{0, 1271}";
+			sepNavIntBoundsRect = "{{0, 0}, {1014, 1755}}";
+			sepNavSelRange = "{3921, 0}";
+			sepNavVisRange = "{3341, 996}";
 		};
 	};
 	28802D9F11A9AFCF0085C8DA /* PBXTextBookmark */ = {
@@ -732,7 +792,7 @@
 		fRef = 28802D9811A9AFBF0085C8DA /* UploadViewController.m */;
 		name = "UploadViewController.m: 75";
 		rLen = 0;
-		rLoc = 3566;
+		rLoc = 3905;
 		rType = 0;
 		vrLen = 939;
 		vrLoc = 1604;
@@ -752,7 +812,7 @@
 		fRef = 28802D9711A9AFBF0085C8DA /* UploadViewController.h */;
 		name = "UploadViewController.h: 27";
 		rLen = 0;
-		rLoc = 867;
+		rLoc = 969;
 		rType = 0;
 		vrLen = 645;
 		vrLoc = 0;
@@ -762,7 +822,7 @@
 		fRef = 28802D9711A9AFBF0085C8DA /* UploadViewController.h */;
 		name = "UploadViewController.h: 17";
 		rLen = 0;
-		rLoc = 541;
+		rLoc = 566;
 		rType = 0;
 		vrLen = 679;
 		vrLoc = 0;
@@ -1544,6 +1604,12 @@
 			2801F3A911AAEF9E0060F0B6 /* PBXTextBookmark */ = 2801F3A911AAEF9E0060F0B6 /* PBXTextBookmark */;
 			2801F3AA11AAEF9E0060F0B6 /* PBXTextBookmark */ = 2801F3AA11AAEF9E0060F0B6 /* PBXTextBookmark */;
 			2801F3AB11AAEF9E0060F0B6 /* PBXTextBookmark */ = 2801F3AB11AAEF9E0060F0B6 /* PBXTextBookmark */;
+			2801F3EF11AAF6270060F0B6 /* PBXTextBookmark */ = 2801F3EF11AAF6270060F0B6 /* PBXTextBookmark */;
+			2801F3F011AAF6270060F0B6 /* PBXTextBookmark */ = 2801F3F011AAF6270060F0B6 /* PBXTextBookmark */;
+			2801F3F111AAF6270060F0B6 /* PBXTextBookmark */ = 2801F3F111AAF6270060F0B6 /* PBXTextBookmark */;
+			2801F3F311AAF6460060F0B6 /* PBXTextBookmark */ = 2801F3F311AAF6460060F0B6 /* PBXTextBookmark */;
+			2801F3F611AAF6B10060F0B6 /* PBXTextBookmark */ = 2801F3F611AAF6B10060F0B6 /* PBXTextBookmark */;
+			2801F3F711AAF6B10060F0B6 /* PBXTextBookmark */ = 2801F3F711AAF6B10060F0B6 /* PBXTextBookmark */;
 			28113D9D116A90C9006CC54A = 28113D9D116A90C9006CC54A /* PBXTextBookmark */;
 			2812418211A997260027A9F8 = 2812418211A997260027A9F8 /* PBXTextBookmark */;
 			2812418311A997260027A9F8 = 2812418311A997260027A9F8 /* PBXTextBookmark */;

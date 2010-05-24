@@ -12,6 +12,7 @@
 #import "ObjectiveResourceConfig.h"
 #import "ConnectionManager.h"
 #import "ASIFormDataRequest.h"
+#import "ASINetworkQueue.h"
 
 
 @implementation UploadViewController
@@ -19,6 +20,8 @@
 
 
 - (void)viewDidLoad {
+	
+	networkQueue = [[ASINetworkQueue alloc] init];
 	
     [super viewDidLoad];
 	
@@ -31,6 +34,11 @@
 #pragma mark Upload Methods
 - (IBAction)upload:(id)sender
 {
+	// set up networkqueue
+	[networkQueue cancelAllOperations];
+	[networkQueue setShowAccurateProgress:YES];
+	[networkQueue setUploadProgressDelegate:progressIndicator];
+	[networkQueue setDelegate:self];
 	// load file to data
 	 NSString* filePath = [NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", filename];
 	 // getting the date
@@ -64,7 +72,9 @@
 	 [request setPostValue:lon forKey:@"sound[lng]"];
 	 [request setPostValue:date forKey:@"sound[recorded_at]"];
 	 [request setTimeOutSeconds:500];
-	 [request start];
+	 //[request start];
+	[networkQueue addOperation:request];
+	[networkQueue go];
 }
 
 - (void)requestDone:(ASIFormDataRequest *)request
@@ -121,6 +131,7 @@
 	[responseData release];
 	[soundwalkIDs release];
 	[locations release];
+	[networkQueue release];
     [super dealloc];
 }
 
