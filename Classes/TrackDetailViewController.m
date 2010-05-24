@@ -300,6 +300,8 @@
 	}
 	//TODO: get titles for the soundwalk ids!
 	uploadViewController.soundwalkIDs = self.soundwalkIDs;
+	uploadViewController.filename = self.message;
+	uploadViewController.locations = self.locations;
 	[self.navigationController pushViewController:uploadViewController animated:YES];
 	/*[networkQueue cancelAllOperations];
 	[networkQueue setShowAccurateProgress:YES];

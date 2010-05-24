@@ -11,35 +11,12 @@
 #import "Connection.h"
 #import "ObjectiveResourceConfig.h"
 #import "ConnectionManager.h"
+#import "ASIFormDataRequest.h"
 
 
 @implementation UploadViewController
-@synthesize soundwalkPicker, filename, responseData, soundwalkIDs;
+@synthesize soundwalkPicker, filename, responseData, soundwalkIDs, locations;
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)viewDidLoad {
 	
@@ -48,6 +25,59 @@
 	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+#pragma mark -
+#pragma mark Upload Methods
+- (IBAction)upload:(id)sender
+{
+	// load file to data
+	 NSString* filePath = [NSString stringWithFormat:@"%@/%@/%@", DOCUMENTS_FOLDER, @"audio", filename];
+	 // getting the date
+	 NSFileManager* fileManager = [NSFileManager defaultManager];
+	 NSDictionary* fileAttributes = [fileManager attributesOfItemAtPath:filePath error:nil];
+	 NSString* date = [NSString stringWithFormat:@"%@", [fileAttributes objectForKey:NSFileModificationDate]];
+	 
+	// getting the soundwalk id for POST
+	NSInteger row = [soundwalkPicker selectedRowInComponent:0];
+	NSString* selected = [NSString stringWithFormat:@"%@", [soundwalkIDs objectAtIndex:row]];
+	NSString* postURL = [NSString stringWithFormat:@"http://www.soundwalks.org/soundwalks/%@/sounds", selected];
+	 ASIFormDataRequest *request = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:postURL]];
+	 
+	 [request setUsername:[ObjectiveResourceConfig getUser]];
+	 [request setPassword:[ObjectiveResourceConfig getPassword]];
+	 [request setDelegate:self];
+	 [request setDidFinishSelector:@selector(requestDone:)];
+	 [request setDidFailSelector:@selector(requestWentWrong:)];
+	 
+	 [request setFile:filePath forKey:@"sound[uploaded_data]"];
+	 [request setPostValue:filename forKey:@"sound[description]"];
+	 
+	 // get location
+	 //ISSUE: location different from website after uploading
+	 // Only use the first location for now!
+	 NSString* loc = [locations objectAtIndex:0];
+	 NSArray* array = [loc componentsSeparatedByString:@","];
+	 NSString* lat = [NSString stringWithFormat:@"%@",[array objectAtIndex:0]];
+	 NSString* lon = [NSString stringWithFormat:@"%@",[array objectAtIndex:1]];
+	 [request setPostValue:lat forKey:@"sound[lat]"];
+	 [request setPostValue:lon forKey:@"sound[lng]"];
+	 [request setPostValue:date forKey:@"sound[recorded_at]"];
+	 [request setTimeOutSeconds:500];
+	 [request start];
+}
+
+- (void)requestDone:(ASIFormDataRequest *)request
+{
+	NSString *response = [request responseString];
+	NSLog(@"response %@", response);
+}
+
+- (void)requestWentWrong:(ASIFormDataRequest *)request
+{
+	NSError *error = [request error];
+	NSLog(@"error %@",[error localizedDescription]);
+	
 }
 
 #pragma mark -
@@ -81,6 +111,7 @@
 	self.filename = nil;
 	self.responseData = nil;
 	self.soundwalkIDs = nil;
+	self.locations = nil;
 }
 
 
@@ -89,6 +120,7 @@
 	[filename release];
 	[responseData release];
 	[soundwalkIDs release];
+	[locations release];
     [super dealloc];
 }
 
