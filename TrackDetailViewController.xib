@@ -43,7 +43,7 @@
 					<object class="IBMKMapView" id="555064302">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{-1, 104}, {320, 283}}</string>
+						<string key="NSFrame">{{-1, 48}, {320, 339}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>

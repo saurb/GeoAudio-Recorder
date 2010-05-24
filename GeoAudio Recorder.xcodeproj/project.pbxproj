@@ -11,6 +11,8 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2801F42711AB38C90060F0B6 /* upload_button_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 2801F42611AB38C90060F0B6 /* upload_button_r.png */; };
+		2801F42A11AB39730060F0B6 /* upload_button_g.png in Resources */ = {isa = PBXBuildFile; fileRef = 2801F42911AB39730060F0B6 /* upload_button_g.png */; };
 		280A88B910DD4BE6005CF926 /* RecordEnabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 280A88B710DD4BE6005CF926 /* RecordEnabled.png */; };
 		280A88BA10DD4BE6005CF926 /* RecordPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 280A88B810DD4BE6005CF926 /* RecordPressed.png */; };
 		280A88F210DD6CF2005CF926 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280A88F110DD6CF2005CF926 /* CoreLocation.framework */; };
@@ -117,6 +119,8 @@
 		1D3623250D0F684500981E51 /* GeoAudio_RecorderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoAudio_RecorderAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* GeoAudio Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeoAudio Recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2801F42611AB38C90060F0B6 /* upload_button_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload_button_r.png; sourceTree = "<group>"; };
+		2801F42911AB39730060F0B6 /* upload_button_g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload_button_g.png; sourceTree = "<group>"; };
 		280A88B710DD4BE6005CF926 /* RecordEnabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordEnabled.png; sourceTree = "<group>"; };
 		280A88B810DD4BE6005CF926 /* RecordPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordPressed.png; sourceTree = "<group>"; };
 		280A88F110DD6CF2005CF926 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -649,6 +653,8 @@
 				28E76F9C10DAE8970025C0D1 /* disclosureButtonControllerIcon.png */,
 				28D9BD9810E53CD8003ADC71 /* cassette.png */,
 				284E63B9115C290100CA0ED9 /* disk.png */,
+				2801F42611AB38C90060F0B6 /* upload_button_r.png */,
+				2801F42911AB39730060F0B6 /* upload_button_g.png */,
 				28D9BDA910E54252003ADC71 /* tape.png */,
 				8D1107310486CEB800E47090 /* GeoAudio_Recorder-Info.plist */,
 			);
@@ -737,6 +743,8 @@
 				28FE7CC9115D3FAA0022A95A /* SoundsTableView.xib in Resources */,
 				28FE7D55115D68170022A95A /* SoundDetailViewController.xib in Resources */,
 				28802D9B11A9AFBF0085C8DA /* UploadViewController.xib in Resources */,
+				2801F42711AB38C90060F0B6 /* upload_button_r.png in Resources */,
+				2801F42A11AB39730060F0B6 /* upload_button_g.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
